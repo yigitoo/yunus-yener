@@ -30,7 +30,7 @@
 | 3 | | |
 | 4 | | |
 | 5 | | |
-| 6 | | |
+| 6 | Polymeric biomaterials | [Ali Can Zaman 3](notlar/ali-can-zaman-03-polymeric-biomaterials.md) · [cheat sheet](sinavlar/polimerik-biyomalzemeler-cheat-sheet.md) |
 | 7 | | |
 | 8 | Vize | |
 | 9 | | |
