@@ -18,6 +18,11 @@
 
 | Hafta | Dosya | Açıklama |
 |-------|-------|----------|
+| - | [lecture-notes.pdf](lecture-notes.pdf) | Prof. Dr. Miray Çelikbilek Ersundu, ders notları (71 sayfa) |
+| - | [part2-metallugy-kinetics-lecture-notes.pdf](part2-metallugy-kinetics-lecture-notes.pdf) | Part 2 ders notları (82 sayfa) |
+| - | [kinetic-note.pdf](kinetic-note.pdf) | El yazısı/taranmış not (11 sayfa) |
+| - | [kinetik-tekrar.pdf](kinetik-tekrar.pdf) | Tekrar notu (6 sayfa) |
+| - | [metalurji-kinetigi-ornek-sorular.docx](metalurji-kinetigi-ornek-sorular.docx) | Örnek sorular |
 
 ## Makaleler / Standartlar
 

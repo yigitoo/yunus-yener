@@ -19,6 +19,12 @@
 
 | Hafta | Dosya | Açıklama |
 |-------|-------|----------|
+| - | [corrosion-pdf.pdf](corrosion-pdf.pdf) | Ders PDF'i (27 sayfa) |
+| 2 | [hafta02-worksheet-tr.pdf](hafta02-worksheet-tr.pdf) | Çalışma kâğıdı: Faraday yasaları ve elektrokimyasal hücre |
+| 3 | [hafta03-worksheet-tr.pdf](hafta03-worksheet-tr.pdf) | Çalışma kâğıdı: Korozyonun termodinamiği |
+| 4 | [hafta04-worksheet-tr.pdf](hafta04-worksheet-tr.pdf) | Çalışma kâğıdı: Potansiyel-pH (Pourbaix) diyagramları |
+| 5 | [week05-worksheet-tr.pdf](week05-worksheet-tr.pdf) | Çalışma kâğıdı: Korozyon kinetiği I, polarizasyon |
+| - | [sorular.pdf](sorular.pdf) | Soru dosyası (4 sayfa, taranmış) |
 
 ## Makaleler / Standartlar
 

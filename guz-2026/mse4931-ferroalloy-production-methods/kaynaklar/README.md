@@ -17,6 +17,8 @@
 
 | Hafta | Dosya | Açıklama |
 |-------|-------|----------|
+| 1 | [w1.pdf](w1.pdf) | Hafta 1 slaytları |
+| 2-3 | [w2-3-compressed.pdf](w2-3-compressed.pdf) | Lecture 2: Fabrication methods of ferroalloys-1 |
 
 ## Makaleler / Standartlar
 
