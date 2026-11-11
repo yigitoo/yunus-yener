@@ -40,6 +40,15 @@
 | 13 | | |
 | 14 | | |
 
+## Çalışma Durumu — Ali Can Zaman Slaytları
+
+| # | Konu | Dosya | Durum |
+|---|------|-------|-------|
+| 1 | Biological environment and material interactions | [pdf](kaynaklar/alicanzaman/1-bm-biological-environment-and-material-interactions.pdf) | ✅ Tamamlandı |
+| 2 | Orthopedic implants (hip prosthesis) | [pdf](kaynaklar/alicanzaman/2-ortheopedic-implants-hip-prothesis.pdf) | ✅ Tamamlandı |
+| 3 | Polymeric biomaterials | [pdf](kaynaklar/alicanzaman/3-polymeric-biomaterials.pdf) · [not](notlar/ali-can-zaman-03-polymeric-biomaterials.md) · [cheat sheet](sinavlar/polimerik-biyomalzemeler-cheat-sheet.md) | ▶ Devam ediyor |
+| 4 | Bioceramics-1 | [pdf](kaynaklar/alicanzaman/4-bioceramics.pdf) | ⏳ Sırada |
+
 ## Sınav Hazırlık
 
 - Önemli formüller / diyagramlar:

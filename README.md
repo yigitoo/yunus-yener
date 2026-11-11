@@ -2,6 +2,16 @@
 
 2026–2027 eğitim-öğretim yılı ders notları, ödevler, lab raporları, sınav hazırlıkları ve bitirme projesi.
 
+## Hakkımda
+
+Ben **Yunus Yener**, Yıldız Teknik Üniversitesi (YTÜ) Metalurji ve Malzeme Mühendisliği **4. sınıf** öğrencisiyim (2026–2027).
+
+## Şu An Çalıştığım
+
+| Ders | Materyal | Durum |
+|------|----------|-------|
+| [MSE4071 Biomedical Materials](guz-2026/mse4071-biomedical-materials/README.md) | Ali Can Zaman slaytları | 1 ✅ · 2 ✅ · **3 ▶ devam ediyor** · 4 ⏳ |
+
 ## Claude ile Kullanım
 
 Bu repo Claude ile ders asistanı olarak kullanılmak üzere düzenlendi. Bağlam ve kurallar [`CLAUDE.md`](CLAUDE.md) dosyasında.
