@@ -26,3 +26,7 @@
 ## Online
 
 -
+
+## Ödev
+
+Ödev dosyası: [`../odevler/mse2941-ohs-homework-assignments.docx`](../odevler/mse2941-ohs-homework-assignments.docx)

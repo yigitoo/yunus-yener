@@ -26,3 +26,7 @@
 ## Online
 
 -
+
+## Lab Dosyaları
+
+Deney föyü, deney anlatımları ve raporlar [`../lab/`](../lab/) altında (foy.pdf, ore-dressing.pdf, powder-metallurgy.pdf, electrolys.pdf, exp3 ve exp8 raporları). Grup listesi: [gruplar.png](gruplar.png).
