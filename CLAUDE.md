@@ -10,6 +10,13 @@ Claude burada ders asistanı olarak çalışır: not düzenler, konu anlatır, s
 - Dersler İngilizce (ders kodları `MSE`). Teknik terimleri **İngilizce bırak**, ilk geçtiği yerde Türkçesini parantez içinde ver. Örnek: *pitting corrosion (oyuk korozyonu)*.
 - Not dosyalarını Türkçe yaz; formül, birim ve terimler İngilizce/SI kalsın.
 
+## Yunus'un Çalışma Tercihi
+
+- Yunus **sohbet ederek** öğrenmek istiyor. Konu anlatımı, soru-cevap ve testler doğrudan sohbette yapılır.
+- PDF, HTML ya da ayrı dosya **üretme**; Yunus açıkça isterse üret.
+- Yunus Claude/Git sistemini teknik olarak bilmiyor. Git, branch, PR gibi teknik ayrıntıları ona anlatma; arka planda hallet.
+- Yunus belge (slayt, PDF, fotoğraf) atınca: dosyayı ilgili dersin `kaynaklar/` klasörüne kaydet, sonra sohbette parça parça anlat.
+
 ## Repo Haritası
 
 | Yol | İçerik |
