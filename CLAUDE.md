@@ -44,6 +44,16 @@ Her ders klasörü:
 7. **Yeni ders:** `./scripts/yeni-ders.sh <guz|bahar> "<KOD>" "<Ders Adı>"` kullan, sonra künyeyi doldur.
 8. **Ödevler:** çözümü adım adım, gerekçesiyle anlat. Yunus'un anlayıp kendi yazabileceği şekilde ilerle, sadece sonuç verme.
 
+## Parçalı PDF Yüklemeleri
+
+Uygulama ~100 sayfadan uzun PDF'leri kabul etmediği için Yunus uzun slaytları **parçalara bölerek** yükler (örn. `..._NED.pdf` + `..._NEDs.pdf`).
+
+- Aynı başlıklı / aynı ders numaralı birden fazla PDF gelirse bunları **tek dersin parçaları** say; ayrı ders sanma.
+- Parçaları sırayla birleştir (`pypdf`), parça sınırında **tekrar eden sayfaları** metin karşılaştırmasıyla bul ve çıkar.
+- Sayfalar yan duruyorsa düz çevir; sonucu küçük önizlemeyle kontrol et.
+- Birleşik dosyayı Yunus'a geri gönder, `kaynaklar/README.md` → "Hocanın Materyalleri" tablosuna tek satır olarak işle.
+- Bir parça eksik görünüyorsa (sayfa numarası atlıyor, konu yarıda kesiliyor) bunu söyle ve kalan parçayı iste.
+
 ## Not Yazım Standardı
 
 - Başlık hiyerarşisi: `#` hafta/konu, `##` ana bölüm, `###` alt başlık.
