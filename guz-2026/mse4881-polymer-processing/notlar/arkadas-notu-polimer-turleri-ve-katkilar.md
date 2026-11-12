@@ -63,7 +63,7 @@ $$
 \underbrace{\mathrm{HO{-}CH_2{-}CH_2{-}OH}}_{\text{etilen glikol}} \;+\; \underbrace{\mathrm{HOOC{-}C_6H_4{-}COOH}}_{\text{tereftalik asit}} \;\rightleftharpoons\; \text{PET} + \mathrm{H_2O}
 $$
 
-- Reaksiyonda **$\mathrm{H_2O}$ açığa çıkar** (kondenzasyonun yan ürünü: bir uçtaki –OH ile diğerindeki –OH birleşip su olarak ayrılır).
+- Reaksiyonda **$\mathrm{H_2O}$ açığa çıkar** (kondenzasyonun yan ürünü: asidin –COOH grubundan **–OH**, alkolün –OH grubundan **H** ayrılır ve su olur; alkolün **oksijeni** ester bağında kalır → $\mathrm{{-}CO{-}O{-}CH_2{-}}$).
 - **Elyaf** haline getirilir ve **en yaygın elyaftır** (polyester).
 - İçi boş şişe üretimi.
 - **Crystallinity (kristalinite)** ↑ olduğu için **gaz geçirgenliği düşük**.
@@ -164,6 +164,8 @@ $$
   - Defterdeki yan not: "çok küçük kuvvetle ...[?]". Muhtemelen: çok küçük kuvvetle bile büyük şekil değiştirirler.
 - Ana zincir üzerinde **çift bağlar (vinil grupları)** içerir. Bu sayede bağlar etrafında dönebilme → yüksek hareket kabiliyeti (**esneklik**).
   - Bu sayede zincirler arasında **free volume (serbest hacim)** oluşabilir → dışarıdan uygulanan mekanik kuvvetleri **absorblayacak boşluklar** oluşur.
+
+> **Not:** Zincirin konformasyon değiştirmesini sağlayan dönme **tek bağlar (C–C σ bağları)** etrafında olur; **C=C çift bağın kendisi etrafında dönme yoktur** (π bağı dönmeyi engeller). Çift bağların dolaylı katkısı şu: doğal kauçuktaki *cis* çift bağlar zincirde kıvrım oluşturup düzenli istiflenmeyi (kristalleşmeyi) zorlaştırır, yanlarındaki tek bağların dönme bariyerini de düşürür → zincir amorf ve hareketli kalır. Çift bağların asıl önemli rolü vulkanizasyonda kükürtle çapraz bağ kurulan noktalar olmalarıdır.
 - **Amorf** malzemelerdir. $T_g$: yaklaşık **0 ile −100 °C** arası (yani oda sıcaklığı $T_g$'nin çok üstünde → kauçuksu davranış).
 
 ### 4.2 Örnekler ve kullanım
