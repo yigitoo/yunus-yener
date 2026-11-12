@@ -7,7 +7,19 @@
 - **El yazısı orijinaller:** [ham-not-1.jpg](ham-not-1.jpg), [ham-not-2.jpg](ham-not-2.jpg)
 
 > Bu dosya el yazısı notların birebir dökümüdür; rapor bunlardan yazılacak.
-> Rapor formatı için Yunus önceki haftalardan bir rapor gönderecek (bkz. `../exp8-ore-dressing-yunus-yener.pdf` de önceki örnek).
+> Rapor formatı referansı: [`../exp8-ore-dressing-yunus-yener.pdf`](../exp8-ore-dressing-yunus-yener.pdf) (Yunus'un kendi Exp 8 raporu).
+
+## Rapor konsepti (Exp 8 örneğinden)
+
+- **Dil:** İngilizce, el yazısı, ~3–4 sayfa. Kısa ve öz.
+- **Başlık bloğu:** `Experiment N: <Konu> – Lab Report` / `Name: Yunus Yener` / `Student No: 2205C046   Group-5`
+- **Bölümler:**
+  1. **Aim** — tek paragraf, spesifik amaçlar
+  2. **Materials and Devices** — madde işaretli malzeme + cihaz listesi
+  3. **Experimental Procedure** — alt başlıklar (3.1, 3.2…), geçmiş zaman edilgen ("was weighed…")
+  4. **Data Derived from the Experiment** — numaralı tablolar (Table 1, Table 2…), elle çizilmiş grafik, hesaplar formülüyle
+  5. **Discussion and Evaluation of the Results** — tek-iki paragraf: sonuçlar, teorik/beklenen ile fark, hata kaynakları
+  6. **References** — Türkçe ders kitapları + "Experiment N: …, MSE4121 Laboratory Manual"
 
 ## Teori notları
 
