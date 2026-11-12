@@ -40,6 +40,12 @@
 | 13 | | |
 | 14 | | |
 
+### Ek Notlar
+
+| Konu | Not | Kaynak |
+|------|-----|--------|
+| Polimer türleri (PP, PVC, PS, PET, ABS, mühendislik polimerleri, termosetler, elastomerler, TPE) ve katkı maddeleri | [md](notlar/arkadas-notu-polimer-turleri-ve-katkilar.md) · [pdf](notlar/arkadas-notu-polimer-turleri-ve-katkilar.pdf) | Arkadaş defteri, hafta bilinmiyor |
+
 ## Sınav Hazırlık
 
 - Önemli formüller / diyagramlar:
