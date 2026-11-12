@@ -10,7 +10,7 @@ Ben **Yunus Yener**, Yıldız Teknik Üniversitesi (YTÜ) Metalurji ve Malzeme M
 
 | Ders | Materyal | Durum |
 |------|----------|-------|
-| [MSE4071 Biomedical Materials](guz-2026/mse4071-biomedical-materials/README.md) | Ali Can Zaman slaytları | 1 ✅ · 2 ✅ · **3 ▶ devam ediyor** · 4 ⏳ |
+| [MSE4071 Biomedical Materials](guz-2026/mse4071-biomedical-materials/README.md) | Ali Can Zaman slaytları | 1 ✅ · 2 ✅ · **3 ✅** · 4 ⏳ |
 
 ## Claude ile Kullanım
 

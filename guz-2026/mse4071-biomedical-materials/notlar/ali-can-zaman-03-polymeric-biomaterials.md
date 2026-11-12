@@ -75,5 +75,6 @@ Uyaran (ör. ısı) ile eski şekline döner. Döngü: **heating → deforming �
 4. PLA / PGA / PLGA karşılaştırması (hydrophobic–hydrophilic, bozunma hızı).
 5. Hydrogel tanımı ve üç ilaç salınım mekanizması; PMMA'nın osseointegration'a etkisi; PEEK ve silicone'un avantaj/dezavantajları.
 
-## Anlaşılmayanlar / Hocaya Sorulacak
-- Slaytta bazı bölümler (slayt 38–39) görsel olduğundan metne çıkmadı, gerekirse birlikte bakılacak.
+### Slayt 38–39 (görsel tablolar)
+**Polimer implantlar:** kardiyovasküler (PU, PTFE, silikon kauçuk) · ilaç salınımı (PLG, PLA) · doku iskelesi (PLA, PLG) · kalp kapakçığı (PTFE) · yapay kalp (PU) · lens (PMMA, PC) · ortopedik implant (UHMWPE, PMMA).
+**Biyobozunur polimerler:** doğal: fibrin, kolajen, kitosan, jelatin, hyaluronan · sentetik: PLA, PGA, PLGA, PCL, polyorthoesters, poly(dioxanone), poly(anhydrides), poly(trimethylene carbonate), poly(phosphazenes).
