@@ -64,4 +64,5 @@
 - [ ] **Değerlendirme:** slaytta "Final 40%, Mid-term Exam 1-2 30%" yazıyor; toplam 70 → kalan %30 ne (ikinci vize, ödev, quiz)?
 - [x] Lecture 4–5 geldi (Measurement Statistics).
 - [ ] **Lecture 3 slaytı** — elinde varsa yükle.
+- [x] Lecture 7 (Metrology of Length) vizeye kadar işlenmeyecek → vize kapsamı: L1, L2, L3, L4–5, L6.
 - [ ] **Sıra farkı:** izlencede Lecture 2 = "Measurement Equipments", Lecture 6 = "Measurement Uncertainty". Gelen dosyalarda ise Lecture 2 = Terms & Concepts, Lecture 6 = Measurement Equipments. Derste anlatılan sıra hangisi?
