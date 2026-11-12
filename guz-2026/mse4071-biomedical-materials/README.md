@@ -47,7 +47,7 @@
 | 1 | Biological environment and material interactions | [pdf](kaynaklar/alicanzaman/1-bm-biological-environment-and-material-interactions.pdf) | ✅ Tamamlandı |
 | 2 | Orthopedic implants (hip prosthesis) | [pdf](kaynaklar/alicanzaman/2-ortheopedic-implants-hip-prothesis.pdf) | ✅ Tamamlandı |
 | 3 | Polymeric biomaterials | [pdf](kaynaklar/alicanzaman/3-polymeric-biomaterials.pdf) · [not](notlar/ali-can-zaman-03-polymeric-biomaterials.md) · [konu anlatımı 1 (slayt 1–9, PDF)](notlar/ali-can-zaman-03-bolum-1-konu-anlatimi.pdf) · [cheat sheet](sinavlar/polimerik-biyomalzemeler-cheat-sheet.md) | ✅ Tamamlandı |
-| 4 | Bioceramics-1 | [pdf](kaynaklar/alicanzaman/4-bioceramics.pdf) | ⏳ Sırada |
+| 4 | Bioceramics-1 | [pdf](kaynaklar/alicanzaman/4-bioceramics.pdf) · [cheat sheet](sinavlar/biyoseramikler-cheat-sheet.pdf) | ▶ Cheat sheet hazır |
 
 ## Sınav Hazırlık
 
