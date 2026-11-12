@@ -25,6 +25,7 @@
 |-------|-------|----------|
 | 1 | 1_MEM_3921_Lecture_1.pdf | İzlence, değerlendirme, metrology'e giriş, quantities & units |
 | 2 | 2_LECTURE_2_2026.pdf | Metrology terms & concepts: accuracy, error, uncertainty, calibration, traceability |
+| 4–5 | 4-5__MSE_3271_Lecture-4_5_NED(s).pdf | Measurement Statistics: veri türleri, ölçek (nominal/ordinal/interval/ratio), mean/median/mode, variance, std. deviation, normal dağılım, z-score, z tablosu (iki dosya tek ders; 117 sayfa) |
 | 6 | 6_MSE3271_Lecture-6_NED.pdf | Measurement equipments in part manufacturing: yöntemler, Go/No-Go, vernier caliper |
 
 ## Makaleler / Standartlar

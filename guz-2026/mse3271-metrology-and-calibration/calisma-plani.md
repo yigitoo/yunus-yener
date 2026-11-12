@@ -53,12 +53,15 @@
 | 3 | Uncertainty + Calibration + Traceability | L2 (2. yarı) | `notlar/hafta-02.md` devamı + soru seti | ⏳ |
 | 4 | Dimensional measurement yöntemleri + Go/No-Go | L6 (1. yarı) | `notlar/hafta-06.md` | ⏳ |
 | 5 | Vernier caliper / micrometer okuma pratiği | L6 (2. yarı) | okuma alıştırmaları | ⏳ |
-| 6 | L3–L5 (slayt gelince) | L3–L5 | `notlar/hafta-03..05.md` | ⏸ slayt bekleniyor |
+| 6a | Measurement Statistics: veri türleri, mean/median/mode, variance, SD | L4–5 (1. yarı) | `notlar/hafta-04.md` | ⏳ |
+| 6b | Normal dağılım, z-score, z tablosu soruları | L4–5 (2. yarı) | `notlar/hafta-05.md` + soru seti | ⏳ |
+| 6c | International Metrology System | L3 | `notlar/hafta-03.md` | ⏸ slayt bekleniyor |
 | 7 | Vize hazırlık: özet + formül kağıdı + deneme | tüm notlar | `sinavlar/vize-ozet.md` | ⏳ |
 
 ## Önce Netleşmesi Gerekenler
 
 - [ ] **Vize tarihi?** İzlencede 8. hafta yazıyor ama kesin tarih repoda yok.
 - [ ] **Değerlendirme:** slaytta "Final 40%, Mid-term Exam 1-2 30%" yazıyor; toplam 70 → kalan %30 ne (ikinci vize, ödev, quiz)?
-- [ ] **Lecture 3, 4, 5 slaytları** — elinde varsa yükle.
+- [x] Lecture 4–5 geldi (Measurement Statistics).
+- [ ] **Lecture 3 slaytı** — elinde varsa yükle.
 - [ ] **Sıra farkı:** izlencede Lecture 2 = "Measurement Equipments", Lecture 6 = "Measurement Uncertainty". Gelen dosyalarda ise Lecture 2 = Terms & Concepts, Lecture 6 = Measurement Equipments. Derste anlatılan sıra hangisi?
