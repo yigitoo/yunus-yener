@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Metrology L1–L2 Cheat Sheet</title>
+<style>
+:root{
+  --ink:#1b2430; --muted:#5b6673; --line:#dfe5ea; --card:#ffffff; --soft:#f4f7f9;
+  --acc:#14707a; --acc2:#1d4f73; --accSoft:#e6f2f3; --warn:#b4471b; --warnSoft:#fdf1ea; --star:#e0a100;
+}
+@page{size:A4;margin:11mm 10mm 13mm}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Inter","Inter Display",system-ui,sans-serif;font-size:8.6pt;line-height:1.38;color:var(--ink);background:#fff}
+.hero{background:linear-gradient(120deg,var(--acc2),var(--acc));color:#fff;border-radius:9px;padding:11px 15px 10px;margin-bottom:9px}
+.hero .kick{font-size:7.2pt;letter-spacing:.14em;opacity:.85;text-transform:uppercase}
+.hero h1{font-family:"Inter Display","Inter",sans-serif;font-size:19pt;margin:2px 0 3px;font-weight:800}
+.hero .src{font-size:8pt;opacity:.92}
+.sec{display:flex;align-items:center;gap:7px;margin:11px 0 6px;border-bottom:1px solid var(--line);padding-bottom:3px;break-after:avoid}
+.sec .b{background:var(--acc);color:#fff;font-weight:800;font-size:8pt;width:17px;height:17px;border-radius:4px;display:flex;align-items:center;justify-content:center}
+.sec h2{font-family:"Inter Display","Inter",sans-serif;font-size:11.5pt;margin:0;color:var(--acc2)}
+.star{color:var(--star)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.span{grid-column:1/-1}
+.card{border:1px solid var(--line);border-radius:7px;padding:6px 8px 6px;background:var(--card);break-inside:avoid}
+.card.top{border-top:3px solid var(--acc)}
+.card h3{font-size:8.9pt;margin:0 0 4px;color:var(--acc);display:flex;align-items:baseline;gap:5px}
+.card h3 .ref{margin-left:auto;font-weight:500;color:var(--muted);font-size:7.2pt;white-space:nowrap}
+p{margin:2px 0}
+ul{margin:2px 0;padding-left:14px} li{margin:1px 0}
+table{width:100%;border-collapse:collapse;margin:3px 0}
+th{background:var(--accSoft);color:var(--acc2);text-align:left;font-weight:700;padding:2.5px 5px;font-size:8pt}
+td{padding:2.5px 5px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.kv td:first-child{width:23%;font-weight:700;color:var(--acc2);font-size:7.6pt;text-transform:uppercase;letter-spacing:.02em}
+.tree{font-family:"DejaVu Sans Mono",monospace;font-size:7.4pt;background:var(--soft);border-radius:5px;padding:5px 7px;white-space:pre;line-height:1.3;margin:3px 0}
+.f{font-family:"DejaVu Sans Mono",monospace;font-size:7.9pt;background:var(--soft);border-left:3px solid var(--acc);border-radius:3px;padding:4px 7px;margin:3px 0;white-space:pre-wrap}
+.tpl{font-family:"DejaVu Sans Mono",monospace;font-size:7.5pt;background:#fff;border:1px dashed #b9c6cf;border-radius:4px;padding:4px 7px;margin:3px 0;white-space:pre}
+.note{background:var(--warnSoft);border-left:3px solid var(--warn);border-radius:3px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.tip{background:var(--accSoft);border-radius:4px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.trap{border:1px solid #f0c8b3;background:var(--warnSoft);border-radius:7px;padding:6px 9px;break-inside:avoid}
+.trap h3{color:var(--warn);margin:0 0 3px;font-size:9pt}
+.quiz ol{padding-left:17px;margin:2px 0} .quiz li{margin:2.5px 0}
+.ans td:first-child{width:18px;font-weight:800;color:var(--acc)}
+b{font-weight:700}
+.pb{break-before:page}
+.foot{margin-top:7px;text-align:center;color:var(--muted);font-size:7pt}
+sub,sup{font-size:.72em}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="kick">MSE3271 · Metrology and Calibration · YTÜ Metalurji ve Malzeme Müh.</div>
+  <h1>Lecture 1 + 2 · Cheat Sheet</h1>
+  <div class="src">Kaynak: Doç. Dr. Nilüfer Duygulu, Lecture 1 (59 slayt) + Lecture 2 "Metrology Terms and Concepts" (76 slayt) · Şablon özet + hesap şablonları + mini test + cevap anahtarı</div>
+</div>
+
+<!-- ================= A ================= -->
+<div class="sec"><div class="b">A</div><h2>Lecture 1 · Temel kavramlar</h2></div>
+<div class="grid">
+
+  <div class="card">
+    <h3>1 · Metroloji nedir? <span class="ref">L1 s.6–10</span></h3>
+    <ul>
+      <li><b>Measurement</b>: nesne veya olaylara sayısal değer atamak.</li>
+      <li><b>Metrology</b>: ölçüm bilimi. <b>Resolution, accuracy, repeatability</b> ve uncertainty ile ilgilenir; ölçümün teorik ve pratik tüm yönlerini kapsar.</li>
+      <li>Neden önemli: yanlış ölçüm → para ve can kaybı. <b>NASA Mars orbiter</b>: İngiliz/metrik birim çevrilmedi → ~60 mil sapma, sonda kayıp.</li>
+      <li>Kelvin: "Ölçebiliyor ve sayıyla ifade edebiliyorsan bir şey biliyorsun."</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>2 · Metrolojinin 3 dalı <span class="star">★</span> <span class="ref">L1 s.15–22</span></h3>
+    <div class="tree">                METROLOGY
+     ┌──────────────┼──────────────┐
+ SCIENTIFIC     INDUSTRIAL        LEGAL
+ standart       üretimde cihaz    kanunla denetlenen
+ yaratır/korur  doğru çalışsın    ticaret·sağlık·güvenlik</div>
+    <table>
+      <tr><th>Dal</th><th>Anahtar</th></tr>
+      <tr><td><b>Scientific</b></td><td>en üst seviye · base unit, fiziksel sabit · BIPM, NIST, NPL, <b>UME</b> · atomic clock</td></tr>
+      <tr><td><b>Industrial</b></td><td>kalibrasyon, CMM, tolerans · <b>ISO 9001 / 17025</b></td></tr>
+      <tr><td><b>Legal</b></td><td>tüketici koruma · pompa, terazi, taksimetre, hazır ambalaj</td></tr>
+    </table>
+    <div class="tip">Karar sorusu: <b>yanlış olursa kim zarar görür?</b> Sistem → scientific · ürün → industrial · tüketici → legal</div>
+  </div>
+
+  <div class="card span">
+    <h3>3 · Measurement procedure: 6 bileşen <span class="star">★</span> <span class="ref">L1 s.26–31 · L2 s.39–41</span></h3>
+    <table class="kv">
+      <tr><td>Principle</td><td>Ölçümün dayandığı <b>fizik yasası</b>. Ör: thermoelectric effect (sıcaklık), Josephson effect (voltaj).</td></tr>
+      <tr><td>Method</td><td>Ölçümün <b>mantığı</b>: <b>direct</b> (cetvelle uzunluk) / <b>indirect</b> (en·boy·yükseklikten hacim).</td></tr>
+      <tr><td>Model</td><td>Ölçülen ile sonucu bağlayan <b>matematiksel ifade</b>: V = a·b·c, ρ = m/V.</td></tr>
+      <tr><td>Steps</td><td>Adım adım: hazırlık → kalibrasyon → ortam koşulları → ölçüm → kayıt.</td></tr>
+      <tr><td>Uncertainty</td><td>Sonucun ne kadar güvenilir olduğu (ör. ±0.1 °C).</td></tr>
+      <tr><td>SOP</td><td><b>Standard Operating Procedure</b>: belgelenmiş standart hali; farklı kişi ve yerde aynı sonuç. İlaç, sağlık, mühendislik.</td></tr>
+    </table>
+    <div class="tip">Örnek (s.31), sıcaklık ölçümü: Preparation (termometre kalibre) → Method (numuneye daldır, dengeye gelsin) → Principle (sıvı genleşmesi / elektriksel direnç) → Recording → Uncertainty ±0.1 °C</div>
+  </div>
+
+  <div class="card">
+    <h3>4 · SI: 7 base unit <span class="star">★</span> <span class="ref">L1 s.36–46</span></h3>
+    <table>
+      <tr><th>Quantity</th><th>Unit</th><th></th><th>Slayttaki tanım (özet)</th></tr>
+      <tr><td>length</td><td>metre</td><td><b>m</b></td><td>ışığın vakumda 1/299 792 458 s'de aldığı yol</td></tr>
+      <tr><td>mass</td><td>kilogram</td><td><b>kg</b></td><td>uluslararası kilogram prototipi</td></tr>
+      <tr><td>time</td><td>second</td><td><b>s</b></td><td>Cs-133'ün 9 192 631 770 periyodu</td></tr>
+      <tr><td>current</td><td>ampere</td><td><b>A</b></td><td>1 m aralı iki iletken arası 2×10⁻⁷ N/m</td></tr>
+      <tr><td>temperature</td><td>kelvin</td><td><b>K</b></td><td>suyun üçlü noktasının 1/273.16'sı</td></tr>
+      <tr><td>amount</td><td>mole</td><td><b>mol</b></td><td>0.012 kg C-12'deki atom sayısı kadar</td></tr>
+      <tr><td>luminous int.</td><td>candela</td><td><b>cd</b></td><td>540×10¹² Hz, 1/683 W/sr</td></tr>
+    </table>
+    <div class="note">⚠️ Slayt kg, K, mol, A için <b>2019 öncesi</b> tanımları veriyor (bugün h, k, N<sub>A</sub>, e sabitleriyle tanımlı). Sınavda <b>slayttaki</b> tanımı yaz.</div>
+  </div>
+
+  <div class="card">
+    <h3>5 · Quantity, unit, value <span class="ref">L1 s.33–35, 48, 53–57</span></h3>
+    <table class="kv">
+      <tr><td>Quantity</td><td>Olgu, cisim veya maddenin nitel olarak ayırt edilip nicel olarak belirlenebilen özelliği</td></tr>
+      <tr><td>Base q.</td><td>Diğerlerinden <b>fonksiyonel olarak bağımsız</b> kabul edilen (mekanikte length, mass, time)</td></tr>
+      <tr><td>Derived q.</td><td>Base'lerin fonksiyonu (velocity = length / time)</td></tr>
+      <tr><td>Unit</td><td>Uzlaşmayla kabul edilen referans nicelik; aynı türden nicelikler ona oranlanır</td></tr>
+      <tr><td>SI</td><td><b>CGPM</b>'in kabul ettiği coherent birim sistemi</td></tr>
+      <tr><td>Value</td><td>sayı × birim (5.2 m)</td></tr>
+      <tr><td>True value</td><td>Tanıma tam uyan değer → <b>bilinemez</b></td></tr>
+      <tr><td>Conv. true v.</td><td>Amaca uygun belirsizlikle <b>kabul edilen</b> değer: referans standardın değeri, CODATA N<sub>A</sub> = 6.022 136 7×10²³ mol⁻¹</td></tr>
+    </table>
+  </div>
+
+  <div class="card span">
+    <h3>6 · Supplementary units, ön ekler, tarih <span class="ref">L1 s.23–25, 49–52, 59</span></h3>
+    <table>
+      <tr><th>Birim</th><th>Nicelik</th><th>Tanım</th><th>Boyut</th></tr>
+      <tr><td><b>rad</b></td><td>düzlem açı</td><td>yarıçapa eşit yay gören iki yarıçap arasındaki açı</td><td>m/m (boyutsuz)</td></tr>
+      <tr><td><b>sr</b></td><td>katı açı</td><td>küre yüzeyinden kenarı yarıçapa eşit kare alan kesen açı</td><td>m²/m² (boyutsuz)</td></tr>
+    </table>
+    <p><b>Ön ekler:</b> G 10⁹ · M 10⁶ · k 10³ · m 10⁻³ · µ 10⁻⁶ · n 10⁻⁹ · p 10⁻¹² &nbsp;|&nbsp; <b>Derived:</b> N = kg·m/s² · Pa = N/m² · J = N·m · W = J/s · Hz = 1/s &nbsp;|&nbsp; <b>Tarih:</b> Egyptian <b>cubit</b>, ~MÖ 3000: firavunun dirseğinden orta parmak ucuna.</p>
+  </div>
+</div>
+
+<!-- ================= B ================= -->
+<div class="sec"><div class="b">B</div><h2>Lecture 2 · Ölçüm sonucu: error, accuracy, precision <span class="star">★</span></h2></div>
+<div class="grid">
+
+  <div class="card">
+    <h3>Ölçümün aktörleri <span class="ref">L2 s.3, 39–42</span></h3>
+    <table class="kv">
+      <tr><td>Measurand</td><td>Ölçmek <b>istediğimiz</b> nicelik. Ör: 20 °C'de belirli bir su numunesinin buhar basıncı.</td></tr>
+      <tr><td>Influence q.</td><td>Ölçülmeyen ama <b>sonucu etkileyen</b>. Ör: uzunluk ölçerken mikrometrenin sıcaklığı.</td></tr>
+      <tr><td>Signal</td><td>Measurand'ı temsil eden, onunla fonksiyonel ilişkili büyüklük. Ör: basınç transducer'ının elektrik çıkışı.</td></tr>
+      <tr><td>Resolution</td><td>Göstergede algılanabilir değişim yaratan en küçük değişim.</td></tr>
+    </table>
+    <div class="tip">Measurand = <b>hedef</b> · influence quantity = <b>dış etken</b></div>
+  </div>
+
+  <div class="card">
+    <h3>Error tanımları (VIM) <span class="ref">L2 s.6–10, 32</span></h3>
+    <div class="f">Error            = ölçülen − true value
+Random error     = ölçülen − (∞ ölçümün ortalaması)
+Systematic error = (∞ ölçümün ortalaması) − true value
+Toplam error     = random + systematic
+Correction       = −(systematic error)
+Corrected result = uncorrected + correction</div>
+    <p><b>Uncorrected result</b>: sistematik hata düzeltilmeden önceki sonuç · <b>Deviation</b>: değer − referans değeri</p>
+  </div>
+
+  <div class="card">
+    <h3>Systematic vs Random <span class="ref">L2 s.11–12</span></h3>
+    <table>
+      <tr><th></th><th>Systematic</th><th>Random</th></tr>
+      <tr><td><b>Davranış</b></td><td>aynı yön, aynı miktar</td><td>her seferinde farklı</td></tr>
+      <tr><td><b>Bozar</b></td><td><b>accuracy</b></td><td><b>precision</b></td></tr>
+      <tr><td><b>Tekrar ölç.</b></td><td>işe yaramaz</td><td>ortalama → azalır</td></tr>
+      <tr><td><b>Çözüm</b></td><td>correction / kalibrasyon</td><td>çok ölçüm + ortalama</td></tr>
+      <tr><td><b>Örnek</b></td><td>terazi hep +0.1 kg · termometre hep +2 °C · sıfırı kaymış kumpas</td><td>cetvel: 1.02, 1.03, 1.01 m (paralaks, el) · dış hava: 20.2, 20.3, 20.1 °C</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Accuracy vs Precision: 4 kutu <span class="ref">L2 s.13–21</span></h3>
+    <table>
+      <tr><th></th><th>Precise (σ küçük)</th><th>Imprecise</th></tr>
+      <tr><td><b>Accurate</b></td><td>🎯 Olimpik okçu</td><td>Kızılderili: merkez etrafında dağınık</td></tr>
+      <tr><td><b>Inaccurate</b></td><td>Robin Hood'un adamı: sıkı grup, merkez dışı</td><td>Taş devri adamı</td></tr>
+    </table>
+    <ul>
+      <li><b>Accuracy</b>: sonucun <b>true value'ya</b> yakınlığı (doğruluk)</li>
+      <li><b>Precision</b>: tekrarlanan ölçümlerin <b>birbirine</b> yakınlığı (kesinlik); σ ile ölçülür</li>
+      <li>Slayt örneği: 9.81, 9.80, 9.82 → precise · true 10.00 için 9.99 → accurate</li>
+    </ul>
+  </div>
+
+  <div class="card span">
+    <h3>Repeatability vs Reproducibility <span class="ref">L2 s.34–37</span></h3>
+    <table>
+      <tr><th style="width:50%">Repeatability (tekrarlanabilirlik): AYNI koşul</th><th>Reproducibility (yeniden üretilebilirlik): DEĞİŞEN koşul</th></tr>
+      <tr><td>aynı prosedür · aynı gözlemci · aynı cihaz, aynı koşulda · aynı yer · <b>kısa sürede</b> tekrar</td><td>değişebilir: principle · method · gözlemci · cihaz · referans standard · yer · kullanım koşulu · zaman. ⚠ <b>Değişen koşul belirtilmeli.</b></td></tr>
+      <tr><td>Ör: kendi lab'ında aynı cihazla 3 test → hepsi 5 mg/h</td><td>Ör: iki farklı lab, farklı araştırmacı → ikisi de 5 mg/h</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ================= C ================= -->
+<div class="sec"><div class="b">C</div><h2>Lecture 2 · Uncertainty, calibration, traceability, standards</h2></div>
+<div class="grid">
+
+  <div class="card span">
+    <h3>Uncertainty (belirsizlik) <span class="star">★</span> <span class="ref">L2 s.22–25, 67–74</span></h3>
+    <p><b>Tanım:</b> Ölçüm sonucuna bağlı, measurand'a makul olarak atanabilecek değerlerin <b>dağılımını</b> karakterize eden parametre. Gerçek değerin bulunması beklenen aralığı verir.</p>
+    <table class="kv">
+      <tr><td>Kaynaklar</td><td>cihaz (resolution, kalibrasyon) · çevre (sıcaklık, nem, basınç) · operatör (paralaks, okuma) · yöntem · örnekleme</td></tr>
+      <tr><td>Type A</td><td><b>İstatistiksel</b>: tekrarlı ölçümlerin standart sapmasından (random etki). L3: "standard deviation of the mean" = s/√n</td></tr>
+      <tr><td>Type B</td><td><b>İstatistik dışı</b>: üretici spesifikasyonu, kalibrasyon sertifikası, deneyim (sistematik etki)</td></tr>
+      <tr><td>Combined</td><td>Kaynaklar <b>root-sum-square</b> ile birleştirilir</td></tr>
+      <tr><td>Expanded</td><td>u<sub>c</sub> × coverage factor <b>k = 2</b> → <b>%95</b> güven aralığı</td></tr>
+      <tr><td>İfade</td><td>Absolute (±0.2 g) · relative (% olarak) · 5.0 ± 0.2 cm → gerçek değer 4.8–5.2 cm arasında</td></tr>
+    </table>
+    <div class="tip">Slayt örneği (s.25): masa 150.0 cm, şerit metre resolution 0.1 cm, tekrar ölçümlerde ±0.3 cm fark → sonuç <b>150 ± 0.3 cm</b> (149.7–150.3)</div>
+  </div>
+
+  <div class="card">
+    <h3>Calibration <span class="ref">L2 s.26–29</span></h3>
+    <ul>
+      <li>Cihazın <b>gösterdiği değer</b> ile <b>referans standard</b> arasındaki ilişkiyi kuran işlemler</li>
+      <li>Ölçüm sistemini standartlar aracılığıyla dış otoriteye uydurmak</li>
+      <li>Ör: teraziyi bilinen kütlelerle kontrol edip yanıtını kg'a bağlamak</li>
+    </ul>
+    <table class="kv">
+      <tr><td>Metrologist</td><td>kalibrasyon ve test tasarlar, sonucu analiz eder, cihazın son doğruluğunu belirler</td></tr>
+      <tr><td>Engineer</td><td>prosedür geliştirir, performansı optimize eder, veriyi analiz eder, teknisyene destek</td></tr>
+      <tr><td>Technician</td><td>kalibre eder, arıza giderir, kayıt tutar, ekipmanın bakımını yapar</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Traceability (izlenebilirlik) <span class="star">★</span> <span class="ref">L2 s.30, 44–51</span></h3>
+    <p>Sonucun, <b>her biri belirtilmiş uncertainty'ye sahip kesintisiz bir kalibrasyon zinciriyle</b> ulusal veya uluslararası standarda (SI) bağlanabilmesi.</p>
+    <p><b>Her halkada şart:</b> uncertainty tahmini · belgelenmiş prosedür ve sonuç · yetkinlik · geçerlilik (kalibrasyon aralığı, koşullar)</p>
+    <p><b>Traceability tower:</b> bir halka eksikse kule <b>çöker</b>; hiçbir seviyenin uncertainty'si altındakilerden <b>küçük olamaz</b>.</p>
+    <p><b>Örnek:</b> aşı dolabı termometresi → referans termometre → ulusal standart (ITS)</p>
+    <p><b>Neden:</b> tedarikçiler farklı ölçeklerle çalışırsa üretim imkânsız olur; araştırma tekrarlanamaz.</p>
+  </div>
+
+  <div class="card">
+    <h3>Measurement standards (etalon) <span class="ref">L2 s.52–55</span></h3>
+    <div class="tree">BIPM
+ └ PRIMARY    en yüksek kalite, başka standarda referans vermez
+    └ SECONDARY  primary'ye karşı kalibre
+       └ WORKING    günlük; secondary'ye karşı periyodik
+          └ Lab / sanayi cihazları      ↓ aşağı indikçe U büyür</div>
+    <table class="kv">
+      <tr><td>National</td><td>ülkede ulusal kararla değer atamanın temeli</td></tr>
+      <tr><td>Reference</td><td>bir yer veya kurumdaki en yüksek kaliteli standart</td></tr>
+      <tr><td>Transfer</td><td>standartları birbiriyle karşılaştırmak için aracı</td></tr>
+    </table>
+    <p>Standard olabilir: material measure, instrument, measuring system, reference material. Ör: 1 kg kütle standardı.</p>
+  </div>
+
+  <div class="card">
+    <h3>Uluslararası metroloji sistemi <span class="ref">L2 s.56–66</span></h3>
+    <div class="tree">Metre Convention (1875 · 17 ülke · diplomatik antlaşma)
+ └ CGPM  genel konferans, üye devlet delegeleri
+    └ CIPM  18 kişi, BIPM'i denetler
+       ├ CC    Consultative Committees (teknik)
+       └ BIPM  Sèvres/Paris lab'ı · ~70 personel
+Seviyeler: Global → Regional (RMO) → National (NMI)</div>
+    <p><b>RMO:</b> EURAMET · APMP · COOMET · SIM · AFRIMETS · GULFMET &nbsp;·&nbsp; <b>NMI:</b> UME (TR), NIST (ABD), NPL (UK)</p>
+    <p><b>CIPM MRA:</b> NMI standartlarının eşdeğerliği + kalibrasyon sertifikalarının <b>karşılıklı tanınması</b> → ticaret için teknik temel.</p>
+  </div>
+
+  <div class="card span">
+    <h3>Tolerance <span class="ref">L2 s.75–76</span></h3>
+    <p>Bir ölçünün, parçanın işlevini bozmadan <b>nominal</b> değerden ne kadar sapabileceği. <b>Upper limit</b> (izin verilen maks.) · <b>Lower limit</b> (min.) · <b>Tolerance range = Upper − Lower</b>. Ör: 10 ± 0.1 mm → 9.9–10.1 mm, range 0.2 mm.</p>
+    <div class="note">⚠️ <b>Tolerance ≠ Uncertainty:</b> tolerance tasarımın <b>izin verdiği</b> aralık; uncertainty ölçümün <b>şüphesi</b>.</div>
+  </div>
+</div>
+
+<!-- ================= D ================= -->
+<div class="sec"><div class="b">D</div><h2>Hesap şablonları: Verilen → İstenen → Çözüm → Birim kontrolü</h2></div>
+<div class="grid">
+
+  <div class="card top">
+    <h3>Ş1 · Error ve % error <span class="ref">L2 s.7–9, 33 · L3</span></h3>
+    <div class="f">E          = x_ölç − x_true
+% error L2 = (x_true − x_ölç) / x_true × 100
+E_r     L3 = (x_i − x_t) / x_t × 100</div>
+    <div class="tpl">x_true = ____  x_ölç = ____
+E       = ____ − ____ = ____ [birim]
+% error = ____/____ × 100 = ____ %</div>
+    <div class="note">L2 ve L3 formülleri <b>işaretçe ters</b>, büyüklük aynı. Hangisini kullandığını yaz. True = 0 ise % error tanımsız.</div>
+  </div>
+
+  <div class="card top">
+    <h3>Ş2 · Systematic error ve correction <span class="ref">L2 s.10, 32</span></h3>
+    <div class="tpl">x̄           = Σx / n             = ____
+Sist. error  = x̄ − x_true         = ____
+Correction   = −(Sist. error)     = ____
+Corrected    = okunan + correction = ____
+Yorum: σ küçük? → precise · x̄≈true? → accurate</div>
+    <div class="tip">Zero error: kumpas kapalıyken 0.03 gösteriyorsa correction = −0.03 mm → 25.47 okunursa gerçek 25.44 mm</div>
+  </div>
+
+  <div class="card top">
+    <h3>Ş3 · Ortalama ve sapma <span class="ref">L2 s.33 · L4–5</span></h3>
+    <div class="f">x̄ = Σxᵢ / n
+σ = √[ Σ(xᵢ − x̄)² / N ]      (L4–5: N'ye böler)
+s = √[ Σ(xᵢ − x̄)² / (n−1) ]  (soru "sample" derse)
+Ortalama sapma = Σ|xᵢ − x̄| / n   (L2 s.33)</div>
+  </div>
+
+  <div class="card top">
+    <h3>Ş4 · Uncertainty bütçesi <span class="star">★</span> <span class="ref">L2 s.70–74</span></h3>
+    <div class="tpl">Type A: s=____ n=____ → u_A = s/√n = ____
+Type B: kaynak ____     → u_B = ____
+u_c = √(u_A² + u_B²)        = ____
+U   = k·u_c = 2·____        = ____
+Sonuç: x = ____ ± ____ [birim] (k=2, ≈%95)
+Relative = U/x × 100        = ____ %</div>
+  </div>
+
+  <div class="card top span">
+    <h3>Ş5 · Tolerance kontrolü <span class="ref">L2 s.75–76</span></h3>
+    <div class="tpl">Nominal = ____ , tolerans ± ____   →  Upper = ____   Lower = ____   Range = Upper − Lower = ____
+Ölçülen ____  →  [Lower, Upper] içinde mi?   KABUL / RED</div>
+  </div>
+</div>
+
+<!-- ================= E ================= -->
+<div class="sec"><div class="b">E</div><h2>Tek bakışta: karıştırılan çiftler</h2></div>
+<div class="card">
+<table>
+  <tr><th>A</th><th>B</th><th>Fark</th></tr>
+  <tr><td><b>Accuracy</b></td><td><b>Precision</b></td><td>true'ya yakınlık ↔ birbirine yakınlık</td></tr>
+  <tr><td><b>Systematic</b></td><td><b>Random</b></td><td>sabit yön, düzeltilebilir ↔ dağınık, ortalamayla azalır</td></tr>
+  <tr><td><b>Repeatability</b></td><td><b>Reproducibility</b></td><td>aynı koşul ↔ değişen koşul (belirtilmeli)</td></tr>
+  <tr><td><b>Error</b></td><td><b>Uncertainty</b></td><td>tek değer farkı, bilinemez ↔ şüphe aralığı, tahmin edilir</td></tr>
+  <tr><td><b>Principle</b></td><td><b>Method</b></td><td>hangi fizik ↔ hangi mantık (direct/indirect)</td></tr>
+  <tr><td><b>Measurand</b></td><td><b>Influence quantity</b></td><td>ölçülen hedef ↔ sonucu etkileyen dış etken</td></tr>
+  <tr><td><b>True value</b></td><td><b>Conventional true value</b></td><td>bilinemez ↔ kabul edilen</td></tr>
+  <tr><td><b>Base</b></td><td><b>Derived</b></td><td>7 birimden biri ↔ onlardan türetilen</td></tr>
+  <tr><td><b>Calibration</b></td><td><b>Traceability</b></td><td>tek halka ↔ kesintisiz zincir</td></tr>
+  <tr><td><b>Type A</b></td><td><b>Type B</b></td><td>istatistik ↔ sertifika, üretici, deneyim</td></tr>
+  <tr><td><b>Primary</b></td><td><b>Working standard</b></td><td>en iyi, referanssız ↔ günlük, periyodik kalibre</td></tr>
+  <tr><td><b>Tolerance</b></td><td><b>Uncertainty</b></td><td>tasarım izni ↔ ölçüm şüphesi</td></tr>
+</table>
+</div>
+
+<div class="trap" style="margin-top:7px">
+  <h3>⚠️ Sınav tuzakları</h3>
+  <ul>
+    <li>"Force base quantity'dir" → <b>Yanlış</b>: N = kg·m/s², derived. Base olanlar yalnızca m, kg, s, A, K, mol, cd.</li>
+    <li>"Precise ölçüm accurate'tir" → <b>Yanlış</b>: bozuk terazi her seferinde 5.1 kg gösterir; precise ama inaccurate.</li>
+    <li>"Çok ölçüm alırsam systematic error azalır" → <b>Yanlış</b>: ortalama yalnızca random error'u azaltır; systematic için correction gerekir.</li>
+    <li>Mikrometrenin / atölyenin sıcaklığı measurand değil, <b>influence quantity</b>.</li>
+    <li>Correction, error'un <b>ters işaretlisidir</b>: +0.2 g sıfır hatası → correction −0.2 g.</li>
+    <li>% error'da ×100'ü unutma ve kontrol et: 100'de 0.5 = <b>%0.5</b> (binde 5).</li>
+    <li>Reproducibility ifadesinde <b>hangi koşulun değiştiği</b> yazılmalı.</li>
+    <li>Expanded uncertainty: <b>k = 2 → %95</b>. Traceability zincirinde aşağı indikçe uncertainty <b>büyür</b>.</li>
+  </ul>
+</div>
+
+<!-- ================= F ================= -->
+<div class="sec"><div class="b">F</div><h2>Mini test (12 soru)</h2></div>
+<div class="card quiz">
+<ol>
+  <li>Metrolojinin üç dalını yazınız ve her birine bir örnek veriniz.</li>
+  <li>Measurement procedure'ın 6 bileşenini sırayla yazınız. Principle ile method farkı nedir?</li>
+  <li>SI'ın 7 base unit'ini nicelik, birim ve sembolüyle yazınız.</li>
+  <li>Force, time ve density'yi base / derived olarak sınıflandırınız.</li>
+  <li>True value ile conventional true value farkı nedir? Bir örnek veriniz.</li>
+  <li>Bir kumpas kapalıyken 0.03 mm gösteriyor. Error türü ve correction nedir?</li>
+  <li>9.81, 9.80, 9.82 (true = 10.00): accurate mı, precise mı?</li>
+  <li>Gerçek uzunluk 100.0 mm, ölçülen 99.5 mm. % error'u L2 formülüyle hesaplayınız.</li>
+  <li>Repeatability koşullarını sayınız.</li>
+  <li>Type A ve Type B uncertainty farkı nedir? Expanded uncertainty nasıl bulunur?</li>
+  <li>u<sub>A</sub> = 0.03 mm, u<sub>B</sub> = 0.04 mm, x = 25.00 mm. Sonucu k = 2 ile yazınız.</li>
+  <li>Traceability'nin tanımını ve her kalibrasyon halkasında aranan şartları yazınız.</li>
+</ol>
+</div>
+
+<div class="sec"><div class="b">✓</div><h2>Cevap anahtarı</h2></div>
+<div class="card">
+<table class="ans">
+  <tr><td>1</td><td><b>Scientific</b> (BIPM, UME: standart yaratır) · <b>Industrial</b> (üretimde cihaz kalibrasyonu, CMM) · <b>Legal</b> (benzin pompası, market terazisi)</td></tr>
+  <tr><td>2</td><td>Principle → Method → Model → Steps → Uncertainty → SOP. Principle = hangi <b>fizik yasası</b>; method = hangi <b>mantık</b> (direct/indirect)</td></tr>
+  <tr><td>3</td><td>length–metre–m · mass–kilogram–kg · time–second–s · current–ampere–A · temperature–kelvin–K · amount–mole–mol · luminous intensity–candela–cd</td></tr>
+  <tr><td>4</td><td>time: <b>base</b> · force: <b>derived</b> (kg·m/s²) · density: <b>derived</b> (kg/m³)</td></tr>
+  <tr><td>5</td><td>True value bilinemez. Conventional true value, amaca yeterli belirsizlikle doğru <b>kabul edilen</b> değerdir: referans standardın değeri, CODATA N<sub>A</sub></td></tr>
+  <tr><td>6</td><td><b>Systematic</b> (zero error). E = +0.03 mm → correction = <b>−0.03 mm</b></td></tr>
+  <tr><td>7</td><td><b>Precise ama inaccurate</b>: σ küçük, ortalama 9.81 ≠ 10.00 (aynı yönde ~0.19 sapma = systematic)</td></tr>
+  <tr><td>8</td><td>(100.0 − 99.5)/100.0 × 100 = <b>%0.5</b></td></tr>
+  <tr><td>9</td><td>Aynı prosedür · gözlemci · cihaz (aynı koşulda) · yer · kısa sürede tekrar</td></tr>
+  <tr><td>10</td><td>A: tekrarlı ölçümlerin istatistiği (s/√n) · B: sertifika, üretici, deneyim · u<sub>c</sub> = √(Σu²) · U = k·u<sub>c</sub>, k = 2 → %95</td></tr>
+  <tr><td>11</td><td>u<sub>c</sub> = √(0.03² + 0.04²) = 0.05 mm · U = 2 × 0.05 = 0.10 mm → <b>25.00 ± 0.10 mm (k = 2)</b></td></tr>
+  <tr><td>12</td><td>Sonucun, her biri belirtilmiş uncertainty'ye sahip <b>kesintisiz kalibrasyon zinciriyle</b> ulusal/uluslararası standarda bağlanması. Şartlar: uncertainty tahmini · belgelenmiş prosedür · yetkinlik · geçerlilik süresi</td></tr>
+</table>
+</div>
+
+<div class="foot">MSE3271 Metrology and Calibration · Lecture 1 + 2 (Nilüfer Duygulu) · Hocanın slaytlarına göre hazırlanmış çalışma özeti</div>
+</body>
+</html>
