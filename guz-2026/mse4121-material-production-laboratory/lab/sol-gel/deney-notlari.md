@@ -21,6 +21,15 @@
   5. **Discussion and Evaluation of the Results** — tek-iki paragraf: sonuçlar, teorik/beklenen ile fark, hata kaynakları
   6. **References** — Türkçe ders kitapları + "Experiment N: …, MSE4121 Laboratory Manual"
 
+## Rapor kararları (Yunus, 12.11.2026)
+
+- **Ana veri kaynağı: bu notlar.** Çelişkide Yunus'un notu geçerli (kurutma 100 °C, stok toplam 12 damla, spin coating 3 damla FTO/ITO cam, test sırası aşağıdaki tablodaki gibi).
+- Notlarda olmayan miktarlar föyden alınır: Sol I = 3 mL TEOS + 5 mL etanol; Sol II = 3 mL su + 5 mL etanol; stok = 1.9 g NH₄F + 23 mL NH₄OH / 100 mL su.
+- Föyde Exp 4 için soru listesi **yok** (Exp 5'te "Post-lab questions" var, Exp 4'te yok) → sorular derste sözlü verildi.
+- Notlardan çıkan sorular: % ağırlık kaybı · spin coating'de hangi parametre neden etkisiz (geçen sene finalde) · süperhidrofobik silika yüzey · Ostwald viskozitesi.
+- Sınıf arkadaşının raporunda ek olarak: Tyndall etkisi ve SiO₂ nanotozun yapısı (amorf/kristal). Bunlar da kısa cevaplanacak.
+- Teori/Aim kısa; deney süreci ve sorular ağırlıklı. Sorularda kaynak gösterilecek. Benzerlik cezası var → özgün metin.
+
 ## Teori notları
 
 - **Colloidal structure** (kolloidal yapı): iki faz birbiri içinde tam çözünmüyor. Ör. sisli hava, köpük. Dispersion medium → sıvı.
