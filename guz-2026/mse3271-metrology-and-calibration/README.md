@@ -28,7 +28,7 @@
 | Hafta | Konu | Not |
 |-------|------|-----|
 | 1 | Fundamentals of Metrology and Measurement Technique | [hafta-01](notlar/hafta-01.md) |
-| 2 | Measurement Equipments (izlence) · gelen L2: Metrology Terms and Concepts | |
+| 2 | Measurement Equipments (izlence) · gelen L2: Metrology Terms and Concepts | [L2-B basit anlatım (PDF)](notlar/hafta-02b-basit-anlatim.pdf) |
 | 3 | International Metrology System | |
 | 4 | International System of Units | |
 | 5 | Measurement Statistics | |
