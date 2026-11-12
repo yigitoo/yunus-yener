@@ -1,0 +1,70 @@
+# Sol-Gel Deneyi — Deney Sırasında Alınan Notlar (ham)
+
+- **Öğrenci:** Yunus Yener — 2205C046 — **Grup 5**
+- **Deneyi yürüten:** Serra Hoca (tam adı/unvanı: bilinmiyor)
+- **Tarih:** Kasım 2026, ilk hafta (kesin gün bilinmiyor)
+- **Föy:** [`../foy.pdf`](../foy.pdf)
+- **El yazısı orijinaller:** [ham-not-1.jpg](ham-not-1.jpg), [ham-not-2.jpg](ham-not-2.jpg)
+
+> Bu dosya el yazısı notların birebir dökümüdür; rapor bunlardan yazılacak.
+> Rapor formatı için Yunus önceki haftalardan bir rapor gönderecek (bkz. `../exp8-ore-dressing-yunus-yener.pdf` de önceki örnek).
+
+## Teori notları
+
+- **Colloidal structure** (kolloidal yapı): iki faz birbiri içinde tam çözünmüyor. Ör. sisli hava, köpük. Dispersion medium → sıvı.
+- **pH etkisi:** bazik ortamda bond daha kuvvetli, asidik ortamda daha zayıf. pH değişince process hızlanıyor; catalyst (katalizör) hızlandırıyor.
+- Hydrolysis (hidroliz): $\equiv\text{Si–OR} + \text{H}_2\text{O} \rightleftharpoons \equiv\text{Si–OH} + \text{ROH}$
+- **Solvent:** metal alkoxide'i (metal alkoksit) çözmesi lazım.
+- **Calcination** (kalsinasyon): organikler uzaklaşır, kısa sürer.
+- **Sintering** (sinterleme): dense (yoğun) malzeme oluşur.
+- **Tyndall effect** (Tyndall etkisi): jel olduktan sonra lazer tutuyoruz — [jel | saf su] kapları yan yana, lazer geçirildi.
+- Dip / spin coating: RPM ve süre (time) etkisi kaplamaya.
+
+## 1) Sentez — Silica nanopartikül + dip coating
+
+- Sol-2'den Sol-1'e damla damla eklenecek → alkoxide hidrolizi başlıyor.
+- Stok (katalizör solüsyonu) ekleniyor: 3 damla + 3 damla şeklinde. Cam üzerinde kaplama olmaya başladığında (dip coating) durup stok eklemeyi bırakıyoruz. **Toplam 12 damla.**
+
+**Kütle ölçümleri (yüzde ağırlık kaybı hesabı rapor için):**
+
+| Aşama | Kütle |
+|-------|-------|
+| Jel (ıslak) | 10.9 g |
+| 100 °C, 24 h kurutma sonrası (su uçtu) | 0.576 g |
+| 500 °C, 1 h calcination sonrası → silica nanoparticle | 0.394 g |
+
+## 2) PVA çözeltisi — Spin coating, viskozite, contact angle
+
+- 0.5 g PVA ve 1 g PVA saf suda çözüldü (spin coating, viskozite ölçümü, contact angle için).
+- **Spin coating** (0.5 g PVA ile), 4 test, FTO/ITO cam, 3 damla:
+
+| Test | RPM | Süre |
+|------|-----|------|
+| 1 | 500 | 5 s |
+| 2 | 500 | 10 s |
+| 3 | 800 | 10 s |
+| 4 | 800 | 5 s |
+
+- Gözlem: "Süre etkilemiyor." Hoca notu: bu parametrelerden birinin etkisi işe yaramıyor — **geçen sene finalde sorulmuş, araştırılacak.**
+
+## 3) Contact angle (temas açısı)
+
+Yüzeylere 1 damla saf su damlatıldı:
+- Çok silikalı yüzey, az silikalı yüzey, grafit yüzey kâğıt, nanofiber kâğıt.
+- Silika arttıkça angle azalıyor → hydrophilic (hidrofilik) oluyor.
+- Nanofiber kâğıt: suyu direkt emmiyor → hydrophobic (hidrofobik).
+- **Rapor sorusu:** "Silikayla superhydrophobic bir yapı yapmak istiyorum; yağmur suyu gelince akıp gitsin. Ne yapmam lazım?"
+
+## 4) Ostwald viskozimetresi deneyi
+
+- U-tüp; C, A, B işaretleri. Sıvı C'ye gelene kadar dolduruluyor; balon sıkılarak sıvı A–B arasına çekiliyor, akış süresi ölçülüyor.
+- Su referans: $V = 5\ \text{ml} = 5\ \text{cm}^3$, $t_0 = 1.45\ \text{s}$, $\rho_0 = 1\ \text{g/cm}^3$, $\eta_0 = 0.89\ \text{mPa·s}$
+
+$$\eta = \eta_0 \frac{\rho\, t}{\rho_0\, t_0}$$
+
+| Numune | Kütle (5 ml) | $\rho = m/V$ | Akış süresi $t$ |
+|--------|--------------|--------------|-----------------|
+| Silika çok | 5.1332 g | 1.02664 g/cm³ | 8.34 s |
+| Silika az | 5.1293 g | 1.02586 g/cm³ | 8.06 s |
+
+→ Formülde yerine koyup hesaplanacak (rapor).
