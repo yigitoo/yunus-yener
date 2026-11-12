@@ -28,6 +28,7 @@
 - Föyde Exp 4 için soru listesi **yok** (Exp 5'te "Post-lab questions" var, Exp 4'te yok) → sorular derste sözlü verildi.
 - Notlardan çıkan sorular: % ağırlık kaybı · spin coating'de hangi parametre neden etkisiz (geçen sene finalde) · süperhidrofobik silika yüzey · Ostwald viskozitesi.
 - Sınıf arkadaşının raporunda ek olarak: Tyndall etkisi ve SiO₂ nanotozun yapısı (amorf/kristal). Bunlar da kısa cevaplanacak.
+- Rapor: [exp4-sol-gel-yunus-yener.pdf](exp4-sol-gel-yunus-yener.pdf) (3 sayfa, şekilli; kaynak dosyalar `rapor-kaynak/`, `python3 build.py && node pdf.js` ile yeniden üretilir). Sorular hocanın "Report Requirements" slaytına göre 4.1–4.5.
 - Teori/Aim kısa; deney süreci ve sorular ağırlıklı. Sorularda kaynak gösterilecek. Benzerlik cezası var → özgün metin.
 
 ## Teori notları
