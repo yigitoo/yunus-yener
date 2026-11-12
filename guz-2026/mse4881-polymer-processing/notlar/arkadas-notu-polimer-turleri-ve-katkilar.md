@@ -9,11 +9,23 @@ subtitle: "MSE4881 Polymer Processing — arkadaş notlarının temize çekilmi�
 > İçerik deftere sadık. Eklediğim açıklamalar ve düzeltmeler **"Not:"** kutularında; el yazısında okuyamadığım ya da emin olmadığım yerler **[?]** ile işaretli.
 > Hafta numarası ve tarih defterde yok.
 
-**Sayfa sırası:** Commodity termoplastikler (PP, PVC, PS, PET, ABS) → Engineering polymers (mühendislik polimerleri) → Thermosetting polymers (termosetler) → Elastomers (elastomerler) → TPE → Katkı maddeleri
+**Nasıl çalışılır:** Bu PDF **baştan sona defterin kendi sırasıyla** ilerler; yukarıdan aşağı okuman yeterli. Defterde yeni bir sayfaya geçilen her yerde 📒 **"Defter sayfası X / 5"** işareti var.
+
+| Defter sayfası | Konu | PDF bölümü |
+|---|---|---|
+| 1 | PP, PVC, PS | 1.1 – 1.3 |
+| 2 | PET, ABS, Engineering Polymers | 1.4 – 1.5 ve 2 |
+| 3 | Thermosetting Polymers, Phenolic, Amino, UP | 3.1 – 3.4 |
+| 4 | Epoxy, PU, Elastomers | 3.5 – 3.6 ve 4 |
+| 5 | TPE, Katkı maddeleri | 5 ve 6 |
 
 ---
 
 ## 1. Commodity Termoplastikler
+
+::: defter
+📒 **Defter sayfası 1 / 5** — PP, PVC, PS
+:::
 
 ### 1.1 PP — Polypropylene (polipropilen)
 
@@ -54,6 +66,10 @@ subtitle: "MSE4881 Polymer Processing — arkadaş notlarının temize çekilmi�
   - **Antişok PS (HIPS, high-impact PS)** → opak
 
 > **Not:** HIPS, PS matris içine dağılmış polibütadien kauçuk partikülleriyle yapılır; kauçuk fazı ışığı saçtığı için opaktır. PS'in kimyasal direnci aslında sınırlıdır (ör. aseton, benzin gibi organik çözücülerde çözünür/çatlar). Hoca aksini söylediyse hocanınkini esas al.
+
+::: defter
+📒 **Defter sayfası 2 / 5** — PET, ABS, Engineering Polymers
+:::
 
 ### 1.4 PET — Poly(ethylene terephthalate) (polietilen tereftalat)
 
@@ -101,6 +117,10 @@ $$
 
 ---
 
+::: defter
+📒 **Defter sayfası 3 / 5** — Thermosetting Polymers, Phenolic, Amino, UP
+:::
+
 ## 3. Thermosetting Polymers (Termoset Polimerler)
 
 ### 3.1 Genel özellikler
@@ -138,6 +158,10 @@ $$
 - Kullanım: parlak yüzey eldesi, kaplama, boruların iç yüzeyi kaplaması.
 
 > **Not:** UP'de çapraz bağlanma genelde **stiren** monomeri ve bir peroksit başlatıcıyla, zincirdeki C=C çift bağları üzerinden yapılır (bkz. katkılar bölümü: organik peroksitler).
+
+::: defter
+📒 **Defter sayfası 4 / 5** — Epoxy, PU, Elastomers
+:::
 
 ### 3.5 Epoxy Resins — Epoksi reçineler
 
@@ -194,6 +218,10 @@ $$
 > **Not:** Defterde "aktif C" yazıyor; lastikte kullanılan katkı **carbon black**'tir, **activated carbon (aktif karbon)** farklı bir malzemedir (adsorban). Carbon black aynı zamanda **reinforcing filler (takviye edici dolgu)** olarak mukavemeti de artırır.
 
 ---
+
+::: defter
+📒 **Defter sayfası 5 / 5** — TPE, Plastiklere katılan katkı maddeleri
+:::
 
 ## 5. TPE — Thermoplastic Elastomers (Termoplastik Elastomerler)
 
