@@ -190,7 +190,7 @@ $$E - E_{corr} = b_a\log\frac{i}{i_{corr}} \qquad E - E_{corr} = b_c\log\frac{|i
 $$\boxed{CR\ (\text{mm/y}) = 3.27\times10^{-3}\,\frac{i_{corr}(\mu\text{A/cm}^2)\,M}{z\,\rho}} \qquad \frac{\Delta m}{At} = \frac{i_{corr}M}{zF}$$
 
 - $i_{corr}$: **µA/cm²**; $M$: g/mol; $z$: atom başına elektron; $\rho$: g/cm³
-- $3.27\times10^{-3} = \dfrac{10\ \text{mm/cm}\times3.15\times10^7\ \text{s/y}\times10^{-6}\ \text{A/µA}}{96\,485\ \text{C/mol}}$ (F sabitin içindedir)
+- $3.27\times10^{-3} = \dfrac{10\ \text{mm/cm}\times3.15\times10^7\ \text{s/y}\times10^{-6}\ \text{A}/\mu\text{A}}{96\,485\ \text{C/mol}}$ (F sabitin içindedir)
 - Demir için ($M = 55.85$, $z = 2$, $\rho = 7.86$): **1 µA/cm² = 0.0116 mm/y = 0.46 mpy**
 - İkinci formül birim alan ve zamandaki kütle kaybını verir (yoğunluk girmez).
 

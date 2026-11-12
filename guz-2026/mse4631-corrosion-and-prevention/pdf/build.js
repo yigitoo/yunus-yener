@@ -12,7 +12,7 @@ const NOTLAR = path.join(ROOT, '..', 'notlar');
 const OUT_DIR = path.join(ROOT, '_build');
 const PDF = path.join(ROOT, 'mse4631-korozyon-ders-notlari.pdf');
 
-// PDF'e girecek dosyalar, sirasiyla
+// PDF'e girecek dosyalar (ders klasorune gore), sirasiyla
 const BOLUMLER = JSON.parse(fs.readFileSync(path.join(ROOT, 'icerik.json'), 'utf8'));
 
 function unescapeHtml(s) {
@@ -21,7 +21,7 @@ function unescapeHtml(s) {
 }
 
 function renderMath(html) {
-  return html.replace(/<span class="math (inline|display)">([\s\S]*?)<\/span>/g, (_, kind, tex) => {
+  return html.replace(/<span\s+class="math (inline|display)">([\s\S]*?)<\/span>/g, (_, kind, tex) => {
     try {
       return katex.renderToString(unescapeHtml(tex), {
         displayMode: kind === 'display', throwOnError: true, strict: 'ignore',
@@ -37,11 +37,11 @@ function renderMath(html) {
 fs.mkdirSync(OUT_DIR, { recursive: true });
 let body = '';
 for (const f of BOLUMLER) {
-  const src = path.join(ROOT, f.startsWith('notlar/') ? path.join('..', f) : f);
+  const src = path.join(ROOT, '..', f);
   let md = fs.readFileSync(src, 'utf8');
   // Repo icindeki baglantilar PDF'te anlamsiz: [metin](x.md) -> metin
   md = md.replace(/\[([^\]]+)\]\((?!http)[^)]*\.md\)/g, '$1');
-  const html = execFileSync('pandoc', ['-f', 'markdown+tex_math_dollars', '-t', 'html5', '--katex',
+  const html = execFileSync('pandoc', ['-f', 'markdown+tex_math_dollars', '-t', 'html5', '--katex', '--wrap=none',
     '--resource-path', path.dirname(src)], { input: md, maxBuffer: 1 << 26 }).toString();
   // Gorsel yollarini mutlak yap
   const dir = path.dirname(src);
@@ -52,7 +52,7 @@ for (const f of BOLUMLER) {
 const katexCss = 'file://' + path.join(ROOT, 'node_modules', 'katex', 'dist', 'katex.min.css');
 const css = fs.readFileSync(path.join(ROOT, 'stil.css'), 'utf8');
 const kapak = fs.readFileSync(path.join(ROOT, 'kapak.html'), 'utf8');
-const page = `<!doctype html><html lang="tr"><head><meta charset="utf-8">
+const page = `<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>MSE4631 Korozyon ve Korunma - Ders Notlari</title>
 <link rel="stylesheet" href="${katexCss}"><style>${css}</style></head>
 <body>${kapak}${body}</body></html>`;
 const htmlPath = path.join(OUT_DIR, 'notlar.html');
