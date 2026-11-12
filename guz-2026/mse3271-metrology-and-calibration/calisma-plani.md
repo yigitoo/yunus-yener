@@ -55,7 +55,7 @@
 | 5 | Vernier caliper / micrometer okuma pratiği | L6 (2. yarı) | okuma alıştırmaları | ⏳ |
 | 6a | Measurement Statistics: veri türleri, mean/median/mode, variance, SD | L4–5 (1. yarı) | `notlar/hafta-04.md` | ⏳ |
 | 6b | Normal dağılım, z-score, z tablosu soruları | L4–5 (2. yarı) | `notlar/hafta-05.md` + soru seti | ⏳ |
-| 6c | International Metrology System | L3 | `notlar/hafta-03.md` | ⏸ slayt bekleniyor |
+| 6c | Measurement types, results, uncertainty Type A/B, measuring device properties | L3 | `notlar/hafta-03.md` | ⏳ |
 | 7 | Vize hazırlık: özet + formül kağıdı + deneme | tüm notlar | `sinavlar/vize-ozet.md` | ⏳ |
 
 ## Önce Netleşmesi Gerekenler
@@ -63,6 +63,6 @@
 - [ ] **Vize tarihi?** İzlencede 8. hafta yazıyor ama kesin tarih repoda yok.
 - [ ] **Değerlendirme:** slaytta "Final 40%, Mid-term Exam 1-2 30%" yazıyor; toplam 70 → kalan %30 ne (ikinci vize, ödev, quiz)?
 - [x] Lecture 4–5 geldi (Measurement Statistics).
-- [ ] **Lecture 3 slaytı** — elinde varsa yükle.
+- [x] Lecture 3 geldi (Measurement Techniques and Evaluation; izlencedeki "International Metrology System" değil).
 - [x] Lecture 7 (Metrology of Length) vizeye kadar işlenmeyecek → vize kapsamı: L1, L2, L3, L4–5, L6.
 - [ ] **Sıra farkı:** izlencede Lecture 2 = "Measurement Equipments", Lecture 6 = "Measurement Uncertainty". Gelen dosyalarda ise Lecture 2 = Terms & Concepts, Lecture 6 = Measurement Equipments. Derste anlatılan sıra hangisi?
