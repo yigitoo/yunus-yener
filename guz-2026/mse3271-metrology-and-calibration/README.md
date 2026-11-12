@@ -44,5 +44,5 @@
 
 ## Sınav Hazırlık
 
-- Önemli formüller / diyagramlar:
+- Önemli formüller / diyagramlar: [cheat-sheet-l1-l2](sinavlar/cheat-sheet-l1-l2.md)
 - Sık çıkan soru tipleri:
