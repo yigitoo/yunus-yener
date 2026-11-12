@@ -1,0 +1,10 @@
+{
+  "name": "mse4631-ders-notu-pdf",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "katex": "0.16.11"
+  }
+}

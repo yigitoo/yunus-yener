@@ -1,0 +1,64 @@
+@page { size: A4; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  font-family: "Inter", "DejaVu Sans", sans-serif;
+  font-size: 10.2pt; line-height: 1.55; color: #1d232b;
+  margin: 0;
+}
+.katex { font-size: 1.08em; }
+.katex-display { margin: 0.7em 0; overflow: hidden; }
+
+/* Kapak */
+.kapak { height: 247mm; display: flex; flex-direction: column; justify-content: center; page-break-after: always; }
+.kapak .ust { font-size: 10pt; letter-spacing: .14em; text-transform: uppercase; color: #2f6f73; font-weight: 600; }
+.kapak h1 { font-size: 30pt; line-height: 1.15; margin: .3em 0 .2em; border: 0; padding: 0; color: #13222b; }
+.kapak .alt { font-size: 13pt; color: #4b5863; }
+.kapak .cizgi { width: 60mm; height: 3px; background: #2f6f73; margin: 10mm 0; }
+.kapak ol { font-size: 10.5pt; color: #33404a; columns: 1; padding-left: 1.2em; }
+.kapak ol li { margin: .15em 0; }
+
+/* Basliklar */
+.bolum { page-break-before: always; }
+h1 {
+  font-size: 19pt; color: #13222b; margin: 0 0 .6em; padding-bottom: .25em;
+  border-bottom: 2.5px solid #2f6f73; font-weight: 700;
+}
+h2 { font-size: 13.5pt; color: #1f4f53; margin: 1.5em 0 .5em; font-weight: 700; break-after: avoid; }
+h3 { font-size: 11pt; color: #13222b; margin: 1.2em 0 .4em; font-weight: 650; break-after: avoid; }
+h2 + *, h3 + * { break-before: avoid; }
+p { margin: .45em 0; orphans: 3; widows: 3; }
+ul, ol { margin: .4em 0; padding-left: 1.4em; }
+li { margin: .18em 0; }
+strong { color: #0f1a21; }
+
+/* Tablolar */
+table { border-collapse: collapse; width: 100%; margin: .8em 0; font-size: 9.3pt; break-inside: avoid; }
+th { background: #e6efef; color: #13222b; text-align: left; font-weight: 650; }
+th, td { border: 1px solid #c9d4d6; padding: 4px 7px; vertical-align: top; }
+tr:nth-child(even) td { background: #f7fafa; }
+
+/* Kutular: > [!...] yerine blockquote */
+blockquote {
+  margin: .9em 0; padding: .55em .9em; border-left: 4px solid #2f6f73;
+  background: #eef5f5; border-radius: 0 6px 6px 0; break-inside: avoid;
+}
+blockquote p:first-child { margin-top: 0; }
+blockquote p:last-child { margin-bottom: 0; }
+
+/* Ornek kutusu: ::: ornek */
+.ornek {
+  border: 1px solid #d9c9a3; background: #fdf9ef; border-radius: 6px;
+  padding: .6em .95em; margin: 1em 0;
+}
+.ornek > p:first-child strong:first-child { color: #8a5a00; }
+.sinav {
+  border: 1px solid #c8b6d9; background: #f7f2fc; border-radius: 6px;
+  padding: .6em .95em; margin: 1.3em 0 .5em; break-inside: avoid;
+}
+.sinav h2 { margin-top: .2em; color: #5a3d7a; font-size: 12pt; }
+
+figure { margin: 1em auto; text-align: center; break-inside: avoid; }
+figure img, p > img { max-width: 100%; }
+figcaption { font-size: 8.8pt; color: #5b6770; margin-top: .3em; }
+code { font-family: "DejaVu Sans Mono", monospace; font-size: .9em; background: #f1f3f4; padding: 0 3px; border-radius: 3px; }
+hr { border: 0; border-top: 1px solid #d5dde0; margin: 1.4em 0; }
