@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><title>Lecture 3 Bolum B Cheat Sheet</title>
+<style>
+:root{
+  --ink:#1b2430; --muted:#5b6673; --line:#dfe5ea; --card:#ffffff; --soft:#f4f7f9;
+  --acc:#14707a; --acc2:#1d4f73; --accSoft:#e6f2f3; --warn:#b4471b; --warnSoft:#fdf1ea; --star:#e0a100;
+}
+@page{size:A4;margin:11mm 10mm 13mm}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Inter","Inter Display",system-ui,sans-serif;font-size:8.6pt;line-height:1.38;color:var(--ink);background:#fff}
+.hero{background:linear-gradient(120deg,var(--acc2),var(--acc));color:#fff;border-radius:9px;padding:11px 15px 10px;margin-bottom:9px}
+.hero .kick{font-size:7.2pt;letter-spacing:.14em;opacity:.85;text-transform:uppercase}
+.hero h1{font-family:"Inter Display","Inter",sans-serif;font-size:19pt;margin:2px 0 3px;font-weight:800}
+.hero .src{font-size:8pt;opacity:.92}
+.sec{display:flex;align-items:center;gap:7px;margin:11px 0 6px;border-bottom:1px solid var(--line);padding-bottom:3px;break-after:avoid}
+.sec .b{background:var(--acc);color:#fff;font-weight:800;font-size:8pt;width:17px;height:17px;border-radius:4px;display:flex;align-items:center;justify-content:center}
+.sec h2{font-family:"Inter Display","Inter",sans-serif;font-size:11.5pt;margin:0;color:var(--acc2)}
+.star{color:var(--star)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.span{grid-column:1/-1}
+.card{border:1px solid var(--line);border-radius:7px;padding:6px 8px 6px;background:var(--card);break-inside:avoid}
+.card.top{border-top:3px solid var(--acc)}
+.card h3{font-size:8.9pt;margin:0 0 4px;color:var(--acc);display:flex;align-items:baseline;gap:5px}
+.card h3 .ref{margin-left:auto;font-weight:500;color:var(--muted);font-size:7.2pt;white-space:nowrap}
+p{margin:2px 0}
+ul{margin:2px 0;padding-left:14px} li{margin:1px 0}
+table{width:100%;border-collapse:collapse;margin:3px 0}
+th{background:var(--accSoft);color:var(--acc2);text-align:left;font-weight:700;padding:2.5px 5px;font-size:8pt}
+td{padding:2.5px 5px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.kv td:first-child{width:23%;font-weight:700;color:var(--acc2);font-size:7.6pt;text-transform:uppercase;letter-spacing:.02em}
+.tree{font-family:"DejaVu Sans Mono",monospace;font-size:7.4pt;background:var(--soft);border-radius:5px;padding:5px 7px;white-space:pre;line-height:1.3;margin:3px 0}
+.f{font-family:"DejaVu Sans Mono",monospace;font-size:7.9pt;background:var(--soft);border-left:3px solid var(--acc);border-radius:3px;padding:4px 7px;margin:3px 0;white-space:pre-wrap}
+.tpl{font-family:"DejaVu Sans Mono",monospace;font-size:7.5pt;background:#fff;border:1px dashed #b9c6cf;border-radius:4px;padding:4px 7px;margin:3px 0;white-space:pre}
+.note{background:var(--warnSoft);border-left:3px solid var(--warn);border-radius:3px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.tip{background:var(--accSoft);border-radius:4px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.trap{border:1px solid #f0c8b3;background:var(--warnSoft);border-radius:7px;padding:6px 9px;break-inside:avoid}
+.trap h3{color:var(--warn);margin:0 0 3px;font-size:9pt}
+.quiz ol{padding-left:17px;margin:2px 0} .quiz li{margin:2.5px 0}
+.ans td:first-child{width:18px;font-weight:800;color:var(--acc)}
+b{font-weight:700}
+.pb{break-before:page}
+.foot{margin-top:7px;text-align:center;color:var(--muted);font-size:7pt}
+sub,sup{font-size:.72em}
+</style>
+</head><body>
+<div class="hero">
+  <div class="kick">MSE3271 · Metrology and Calibration · YTÜ Metalurji ve Malzeme Müh.</div>
+  <h1>Lecture 3 · Bölüm B · Cheat Sheet</h1>
+  <div class="src">Kaynak: Doç. Dr. Nilüfer Duygulu, Lecture 3 (PDF 3) · Bölüm B: slayt 65–123 (ölçüm cihazları ve özellikleri) · Şablon özet + mini test + cevap anahtarı</div>
+</div>
+<div class="tip" style="font-size:9pt"><b>Bölümün tek fikri:</b> Bir cihazı önce <b>parçalarına ayır</b> (ne hisseder, ne çevirir, ne gösterir?), sonra <b>ne kadar iyi olduğunu</b> özellikleriyle değerlendir (ne kadar küçük değişimi fark eder, zamanla kayar mı?).</div>
+<!-- E -->
+<div class="sec"><div class="b">A</div><h2>Ölçüm cihazları <span class="star">★</span></h2></div>
+<div class="grid">
+  <div class="card span">
+    <h3>Bir cihazın parçaları: sinyalin yolu <span class="ref">slayt 65–90</span></h3>
+    <div class="tree">  ölçülen şey → SENSOR  →  TRANSDUCER  →  ...measuring chain...  →  DISPLAY / RECORDER
+                 "hisseder"   "çevirir"        "sinyalin yolu"           "gösterir / kaydeder"</div>
+    <table>
+      <tr><th style="width:18%">Terim</th><th>Tanım (basit)</th><th style="width:34%">Slayttaki örnekler</th></tr>
+      <tr><td><b>Measuring instrument</b></td><td>Ölçüm yapmak için kullanılan cihaz; tek başına veya yardımcı cihazlarla. Tek başına kullanılabiliyorsa bir measuring system'dir. İki tür: <b>indicating</b> instrument veya <b>material measure</b></td><td>termometre, voltmetre, mikrometre</td></tr>
+      <tr><td><b>Material measure</b></td><td>Kullanım boyunca <b>kendisi sabit bir değeri temsil eden</b> nesne. Göstergesi kendi atanmış değeridir; bir measurement standard olabilir</td><td><b>gauge block</b>, standart ağırlık, cetvel, standart direnç, hacim ölçeği, sertifikalı referans malzeme</td></tr>
+      <tr><td><b>Measurement apparatus</b></td><td>Özel bir amaç için bir araya getirilmiş, genelde <b>büyük</b> ölçüm düzeneği</td><td>CMM (koordinat ölçüm makinesi)</td></tr>
+      <tr><td><b>Measuring transducer</b></td><td>Girdiyle <b>belirli bir ilişkisi olan çıktı</b> veren cihaz: bir büyüklüğü başkasına <b>çevirir</b></td><td><b>thermocouple</b> (sıcaklık→voltaj), strain gauge, pH elektrodu, akım transformatörü, Bourdon tüpü, bimetal şerit</td></tr>
+      <tr><td><b>Measuring chain</b></td><td>Sinyalin sensörden çıkış elemanına kadar izlediği <b>tek yol</b></td><td>mikrofon→zayıflatıcı→filtre→amplifikatör→voltmetre · Bourdon tüpü→kaldıraçlar→2 dişli→kadran</td></tr>
+      <tr><td><b>Sensor</b></td><td>Ölçülen şeyden <b>doğrudan etkilenen</b> eleman (bazı alanlarda "detector" denir)</td><td>platin direnç termometresinin bobini, türbin debimetrenin rotoru, basınç göstergesinin Bourdon tüpü, seviye ölçerin şamandırası, spektrometrenin fotoseli</td></tr>
+      <tr><td><b>Detector</b></td><td>Bir eşik aşılınca <b>"var / yok"</b> diyen cihaz veya madde (kimyada "indicator")</td><td><b>litmus kağıdı</b>, halojen kaçak dedektörü</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Gösteren ve kaydeden cihazlar <span class="ref">slayt 76–86</span></h3>
+    <table class="kv">
+      <tr><td>Indicating</td><td>Ölçülen değer hakkında bilgi taşıyan <b>çıkış sinyali</b> verir (görsel veya sesli; kayıt da tutabilir)</td></tr>
+      <tr><td>Displaying</td><td>Çıkışı <b>görsel</b> olarak gösteren indicating cihaz</td></tr>
+      <tr><td>Recording</td><td>Değeri <b>kaydeder</b>; analog veya dijital, birden çok büyüklük kaydedebilir. Ör: EKG, X-Y recorder, dozimetre</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Analog vs Digital <span class="ref">slayt 81–84</span></h3>
+    <table>
+      <tr><th></th><th>Analog (skala)</th><th>Digital</th></tr>
+      <tr><td><b>Gösterim</b></td><td>ibre hareketi</td><td>sayı</td></tr>
+      <tr><td><b>Okuma</b></td><td>öğrenmek gerekir</td><td>eğitim gerekmez</td></tr>
+      <tr><td><b>Ondalık</b></td><td>genelde tam sayı; ondalık okuma her zaman doğru olmaz</td><td>bir veya daha fazla ondalık</td></tr>
+      <tr><td><b>Hata</b></td><td>insan okuma hatası var</td><td>okuma hatası yok → slayta göre <b>daha doğru</b></td></tr>
+      <tr><td><b>Örnek</b></td><td>analog devir göstergesi</td><td>dijital terazi, termometre</td></tr>
+    </table>
+  </div>
+
+  <div class="card span">
+    <h3>Skala, kadran, sıfır ayarı <span class="ref">slayt 85, 91–97, 123</span></h3>
+    <table class="kv">
+      <tr><td>Scale</td><td>Gösterge cihazının, değerleriyle birlikte <b>sıralı çizgilerden</b> oluşan kısmı; her çizgi bir <b>scale mark</b>. <b>Linear</b> (doğrusal) veya <b>nonlinear</b> olabilir</td></tr>
+      <tr><td>Scale division</td><td>Skaladaki <b>en küçük bölme</b></td></tr>
+      <tr><td>Scale range</td><td>Ardışık iki skala çizgisi arasındaki fark</td></tr>
+      <tr><td>Dial</td><td><b>Kadran</b>: üzerinde sayı ve işaretler olan düz yüzey. Ör: hız göstergesi, manometre, vakum göstergesi, voltmetre, ampermetre, termometre, takometre, hidrometre</td></tr>
+      <tr><td>Zero adjustment</td><td>Ölçülen şey <b>sıfırken</b> cihazın <b>sıfır</b> göstermesi için yapılan ayar (Lecture 2'deki "kumpas kapalıyken 0.03 gösteriyor" sorusu)</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- F -->
+<div class="sec"><div class="b">B</div><h2>Cihaz özellikleri: hız göstergesi örneğiyle <span class="star">★</span></h2></div>
+<div class="card">
+  <table>
+    <tr><th style="width:19%">Özellik</th><th>Tanım (basit)</th><th style="width:32%">Hız göstergesi / örnek</th></tr>
+    <tr><td><b>Measuring interval</b><br><span style="color:var(--muted)">(working interval, measuring range)</span></td><td>Cihazın <b>belirtilen uncertainty ile</b>, tanımlı koşullarda ölçebildiği değerler aralığı. Alt sınırı <b>detection limit</b> ile karıştırılmaz</td><td>göstergenin güvenilir çalıştığı aralık · slayt 98–99</td></tr>
+    <tr><td><b>Indication interval</b><br><span style="color:var(--muted)">(range of indications)</span></td><td>Cihazın <b>gösterebildiği</b> en küçük ve en büyük değer arası</td><td>kadranda 0–240 km/h · slayt örneği: "99 V to 201 V" · slayt 100–101</td></tr>
+    <tr><td><b>Sensitivity</b></td><td>Ölçülen büyüklük değişince çıkışın <b>ne kadar değiştiği</b>:<br><span style="font-family:'DejaVu Sans Mono',monospace">sensitivity = skala sapması / sapmayı oluşturan değer</span></td><td>10 km/h hızlanınca ibre ne kadar dönüyor · slayt 102–104</td></tr>
+    <tr><td><b>Discrimination threshold</b></td><td>Göstergede <b>hiçbir değişiklik yaratmayan en büyük</b> değişim. Sıfırdan başlarken cihazın "uyanması" için gereken minimum girdi. Gürültü veya sürtünmeye bağlı olabilir; mutlak değer ya da tam skalanın yüzdesi olarak verilir</td><td>araba kalkarken ibre <b>~15 km/h</b>'ye kadar kıpırdamıyor · slayt 105–107</td></tr>
+    <tr><td><b>Resolution</b></td><td>Göstergede <b>fark edilebilir değişiklik yaratan en küçük</b> değişim (cihaz zaten bir değer gösterirken). En büyük etken: skalanın ne kadar ince bölündüğü</td><td>çizgiler 20 km/h aralıklı → en iyi <b>±5 km/h</b> tahmin · slayt 108–111</td></tr>
+    <tr><td><b>Resolution of a display</b></td><td>Gösterilen değerler arasında <b>anlamlı olarak ayırt edilebilen en küçük fark</b></td><td>slayt 112</td></tr>
+    <tr><td><b>Hysteresis</b></td><td>Girdi <b>artarken</b> (eğri a) ve <b>azalırken</b> (eğri b) çıkış eğrilerinin <b>çakışmaması</b>. İki büyüklük: maximum input hysteresis, maximum output hysteresis. Diğer adı: <b>reversibility</b></td><td>hızlanırken 60, yavaşlarken aynı hızda 62 · <b>Hysteresis error:</b> sonuç önceki ölçüm koşullarına bağlı (ör. profil projektörü) · slayt 113–116</td></tr>
+    <tr><td><b>Stability</b></td><td>Cihazın metrolojik özelliklerinin <b>zamanla sabit kalması</b>. Ör: belirli bir değişimin ne kadar sürede olduğu, ya da belirli sürede ne kadar değişim olduğu</td><td>yıllar geçse de aynı doğruluk · slayt 117–118</td></tr>
+    <tr><td><b>Instrumental drift</b></td><td>Cihazın özellikleri değiştiği için göstergenin <b>zamanla sürekli kayması</b>. Ölçülen büyüklüğün veya influence quantity'nin değişmesiyle <b>ilgisi yoktur</b></td><td>gösterge yıllar içinde hep biraz fazla göstermeye başlıyor · slayt 119–120</td></tr>
+    <tr><td><b>Accuracy class</b></td><td>Hataları belirli sınırlar içinde tutan cihazların <b>sınıfı</b>; uzlaşmayla bir sayı/sembolle gösterilir. Material measure'lara da uygulanır</td><td>"Class 1.0 manometre" · slayt 121–122</td></tr>
+  </table>
+  <div class="note">⚠️ Slayt 111'deki osiloskop örneği: 8 bit = 2⁸ = 256 değer, toplam aralık 8 bölme × 100 mV = 800 mV → resolution = 800 / 256 = <b>3.125 mV</b> (slaytta "3125 mV" yazıyor, baskı hatası).</div>
+</div>
+
+
+<div class="sec"><div class="b">C</div><h2>Tek bakışta: karıştırılan çiftler</h2></div>
+<div class="card">
+<table>
+  <tr><th>A</th><th>B</th><th>Fark</th></tr>
+  <tr><td><b>Sensor</b></td><td><b>Detector</b></td><td>ölçülen şeyden etkilenir, değer verir ↔ eşik aşılınca sadece var/yok der</td></tr>
+  <tr><td><b>Sensor</b></td><td><b>Transducer</b></td><td>hisseden eleman ↔ bir büyüklüğü başka büyüklüğe çeviren cihaz</td></tr>
+  <tr><td><b>Material measure</b></td><td><b>Indicating instrument</b></td><td>kendisi bir değeri temsil eder (gauge block) ↔ ölçüp gösterir (voltmetre)</td></tr>
+  <tr><td><b>Indicating</b></td><td><b>Recording</b></td><td>gösterir ↔ kaydeder</td></tr>
+  <tr><td><b>Analog</b></td><td><b>Digital</b></td><td>ibre, okuma hatası var ↔ sayı, okuma hatası yok</td></tr>
+  <tr><td><b>Scale division</b></td><td><b>Scale range</b></td><td>en küçük bölme ↔ ardışık iki çizgi arasındaki fark</td></tr>
+  <tr><td><b>Measuring interval</b></td><td><b>Indication interval</b></td><td>belirtilen uncertainty ile ölçebildiği ↔ gösterebildiği</td></tr>
+  <tr><td><b>Threshold</b></td><td><b>Resolution</b></td><td>tepki yaratmayan en BÜYÜK değişim (sıfırdan başlarken) ↔ tepki yaratan en KÜÇÜK değişim (bir değerdeyken)</td></tr>
+  <tr><td><b>Sensitivity</b></td><td><b>Resolution</b></td><td>girdi değişince çıkış ne kadar oynuyor (oran) ↔ fark edilebilen en küçük değişim</td></tr>
+  <tr><td><b>Stability</b></td><td><b>Drift</b></td><td>özellikler zamanla sabit ↔ gösterge zamanla kayıyor</td></tr>
+  <tr><td><b>Hysteresis</b></td><td><b>Drift</b></td><td>artarken ve azalırken farklı okuma ↔ zamanla yavaş yavaş kayma</td></tr>
+</table>
+</div>
+<div class="trap" style="margin-top:7px">
+  <h3>⚠️ Sınav tuzakları</h3>
+  <ul>
+    <li><b>Slayt 111:</b> osiloskop resolution'ı = 800 mV / 2⁸ = 800 / 256 = <b>3.125 mV</b> (slaytta "3125 mV" baskı hatası).</li>
+    <li><b>Thermocouple</b> bir <b>transducer</b>'dır (sıcaklığı voltaja çevirir). Lecture 1'de de ölçüm prensibi örneğiydi (thermoelectric effect).</li>
+    <li><b>Litmus kağıdı</b> sensor değil <b>detector</b>: sadece asit/baz var mı der, değer vermez.</li>
+    <li><b>Gauge block</b> bir <b>material measure</b>'dır; aynı zamanda comparative ölçümün referansı ve bir measurement standard olabilir.</li>
+    <li>Tek bir cihaz da tek başına bir <b>measuring system</b> olabilir.</li>
+    <li>Measuring interval'in alt sınırı <b>detection limit</b> ile karıştırılmaz.</li>
+    <li><b>Drift</b>, ölçülen şey veya influence quantity <b>değişmeden</b> göstergenin kaymasıdır.</li>
+    <li>Hysteresis'in diğer adı <b>reversibility</b>; hysteresis error = sonucun <b>önceki ölçüm koşullarına</b> bağlı olması.</li>
+    <li>Slayta göre digital cihazlar okuma hatası olmadığı için analoglardan <b>daha doğru</b> kabul edilir.</li>
+  </ul>
+</div>
+
+<div class="sec"><div class="b">D</div><h2>Mini test (12 soru)</h2></div>
+<div class="card quiz">
+<ol>
+  <li>Measuring instrument nedir? İki türü nedir?</li>
+  <li>Material measure nedir? Slayttan üç örnek veriniz.</li>
+  <li>Measuring transducer'ı tanımlayınız ve üç örnek veriniz.</li>
+  <li>Sensor ile detector arasındaki fark nedir? Birer örnek veriniz.</li>
+  <li>Measuring chain nedir? Mekanik bir örnek veriniz.</li>
+  <li>Analog ve digital cihazları üç yönden karşılaştırınız.</li>
+  <li>Zero adjustment nedir?</li>
+  <li>Measuring interval ile indication interval arasındaki fark nedir?</li>
+  <li>Sensitivity nasıl tanımlanır? Formülünü yazınız.</li>
+  <li>Discrimination threshold ile resolution farkını hız göstergesi örneğiyle açıklayınız.</li>
+  <li>8 bitlik bir dijital osiloskopta toplam aralık 800 mV ise resolution kaç mV'tur?</li>
+  <li>Hysteresis, stability ve instrumental drift'i birer cümleyle açıklayınız.</li>
+</ol>
+</div>
+
+<div class="sec"><div class="b">✓</div><h2>Cevap anahtarı</h2></div>
+<div class="card">
+<table class="ans">
+  <tr><td>1</td><td>Ölçüm yapmak için tek başına veya yardımcı cihazlarla kullanılan cihaz. Türleri: <b>indicating measuring instrument</b> ve <b>material measure</b>. Tek başına kullanılabiliyorsa bir measuring system'dir.</td></tr>
+  <tr><td>2</td><td>Kullanım boyunca kalıcı olarak <b>belirli bir değeri temsil eden</b> cihaz; göstergesi kendi atanmış değeridir. Ör: <b>gauge block</b>, standart ağırlık, cetvel (standart direnç, hacim ölçeği, sertifikalı referans malzeme)</td></tr>
+  <tr><td>3</td><td>Girdiyle <b>belirli bir ilişkisi olan çıktı</b> veren cihaz. Ör: <b>thermocouple</b>, strain gauge, pH elektrodu (akım transformatörü, Bourdon tüpü, bimetal şerit)</td></tr>
+  <tr><td>4</td><td><b>Sensor</b> ölçülen şeyden doğrudan etkilenir (Bourdon tüpü, şamandıra). <b>Detector</b> bir eşik aşılınca varlığı gösterir (litmus kağıdı, halojen kaçak dedektörü).</td></tr>
+  <tr><td>5</td><td>Sinyalin sensörden çıkış elemanına kadar izlediği tek yol. Ör: <b>Bourdon tüpü → kaldıraçlar → iki dişli → mekanik kadran</b></td></tr>
+  <tr><td>6</td><td>Gösterim: ibre ↔ sayı · Okuma: öğrenmek gerekir ↔ eğitim gerekmez · Hata: insan okuma hatası var ↔ yok (daha doğru)</td></tr>
+  <tr><td>7</td><td>Ölçülen büyüklük <b>sıfırken</b> cihazın <b>sıfır</b> göstermesi için yapılan ayar</td></tr>
+  <tr><td>8</td><td>Measuring interval: cihazın <b>belirtilen uncertainty ile</b> ölçebildiği aralık. Indication interval: <b>gösterebildiği</b> en küçük–en büyük değer (ör. "99 V to 201 V")</td></tr>
+  <tr><td>9</td><td>Ölçülen büyüklük değişince çıkışın ne kadar değiştiği: <b>sensitivity = skala sapması / sapmayı oluşturan ölçülen değer</b></td></tr>
+  <tr><td>10</td><td><b>Threshold:</b> sıfırdan başlarken tepki için gereken minimum girdi (araba ~15 km/h'ye kadar ibre kıpırdamaz). <b>Resolution:</b> bir değer gösterirken fark edilebilen en küçük değişim (çizgiler 20 km/h aralıklı → ±5 km/h)</td></tr>
+  <tr><td>11</td><td>2⁸ = 256 değer → 800 / 256 = <b>3.125 mV</b></td></tr>
+  <tr><td>12</td><td><b>Hysteresis:</b> girdi artarken ve azalırken farklı okuma (eğriler çakışmaz). <b>Stability:</b> özelliklerin zamanla sabit kalması. <b>Drift:</b> cihazın özellikleri değiştiği için göstergenin zamanla kayması.</td></tr>
+</table>
+</div>
+</body></html>

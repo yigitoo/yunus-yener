@@ -45,4 +45,5 @@
 ## Sınav Hazırlık
 
 - Önemli formüller / diyagramlar: [cheat-sheet-l1-l2 (PDF)](sinavlar/cheat-sheet-l1-l2.pdf) · [kaynak HTML](sinavlar/cheat-sheet-l1-l2.html)
+- Lecture 3: [Bölüm A (PDF)](sinavlar/cheat-sheet-lecture-3a.pdf) · [Bölüm B (PDF)](sinavlar/cheat-sheet-lecture-3b.pdf)
 - Sık çıkan soru tipleri:
