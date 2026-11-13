@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><title>Cikmis Sorular</title>
+<style>
+:root{
+  --ink:#1b2430; --muted:#5b6673; --line:#dfe5ea; --card:#ffffff; --soft:#f4f7f9;
+  --acc:#14707a; --acc2:#1d4f73; --accSoft:#e6f2f3; --warn:#b4471b; --warnSoft:#fdf1ea; --star:#e0a100;
+}
+@page{size:A4;margin:11mm 10mm 13mm}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Inter","Inter Display",system-ui,sans-serif;font-size:8.6pt;line-height:1.38;color:var(--ink);background:#fff}
+.hero{background:linear-gradient(120deg,var(--acc2),var(--acc));color:#fff;border-radius:9px;padding:11px 15px 10px;margin-bottom:9px}
+.hero .kick{font-size:7.2pt;letter-spacing:.14em;opacity:.85;text-transform:uppercase}
+.hero h1{font-family:"Inter Display","Inter",sans-serif;font-size:19pt;margin:2px 0 3px;font-weight:800}
+.hero .src{font-size:8pt;opacity:.92}
+.sec{display:flex;align-items:center;gap:7px;margin:11px 0 6px;border-bottom:1px solid var(--line);padding-bottom:3px;break-after:avoid}
+.sec .b{background:var(--acc);color:#fff;font-weight:800;font-size:8pt;width:17px;height:17px;border-radius:4px;display:flex;align-items:center;justify-content:center}
+.sec h2{font-family:"Inter Display","Inter",sans-serif;font-size:11.5pt;margin:0;color:var(--acc2)}
+.star{color:var(--star)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.span{grid-column:1/-1}
+.card{border:1px solid var(--line);border-radius:7px;padding:6px 8px 6px;background:var(--card);break-inside:avoid}
+.card.top{border-top:3px solid var(--acc)}
+.card h3{font-size:8.9pt;margin:0 0 4px;color:var(--acc);display:flex;align-items:baseline;gap:5px}
+.card h3 .ref{margin-left:auto;font-weight:500;color:var(--muted);font-size:7.2pt;white-space:nowrap}
+p{margin:2px 0}
+ul{margin:2px 0;padding-left:14px} li{margin:1px 0}
+table{width:100%;border-collapse:collapse;margin:3px 0}
+th{background:var(--accSoft);color:var(--acc2);text-align:left;font-weight:700;padding:2.5px 5px;font-size:8pt}
+td{padding:2.5px 5px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.kv td:first-child{width:23%;font-weight:700;color:var(--acc2);font-size:7.6pt;text-transform:uppercase;letter-spacing:.02em}
+.tree{font-family:"DejaVu Sans Mono",monospace;font-size:7.4pt;background:var(--soft);border-radius:5px;padding:5px 7px;white-space:pre;line-height:1.3;margin:3px 0}
+.f{font-family:"DejaVu Sans Mono",monospace;font-size:7.9pt;background:var(--soft);border-left:3px solid var(--acc);border-radius:3px;padding:4px 7px;margin:3px 0;white-space:pre-wrap}
+.tpl{font-family:"DejaVu Sans Mono",monospace;font-size:7.5pt;background:#fff;border:1px dashed #b9c6cf;border-radius:4px;padding:4px 7px;margin:3px 0;white-space:pre}
+.note{background:var(--warnSoft);border-left:3px solid var(--warn);border-radius:3px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.tip{background:var(--accSoft);border-radius:4px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.trap{border:1px solid #f0c8b3;background:var(--warnSoft);border-radius:7px;padding:6px 9px;break-inside:avoid}
+.trap h3{color:var(--warn);margin:0 0 3px;font-size:9pt}
+.quiz ol{padding-left:17px;margin:2px 0} .quiz li{margin:2.5px 0}
+.ans td:first-child{width:18px;font-weight:800;color:var(--acc)}
+b{font-weight:700}
+.pb{break-before:page}
+.foot{margin-top:7px;text-align:center;color:var(--muted);font-size:7pt}
+sub,sup{font-size:.72em}
+</style>
+</head><body>
+<div class="hero">
+  <div class="kick">MSE3271 · Metrology and Calibration · YTÜ Metalurji ve Malzeme Müh.</div>
+  <h1>Çıkmış Sorular · Cevaplı</h1>
+  <div class="src">Yunus'un gönderdiği 5 fotoğraftaki sınav kağıtlarından derlendi · Kağıtlarda kesilen / görünmeyen sorular "görünmüyor" diye işaretli · Cevaplar hocanın slaytlarına göre</div>
+</div>
+
+<div class="tip" style="font-size:8.8pt"><b>Kapsam:</b> Kağıt 1 ve Kağıt 2 doğrudan <b>vize konuları</b> (ölçüm okuma, accuracy/precision, uncertainty, SI, tolerans, normal dağılım). Kağıt 3 ve Kağıt 4 <b>final konuları</b> (kuvvet, nem, basınç, açı ölçümü, malzeme karakterizasyonu); Kağıt 4'ün tarihi 15/01/2026, geçen dönemin finali. Kağıt 1–3'ün tarihi görünmüyor.</div>
+
+<!-- ============ KAĞIT 1 ============ -->
+<div class="sec"><div class="b">1</div><h2>Kağıt 1 · Ölçüm okuma + çoktan seçmeli</h2></div>
+
+<div class="card">
+  <h3>Q1 · Kumpas ve mikrometre okuma (kağıttaki görüntü)</h3>
+  <img src="cikmis-img/olcum.jpg" style="width:100%;border-radius:5px;border:1px solid var(--line)">
+  <table style="margin-top:4px">
+    <tr><th style="width:10%">Soru</th><th style="width:16%">Alet</th><th>Okuma</th><th style="width:14%">Cevap</th></tr>
+    <tr><td><b>5</b></td><td>Kumpas 1/20</td><td>Verniyer 0'ı 10 mm'yi geçmiş → <b>10</b> · hizalı verniyer çizgisi 17. → 17 × 0.05 = 0.85</td><td><b>10.85 mm</b> ✓</td></tr>
+    <tr><td><b>6a</b></td><td>Mikrometre</td><td>Kovan (sleeve) <b>3.00</b> · tambur (thimble) çizgisi <b>42</b> × 0.01 = 0.42</td><td><b>3.42 mm</b> ✓</td></tr>
+    <tr><td><b>6g</b></td><td>Mikrometre</td><td>Kovan <b>11.00</b> (10'dan sonra 1 çizgi) · tambur <b>43</b> → 0.43</td><td><b>11.43 mm</b> ✓</td></tr>
+    <tr><td><b>6h</b></td><td>Mikrometre</td><td>Kovan <b>11.00</b> · tambur <b>43</b> → 0.43</td><td><b>11.43 mm</b> ✓</td></tr>
+    <tr><td><b>6k</b></td><td>Mikrometre</td><td>Kovan <b>14.00</b> · tambur <b>42</b> → 0.42</td><td><b>14.42 mm</b> ✓</td></tr>
+    <tr><td><b>6l</b></td><td>Mikrometre</td><td>Kovan <b>9.50</b> (alt tarafta yarım mm çizgisi görünüyor) · tambur <b>41</b> → 0.41</td><td><b>9.91 mm</b> ✓</td></tr>
+  </table>
+  <div class="note"><b>Mikrometre slaytlarda (PDF 6) yok ama sınavda çıkmış!</b> Okuma: ① <b>kovan (sleeve)</b>: tamburun kenarından önce görünen son çizgi → tam mm (üst çizgiler) + varsa <b>0.5 mm</b> (alt çizgiler) · ② <b>tambur (thimble)</b>: kovanın yatay çizgisiyle hizalanan bölme × <b>0.01 mm</b> (tambur 50 bölme, 1 tur = 0.5 mm) · ③ topla. Kağıttaki el yazısı notu: "<b>açık dilimden önce</b>" = tamburun kenarından önce görünen son çizgi.</div>
+  <div class="f">Ölçüm = kovan (tam mm + 0.5?) + tambur bölmesi × 0.01
+Örnek 6l: 9 + 0.5 + 41 × 0.01 = 9.91 mm</div>
+</div>
+
+<div class="card" style="margin-top:7px">
+  <h3>Q2 · Çoktan seçmeli (15 × 2 = 30 puan) · kağıtta 1–5 ve 9–13 görünüyor</h3>
+  <table class="ans">
+    <tr><td>1</td><td><i>A part is to be made to the length specification 14.7 + 0.2 mm. What is the largest acceptable size?</i><br>Üst sınır = 14.7 + 0.2 → <b>b) 14.9 mm</b></td></tr>
+    <tr><td>2</td><td><i>What is the point of having units in the sciences?</i><br><b>b) They distinguish our numbers as measurements instead of pure numbers.</b> (Kağıtta d işaretli; d metrik/emperyal ile ilgili, yanlış.)</td></tr>
+    <tr><td>3</td><td><i>Specification 17.8 + 0.4 mm. The constructed part is 18.3 mm. Is it acceptable?</i><br>Üst sınır 18.2 &lt; 18.3 → <b>a) No</b></td></tr>
+    <tr><td>4</td><td><i>Which of the following represents an SI unit of luminous intensity?</i><br><b>b) Candela</b> (kağıtta "None of them" işaretli → ✗). Lumen ışık akısı, diyoptri mercek gücü.</td></tr>
+    <tr><td>5</td><td><i>What do we call an SI unit that is created by combining base units using algebra?</i><br><b>a) a derived unit</b> (kağıtta "basic unit" işaretli → ✗)</td></tr>
+    <tr><td>6–8</td><td style="color:var(--muted)">görünmüyor</td></tr>
+    <tr><td>9</td><td><i>The term used to specify the closeness of two or more measurements?</i><br><b>a) Precision</b></td></tr>
+    <tr><td>10</td><td><i>When is triangular distribution used in a Type-B method?</i><br><b>d) When most values are near the centre of distribution</b></td></tr>
+    <tr><td>11</td><td><i>Closeness of measured value to true value is ___</i><br><b>a) Accuracy</b></td></tr>
+    <tr><td>12</td><td><i>The mean length of an object is 5 cm. Which measurement is most accurate?</i><br>Farklar: 4.9 → 0.1 · 4.805 → 0.195 · 5.25 → 0.25 · 5.4 → 0.4 → <b>a) 4.9 cm</b></td></tr>
+    <tr><td>13</td><td><i>Statement 1: Most of the systematic uncertainty is Type-A. Statement 2: Type-A uncertainties vary each and every time a measurement is made.</i><br>S1 <b>yanlış</b> (Type A <b>random</b> etkileri, istatistikle değerlendirir) · S2 <b>doğru</b> → <b>b) F, T</b> (kağıtta T, F işaretli → ✗)</td></tr>
+    <tr><td>14–15</td><td style="color:var(--muted)">görünmüyor</td></tr>
+  </table>
+</div>
+
+<!-- ============ KAĞIT 2 ============ -->
+<div class="sec"><div class="b">2</div><h2>Kağıt 2 · Hedef tahtası soruları + normal dağılım</h2></div>
+<div class="card">
+  <h3>Q3 · Choose the correct answer (7 × 2 = 14 puan)</h3>
+  <img src="cikmis-img/hedef.jpg" style="width:100%;border-radius:5px;border:1px solid var(--line)">
+  <p style="color:var(--muted);margin-top:3px">Hedefler soldan sağa: ① merkezde sıkı grup · ② merkezin etrafına dağılmış · ③ merkez dışında sıkı grup · ④ hem dağınık hem merkez dışı</p>
+  <table class="ans">
+    <tr><td>1</td><td><i>Hedef ①: How would you classify this measurement system?</i> → <b>a) Accurate and precise</b></td></tr>
+    <tr><td>2</td><td><i>Hedef ①: What type of distribution does it show?</i> → değerler <b>merkezde toplanmış</b> → <b>d) Triangular distribution</b> (Kağıt 1, soru 10 ile aynı mantık: "most values near the centre" = triangular)</td></tr>
+    <tr><td>3</td><td><i>Hedef ②: What is the main issue?</i> → ortalama merkezde ama dağınık → <b>b) High random error</b></td></tr>
+    <tr><td>4</td><td><i>Hedef ②: Same operator, same part, same instrument. How is repeatability?</i> → aynı koşullarda sonuçlar dağınık → <b>c) Low</b></td></tr>
+    <tr><td>5</td><td><i>Hedef ③: A gauge produces the pattern. What type of error dominates?</i> → sıkı grup ama hep aynı yöne kaymış → <b>b) Systematic error (bias)</b></td></tr>
+    <tr><td>6</td><td><i>Hedef ④: Which statement is correct?</i> → <b>d) Both accuracy and precision are poor</b></td></tr>
+    <tr><td>7</td><td><i>Hedef ④: What type of distribution does it show?</i> → değerler belirli bir merkezde toplanmadan <b>eşit olasılıkla</b> yayılmış → <b>b) Rectangular distribution</b></td></tr>
+  </table>
+  <div class="note">2. ve 7. soruların (dağılım türü) konusu bizim slaytlarda yok; cevaplar Type B dağılım mantığına göre: merkezde toplanma → <b>triangular</b>, eşit yayılma → <b>rectangular</b>, uçlarda toplanma → <b>U-shaped</b>. Kağıtta 7. soruda öğrenci triangular'ı karalamış. Hocaya teyit ettir.</div>
+  <p>Kağıdın üstündeki el yazısı not: <b>reproducibility</b> = different people, same result · <b>repeatability</b> = same conditions, same result.</p>
+</div>
+
+<div class="card top" style="margin-top:7px">
+  <h3>Q4 · Normal dağılım (20 puan: a = 4, b ve c = 8) <span class="star">★</span> <span class="ref">PDF 4–5, slayt 99–100'deki soru</span></h3>
+  <p><i>A machine produces electrical components. 99.7% of the components have lengths between 1.176 cm and 1.224 cm. Assuming this data is normally distributed, what are the a) mean, b) standard deviation, and c) draw the normal distribution graph?</i></p>
+  <div class="f">a) Mean = (1.176 + 1.224) / 2 = 1.200 cm
+b) %99.7 = ±3σ = toplam 6σ  →  σ = (1.224 − 1.176) / 6 = 0.048 / 6 = 0.008 cm
+c) Çan eğrisi, tepesi 1.200'de; eksen işaretleri:
+   μ−3σ    μ−2σ    μ−σ     μ      μ+σ     μ+2σ    μ+3σ
+   1.176   1.184   1.192   1.200  1.208   1.216   1.224
+   └── %68: 1.192–1.208 ──┘ · %95: 1.184–1.216 · %99.7: 1.176–1.224</div>
+  <div class="tip">Grafikte puan için: <b>simetrik çan</b>, tepe ortalamada, 7 eksen değeri ve <b>%68 / %95 / %99.7</b> bölgeleri işaretli olsun.</div>
+</div>
+
+<!-- ============ KAĞIT 3 ============ -->
+<div class="sec"><div class="b">3</div><h2>Kağıt 3 · Boşluk doldurma + doğru/yanlış (final konuları)</h2></div>
+<div class="card">
+  <h3>Fill in the blanks (8–10)</h3>
+  <table class="ans">
+    <tr><td>8</td><td><i>The most common type of force ___, and one which is a clear example of an elastic element device, is the strain gauge load cell. The working principle is based on the mechanical deformation of an elastic element and its conversion into an electrical signal by bonded strain gauges.</i><br>→ <b>transducer</b> (force transducer / load cell)</td></tr>
+    <tr><td>9</td><td><i>Industrial ___ operate based on the interaction between water vapor in the air and a sensing element…</i><br>→ <b>humidity sensors</b> (hygrometers)</td></tr>
+    <tr><td>10</td><td><i>An ___ is a modified form of the U-tube manometer designed to improve measurement sensitivity. One arm is inclined at a small angle relative to the horizontal plane…</i><br>→ <b>inclined manometer</b></td></tr>
+  </table>
+</div>
+<div class="card" style="margin-top:7px">
+  <h3>Q2 · True / False (10 × 2 = 20 puan)</h3>
+  <table class="ans">
+    <tr><td>1</td><td><i>Sine bar is a tool used for accurate setting out of angles by arranging to convert angular measurements to linear ones.</i> → <b>T</b></td></tr>
+    <tr><td>2</td><td><i>A clinometer is an instrument used for measuring angles relative to the horizontal plane.</i> → <b>T</b></td></tr>
+    <tr><td>3</td><td><i>A manometer is a static type of mechanical pressure measurement.</i> → <b>T</b></td></tr>
+    <tr><td>4</td><td><i>To measure the temperature in the range of −300 to 1500 °C with high accuracy, a th… is …</i> (cümle kesik) → kağıtta <b>F</b> işaretli</td></tr>
+    <tr><td>5</td><td><i>Tolerance is the management of errors in manufactured machine parts.</i> → <b>T</b></td></tr>
+    <tr><td>6</td><td><i>The difference between 60 and 50 degrees is a measurable 10 degrees, is int[erval data].</i> → <b>T</b> (PDF 4–5, slayt 11)</td></tr>
+    <tr><td>7</td><td><i>Repeated data is the value that occurs when sorted by size defines the me[dian].</i> → <b>T</b> (PDF 3, slayt 48: median tanımı)</td></tr>
+    <tr><td>8</td><td><i>In 40 H7/d9, the numbers 7 and 9 indicate tolerance grade.</i> → <b>T</b> (harfler H, d = tolerans konumu; rakamlar = tolerans derecesi)</td></tr>
+    <tr><td>9–10</td><td style="color:var(--muted)">kesik: "…liper has jaws on both sides and knife-edge fac…" ve "…nishes are called…"</td></tr>
+  </table>
+</div>
+
+<!-- ============ KAĞIT 4 ============ -->
+<div class="sec"><div class="b">4</div><h2>Kağıt 4 · 15/01/2026 · Fill in the blanks (10 × 2 = 20 puan)</h2></div>
+<div class="card">
+  <p style="color:var(--muted)">Malzeme karakterizasyon yöntemleri; izlencede "Other physical measurements" haftası. 1–2 ve 8–10 görünmüyor.</p>
+  <table class="ans">
+    <tr><td>?</td><td><i>___ is a technique used for the topographical study of the material's surface which works on the principle of light instead of the physical probe in determining the data.</i> → <b>Optical profilometry</b> (optical profilometer)</td></tr>
+    <tr><td>?</td><td><i>___ is an analytical technique that measures the number of discrete wavelengths of visible light absorbed by or transmitted through a sample compared to a reference or blank sample.</i> → <b>UV-Vis spectroscopy</b> (spectrophotometry)</td></tr>
+    <tr><td>3</td><td><i>___ is a technique used in materials science to determine the crystallographic structure of a material by irradiating it with incident X-rays and measuring the intensities and scattering angles.</i> → <b>X-ray diffraction (XRD)</b></td></tr>
+    <tr><td>4</td><td><i>___ is a thermo analytical technique in which the difference in the amount of heat required to increase the temperature of a sample and reference is measured as a function of temperature.</i> → <b>Differential scanning calorimetry (DSC)</b></td></tr>
+    <tr><td>5</td><td><i>A spectrometer is an optical instrument used to measure properties of light over a specific portion of the electromagnetic spectrum; 5 microns to 20 microns is known as ___</i> → <b>infrared (IR)</b> bölgesi (orta IR; FTIR)</td></tr>
+    <tr><td>6</td><td><i>A ___ is a scientific instrument that uses a focused beam of electrons… the detailed surface characteristics and three-dimensional structure of a specimen…</i> → <b>Scanning electron microscope (SEM)</b></td></tr>
+    <tr><td>7</td><td><i>___ is an advanced scanning probe technique that provides high[-resolution] three-dimensional surface measurements by detecting interaction forces between a sharp probe [and the surface].</i> → <b>Atomic force microscopy (AFM)</b></td></tr>
+  </table>
+</div>
+
+<div class="trap" style="margin-top:7px">
+  <h3>⚠️ Bu kağıtlardan çıkan dersler</h3>
+  <ul>
+    <li>Kağıtlarda en çok yanlış yapılanlar: <b>candela</b>, <b>derived unit</b>, <b>Type A = random</b> (sistematik değil).</li>
+    <li><b>Mikrometre okuma</b> slaytlarda yok ama soruluyor: kovan (tam + 0.5) + tambur × 0.01.</li>
+    <li><b>Hedef tahtası</b>: merkez + sıkı = accurate & precise · merkez + dağınık = random error, düşük repeatability · kaymış + sıkı = systematic error (bias) · kaymış + dağınık = ikisi de kötü.</li>
+    <li><b>Tolerans</b> "a + b" verilince üst sınır = a + b; parça üst sınırı aşarsa kabul edilmez.</li>
+    <li>Normal dağılım sorusu slayttaki örneğin <b>aynısı</b> çıkmış (1.176–1.224 cm) → slayttaki örnekleri mutlaka çalış.</li>
+  </ul>
+</div>
+</body></html>

@@ -48,4 +48,5 @@
 - Lecture 3: [Bölüm A (PDF)](sinavlar/cheat-sheet-lecture-3a.pdf) · [Bölüm B (PDF)](sinavlar/cheat-sheet-lecture-3b.pdf)
 - Lecture 4–5: [CS Lecture 4–5 (PDF)](sinavlar/cs-lecture-4-5.pdf) · [soru seti (PDF)](sinavlar/cs-lecture-4-5-sorular.pdf)
 - Lecture 6: [CS Lecture 6 (PDF)](sinavlar/cs-lecture-6.pdf) (kumpas çizimli alıştırmalar)
+- [Çıkmış sorular, cevaplı (PDF)](sinavlar/cikmis-sorular.pdf)
 - Sık çıkan soru tipleri: hoca **varyans ve standart sapma** (Lecture 4–5) sorusu soracak (Yunus, 13.11.2026)
