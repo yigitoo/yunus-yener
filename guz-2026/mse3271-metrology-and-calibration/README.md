@@ -46,4 +46,5 @@
 
 - Önemli formüller / diyagramlar: [cheat-sheet-l1-l2 (PDF)](sinavlar/cheat-sheet-l1-l2.pdf) · [kaynak HTML](sinavlar/cheat-sheet-l1-l2.html)
 - Lecture 3: [Bölüm A (PDF)](sinavlar/cheat-sheet-lecture-3a.pdf) · [Bölüm B (PDF)](sinavlar/cheat-sheet-lecture-3b.pdf)
+- Lecture 4–5: [cheat sheet (PDF)](sinavlar/cheat-sheet-lecture-4-5.pdf)
 - Sık çıkan soru tipleri:
