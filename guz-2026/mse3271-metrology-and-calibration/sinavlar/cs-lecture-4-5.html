@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><title>Lecture 4-5 Cheat Sheet</title>
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><title>CS Lecture 4-5</title>
 <style>
 :root{
   --ink:#1b2430; --muted:#5b6673; --line:#dfe5ea; --card:#ffffff; --soft:#f4f7f9;
@@ -45,7 +45,7 @@ sub,sup{font-size:.72em}
 </head><body>
 <div class="hero">
   <div class="kick">MSE3271 · Metrology and Calibration · YTÜ Metalurji ve Malzeme Müh.</div>
-  <h1>Lecture 4–5 · Measurement Statistics · Cheat Sheet</h1>
+  <h1>CS · Lecture 4–5 · Measurement Statistics</h1>
   <div class="src">Kaynak: Doç. Dr. Nilüfer Duygulu, Lecture 4–5 (PDF 4–5, 117 slayt) · Veri türleri · ortalama ve standart sapma · normal dağılım · z-score</div>
 </div>
 
@@ -108,6 +108,7 @@ sub,sup{font-size:.72em}
 </div>
 
 <div class="sec"><div class="b">C</div><h2>Variance ve standard deviation <span class="star">★</span></h2></div>
+<div class="tip" style="font-size:8.8pt"><b>Sezgi:</b> Ortalama (μ, "mü") verinin <b>merkezini</b>, standart sapma (σ, "sigma") verinin merkezden <b>tipik uzaklığını</b> söyler. σ'yı bir <b>adım uzunluğu</b> gibi düşün. Farkların düz ortalaması hep 0 çıkar (artılar eksileri götürür) → önce <b>kare</b> alınır (varyans, birimi mm²), sonra <b>karekök</b> ile birim geri mm'ye döner (standart sapma).</div>
 <div class="grid">
   <div class="card">
     <h3>Formül ve adımlar <span class="ref">slayt 47–58</span></h3>
@@ -148,6 +149,15 @@ Kareler:  9,  1,  1,  1, 0, 0, 4, 16  → Σ = 32
 μ ± 2σ  →  %95
 μ ± 3σ  →  %99.7</div>
     <div class="tip">Lecture 2 bağlantısı: expanded uncertainty'de <b>k = 2 → %95</b> buradan gelir.</div>
+  </div>
+  <div class="card span">
+    <h3>68 / 95 / 99.7 nereden geliyor?</h3>
+    <p>Çan eğrisinin altındaki toplam alan = %100. Bir dilimin <b>alanı = o aralıktaki değerlerin yüzdesi</b>. Eğri ortada kalın, kenarlarda ince olduğundan alanın çoğu ortada toplanır. Sayılar <b>z tablosundan</b> gelir: tablo 0'dan z'ye (tek taraf) alanı verir, iki tarafa genişletmek için <b>× 2</b>.</p>
+    <table><tr><th>z (kaç adım)</th><th>tablo (0 → z)</th><th>× 2</th><th>yüzde</th><th>mil örneği (μ = 10.2, σ = 0.14 mm)</th></tr>
+      <tr><td>1</td><td>0.3413</td><td>0.6826</td><td><b>%68</b></td><td>10.06 – 10.34 mm</td></tr>
+      <tr><td>2</td><td>0.4772</td><td>0.9544</td><td><b>%95</b></td><td>9.92 – 10.48 mm</td></tr>
+      <tr><td>3</td><td>0.4987</td><td>0.9974</td><td><b>%99.7</b></td><td>9.78 – 10.62 mm</td></tr></table>
+    <p>Yüzdeler <b>her normal dağılımda aynıdır</b>; değişen tek şey 1 adımın (σ) uzunluğudur.</p>
   </div>
   <div class="card span top">
     <h3>Ters soru tipi: aralıktan ortalama ve σ bulma <span class="ref">slayt 64–66, 99–104</span></h3>
@@ -199,11 +209,23 @@ Fred: Test A 78 (μ=70, σ=8) → z = 1.00
 ③ Tablo: z = 2.00 ötesi = 0.0228
 ④ Oran = 0.0228 → %2.28  →  Kişi = 0.0228 × 480 = 10.94 ≈ 11 kişi</div>
   </div>
+  <div class="card span top">
+    <h3>Tam örnek: terazi, 4 tartım (8, 10, 12, 10 g) → σ, z ve yorum</h3>
+    <div class="f">μ  = 40 / 4 = 10 g
+farklar −2, 0, +2, 0  (toplam 0 ✔)   kareler 4, 0, 4, 0 → Σ = 8
+σ² = 8 / 4 = 2 g²          σ = √2 = 1.41 g
+Yeni tartım 14 g:  z = (14 − 10) / 1.41 = 2.83     ← paydada σ (1.41), varyans (2) DEĞİL
+%95 aralığı = 10 ± 2·1.41 = 7.17 – 12.83 g  → 14 g dışarıda
+Tablo: z = 2.83 → 0.4977 → ötesi 0.5 − 0.4977 = 0.0023 (%0.23, 1000'de ~2)</div>
+    <p><b>Yorum:</b> |z| &lt; 2 normal · 2 &lt; |z| &lt; 3 şüpheli · |z| &gt; 3 çok tuhaf. 14 g bir <b>outlier</b> (aykırı değer): ölçüm hatası veya cihaz sorunu olabilir, kontrol edilir.</p>
+  </div>
 </div>
 
 <div class="trap" style="margin-top:7px">
   <h3>⚠️ Sınav tuzakları</h3>
   <ul>
+    <li><b>En sık hata:</b> z formülünde ve μ ± kσ aralığında <b>σ</b> kullanılır, <b>varyans (σ²) değil</b>. Varyans 2 ise σ = √2 = 1.41.</li>
+    <li>Aralık sorusunda ortalama = <b>(alt + üst) / 2</b>, yüzde kaç olursa olsun (simetri). Ör: %68'i 51–64 → μ = 57.5, σ = 13/2 = 6.5.</li>
     <li><b>Interval vs ratio:</b> °C interval (sıfır keyfi), kelvin, boy, kilo, yaş ratio (gerçek sıfır). Oran yalnızca ratio'da anlamlı.</li>
     <li>(ΣX)² ile ΣX² <b>farklı</b>: önce topla sonra kare ≠ önce kare sonra topla.</li>
     <li>z tablosunda hangi alanın verildiğine bak: "0'dan z'ye" mi, "z'nin ötesi" mi?</li>
