@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><title>L2-B Basit Anlatım</title>
+<style>
+:root{
+  --ink:#1b2430; --muted:#5b6673; --line:#dfe5ea; --card:#ffffff; --soft:#f4f7f9;
+  --acc:#14707a; --acc2:#1d4f73; --accSoft:#e6f2f3; --warn:#b4471b; --warnSoft:#fdf1ea; --star:#e0a100;
+}
+@page{size:A4;margin:11mm 10mm 13mm}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Inter","Inter Display",system-ui,sans-serif;font-size:8.6pt;line-height:1.38;color:var(--ink);background:#fff}
+.hero{background:linear-gradient(120deg,var(--acc2),var(--acc));color:#fff;border-radius:9px;padding:11px 15px 10px;margin-bottom:9px}
+.hero .kick{font-size:7.2pt;letter-spacing:.14em;opacity:.85;text-transform:uppercase}
+.hero h1{font-family:"Inter Display","Inter",sans-serif;font-size:19pt;margin:2px 0 3px;font-weight:800}
+.hero .src{font-size:8pt;opacity:.92}
+.sec{display:flex;align-items:center;gap:7px;margin:11px 0 6px;border-bottom:1px solid var(--line);padding-bottom:3px;break-after:avoid}
+.sec .b{background:var(--acc);color:#fff;font-weight:800;font-size:8pt;width:17px;height:17px;border-radius:4px;display:flex;align-items:center;justify-content:center}
+.sec h2{font-family:"Inter Display","Inter",sans-serif;font-size:11.5pt;margin:0;color:var(--acc2)}
+.star{color:var(--star)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.span{grid-column:1/-1}
+.card{border:1px solid var(--line);border-radius:7px;padding:6px 8px 6px;background:var(--card);break-inside:avoid}
+.card.top{border-top:3px solid var(--acc)}
+.card h3{font-size:8.9pt;margin:0 0 4px;color:var(--acc);display:flex;align-items:baseline;gap:5px}
+.card h3 .ref{margin-left:auto;font-weight:500;color:var(--muted);font-size:7.2pt;white-space:nowrap}
+p{margin:2px 0}
+ul{margin:2px 0;padding-left:14px} li{margin:1px 0}
+table{width:100%;border-collapse:collapse;margin:3px 0}
+th{background:var(--accSoft);color:var(--acc2);text-align:left;font-weight:700;padding:2.5px 5px;font-size:8pt}
+td{padding:2.5px 5px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.kv td:first-child{width:23%;font-weight:700;color:var(--acc2);font-size:7.6pt;text-transform:uppercase;letter-spacing:.02em}
+.tree{font-family:"DejaVu Sans Mono",monospace;font-size:7.4pt;background:var(--soft);border-radius:5px;padding:5px 7px;white-space:pre;line-height:1.3;margin:3px 0}
+.f{font-family:"DejaVu Sans Mono",monospace;font-size:7.9pt;background:var(--soft);border-left:3px solid var(--acc);border-radius:3px;padding:4px 7px;margin:3px 0;white-space:pre-wrap}
+.tpl{font-family:"DejaVu Sans Mono",monospace;font-size:7.5pt;background:#fff;border:1px dashed #b9c6cf;border-radius:4px;padding:4px 7px;margin:3px 0;white-space:pre}
+.note{background:var(--warnSoft);border-left:3px solid var(--warn);border-radius:3px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.tip{background:var(--accSoft);border-radius:4px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.trap{border:1px solid #f0c8b3;background:var(--warnSoft);border-radius:7px;padding:6px 9px;break-inside:avoid}
+.trap h3{color:var(--warn);margin:0 0 3px;font-size:9pt}
+.quiz ol{padding-left:17px;margin:2px 0} .quiz li{margin:2.5px 0}
+.ans td:first-child{width:18px;font-weight:800;color:var(--acc)}
+b{font-weight:700}
+.pb{break-before:page}
+.foot{margin-top:7px;text-align:center;color:var(--muted);font-size:7pt}
+sub,sup{font-size:.72em}
+</style>
+</head><body>
+<div class="hero">
+  <div class="kick">MSE3271 · Metrology and Calibration · Lecture 2 — ikinci yarı</div>
+  <h1>L2-B · Basit Anlatım</h1>
+  <div class="src">Uncertainty · Type A / Type B · Calibration · Traceability · Standards · International System · Tolerance — günlük hayat örnekleriyle (L2 s.22–30, 44–76)</div>
+</div>
+
+<div class="tip" style="font-size:9pt"><b>Bütün bölümün tek sorusu:</b> "Bu ölçüme <b>neden güvenelim</b>?" Aşağıdaki her başlık bu soruya verilen cevabın bir parçası.</div>
+
+<!-- 1 -->
+<div class="sec"><div class="b">1</div><h2>Uncertainty: "şu kadar, artı eksi bu kadar"</h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Fikir</h3>
+    <p>Hava durumu "yarın tam 17.3 °C olacak" demez; <b>"15 ile 18 arası"</b> der. Çünkü emin değildir ve bunu dürüstçe söyler.</p>
+    <p>Ölçüm de böyledir. Hiçbir ölçüm kusursuz olmadığı için sonucu bir <b>aralıkla</b> veririz:</p>
+    <div class="f">25.03 ± 0.03 mm   →   "gerçek değer büyük ihtimalle 25.00 ile 25.06 arasında"</div>
+    <p>Buradaki <b>± 0.03</b> = <b>uncertainty</b> (belirsizlik) = "ne kadar emin değilim".</p>
+  </div>
+  <div class="card">
+    <h3>Error ile farkı (sınavda klasik)</h3>
+    <p>Gözün kapalı dart atıyorsun.</p>
+    <table class="kv">
+      <tr><td>Error</td><td>Okun merkezden <b>gerçek uzaklığı</b>. Gözün kapalı, merkezi görmüyorsun → <b>bilemezsin</b>.</td></tr>
+      <tr><td>Uncertainty</td><td>"Okum büyük ihtimalle şu <b>daire</b> içinde" demen. Bunu <b>tahmin edebilirsin</b>.</td></tr>
+    </table>
+    <div class="tip">Error = tek bir sayı, bilinemez · Uncertainty = şüphe aralığı, hesaplanır</div>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="sec"><div class="b">2</div><h2>Şüphe nereden gelir? → <span style="color:var(--acc)">SIMEO</span></h2></div>
+<div class="card">
+<table>
+  <tr><th>Harf</th><th>Source</th><th>Basit örnek</th></tr>
+  <tr><td><b>S</b></td><td><b>Sampling</b></td><td>Aynı partiden aldığın 3 numune birbirinin tıpatıp aynısı değil</td></tr>
+  <tr><td><b>I</b></td><td><b>Instrument</b></td><td>Cetvelin en küçük çizgisi 1 mm; daha incesini göremezsin (resolution)</td></tr>
+  <tr><td><b>M</b></td><td><b>Method</b></td><td>Hacmi su taşırarak ya da kenarları ölçerek bulmak farklı sonuç verir</td></tr>
+  <tr><td><b>E</b></td><td><b>Environment</b></td><td>Sıcak atölyede metal genleşir, cetvel de uzar</td></tr>
+  <tr><td><b>O</b></td><td><b>Operator</b></td><td>Kadrana yandan bakınca yanlış okursun (parallax)</td></tr>
+</table>
+</div>
+
+<!-- 3 -->
+<div class="sec"><div class="b">3</div><h2>Şüpheyi ölçmenin iki yolu: Type A ve Type B ★</h2></div>
+<div class="tip" style="font-size:9pt"><b>Örnek:</b> Mutfak tartısında 1 su bardağı unu tartıyorsun. "Bu sonuca ne kadar güveniyorum?" sorusuna iki ayrı yoldan cevap ararsın.</div>
+<div class="grid">
+  <div class="card top">
+    <h3>Type A = "Kendime tekrar tekrar sor"</h3>
+    <p>Unu <b>5 kez</b> tartıyorsun: 120, 122, 121, 119, 123 g.</p>
+    <p>Sonuçlar biraz oynuyor. Ne kadar oynadığına <b>kendi verilerinden, hesapla</b> bakarsın (standart sapma).</p>
+    <div class="f">u_A = s / √n</div>
+    <p>Ne kadar çok tartarsan şüphe o kadar <b>azalır</b> (n büyüdükçe u_A küçülür).</p>
+    <div class="tip">Type A = <b>senin tekrarlarından</b> gelen şüphe. Hesap makinesi yeter.</div>
+  </div>
+  <div class="card top">
+    <h3>Type B = "Etiketi oku"</h3>
+    <p>Ama ya tartının <b>kendisi</b> bozuksa? 5 tartımın hepsi birbirine yakın olabilir ama hepsi birlikte yanlış olabilir (Robin Hood'un adamı: oklar sıkı grup ama merkezin dışında).</p>
+    <p>Bunu <b>tekrar tartarak öğrenemezsin.</b> Tartının kutusunda ya da <b>kalibrasyon sertifikasında</b> yazan değere bakarsın: "doğruluk ±1 g".</p>
+    <div class="tip">Type B = <b>dışarıdan, belgeden</b> okuduğun şüphe: sertifika, üretici kataloğu, kılavuz, deneyim.</div>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="sec"><div class="b">4</div><h2>İki şüpheyi birleştir: Pisagor + "güvenlik payı"</h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Combined: dik üçgenin hipotenüsü</h3>
+    <p>İki şüpheyi <b>düz toplamayız</b>, çünkü ikisinin aynı anda en kötü yönde olması pek olası değil. Kareler toplamının karekökünü alırız. Bu tam olarak <b>Pisagor</b>:</p>
+    <div class="f">u_c = √(u_A² + u_B²)
+
+u_A = 0.03 , u_B = 0.04  →  u_c = √(0.0009+0.0016) = 0.05
+(3-4-5 üçgeni!)</div>
+  </div>
+  <div class="card">
+    <h3>Expanded: ×2 güvenlik payı</h3>
+    <p>u_c tek başına "ortalama şüphe"dir. Daha emin bir aralık vermek için <b>2 ile çarparız</b>:</p>
+    <div class="f">U = k · u_c = 2 × 0.05 = 0.10
+Sonuç: 25.00 ± 0.10 mm  (k = 2, ≈ %95)</div>
+    <p>Neden %95? L4–5'teki normal dağılım: verilerin ~%95'i ortalamanın <b>±2σ</b> içinde kalır.</p>
+  </div>
+</div>
+<div class="card" style="margin-top:7px">
+  <h3>Bütün süreç tek satırda</h3>
+  <div class="f">5 kez ölç → u_A = s/√n   +   sertifikayı oku → u_B   →   u_c = √(u_A²+u_B²)   →   U = 2·u_c   →   x ± U</div>
+</div>
+
+<!-- 5 -->
+<div class="sec"><div class="b">5</div><h2>Calibration: "saatini telefonla karşılaştır"</h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Fikir</h3>
+    <p>Evdeki saat 10:05, telefon 10:00. Telefona güveniyorsun (atomik saatten geliyor) → "<b>Saatim 5 dk ileri</b>."</p>
+    <p><b>Calibration</b> = cihazını, doğrusu bilinen bir <b>referansla</b> karşılaştırıp aradaki farkı bulmak ve <b>belgelemek</b>.</p>
+    <div class="tip">Ayar (adjustment) ayrı bir iş: saati çevirip 10:00'a getirmek. Kalibrasyon sadece "5 dk ileri" diye <b>not almak</b>.</div>
+  </div>
+  <div class="card">
+    <h3>Senin çözdüğün örnek</h3>
+    <table class="kv">
+      <tr><td>Referans</td><td>Buzlu su, sertifikası "0.0 °C" diyor (conventional true value)</td></tr>
+      <tr><td>Cihaz okuyor</td><td>0.4 °C</td></tr>
+      <tr><td>Syst. error</td><td>+0.4 °C (hep fazla gösteriyor)</td></tr>
+      <tr><td>Correction</td><td>−0.4 °C</td></tr>
+      <tr><td>Kullanım</td><td>37.6 okursan gerçek değer 37.2 °C ✅</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="sec"><div class="b">6</div><h2>Traceability: "Bunu kimden duydun?" ★</h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Fikir: haberin kaynağı</h3>
+    <p>Biri sana bir haber veriyor. "Kimden duydun?" diye soruyorsun: "Ali'den." Ali kimden duymuş? "Resmî Gazete'den." Kaynak sağlam ve her adım belli → <b>güvenirsin</b>.</p>
+    <p>"Bilmem, bir yerde duydum" derse → <b>güvenmezsin</b>.</p>
+    <p><b>Traceability</b> = ölçümünün "kimden duydun?" zincirinin <b>kesintisiz</b> şekilde en tepeye (SI / BIPM) kadar çıkabilmesi. Her halkada bir <b>kalibrasyon sertifikası</b> var.</p>
+  </div>
+  <div class="card">
+    <h3>Zincir (aşağıdan yukarı oku)</h3>
+    <div class="tree">BIPM / SI                         ± 0.0001
+  ↑ kalibre
+UME (ulusal standart)             ± 0.001
+  ↑ kalibre
+Lab'ın gauge block'u              ± 0.005
+  ↑ kalibre
+Senin kumpasın                    ± 0.010
+  ↑
+Senin ölçümün                     ± 0.03</div>
+    <p style="font-size:7.6pt;color:var(--muted)">(sayılar fikir vermek için örnek)</p>
+  </div>
+</div>
+<div class="grid" style="margin-top:7px">
+  <div class="card">
+    <h3>Fotokopinin fotokopisi</h3>
+    <p>Bir belgenin fotokopisini, sonra onun fotokopisini çekersen <b>her seferinde biraz bulanıklaşır</b>. Hiçbir kopya, kopyalandığı belgeden <b>daha net olamaz</b>.</p>
+    <p>Zincir de böyle: <b>aşağı indikçe uncertainty büyür</b>, hiçbir basamak üstündekinden daha az şüpheli olamaz. (Traceability tower kuralı)</p>
+  </div>
+  <div class="card">
+    <h3>Zincir ne zaman kopar?</h3>
+    <p>Her halkada 4 şart: <b>uncertainty yazılı</b> · <b>prosedür belgelenmiş</b> · <b>yetkin kişi</b> yapmış · <b>süresi geçerli</b>.</p>
+    <p>Biri eksikse, örneğin sertifikanın süresi dolmuşsa, <b>kule çöker</b>: o noktadan aşağısı traceable değildir.</p>
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="sec"><div class="b">7</div><h2>Type B ↔ Traceability bağlantısı (eksik olan parça)</h2></div>
+<div class="card">
+  <div class="grid">
+    <div>
+      <p><b>Market örneği:</b> Bir ürünün <b>etiketinde</b> "500 g" yazıyor. Etikete neden güveniyorsun? Çünkü fabrikanın tartısı denetleniyor, denetçinin tartısı kalibre edilmiş, o da UME'ye bağlı.</p>
+      <ul>
+        <li><b>Etiket</b> = kalibrasyon sertifikası → üstündeki "±" değeri = senin <b>Type B</b>'n</li>
+        <li><b>Etiketin arkasındaki denetim zinciri</b> = <b>traceability</b></li>
+      </ul>
+    </div>
+    <div>
+      <table class="kv">
+        <tr><td>Type A</td><td>Elinden gelen şüphe → <b>kendin hesaplarsın</b></td></tr>
+        <tr><td>Type B</td><td>Cihazından gelen şüphe → <b>sertifikadan okursun</b></td></tr>
+        <tr><td>Traceability</td><td>O sertifikadaki sayının <b>uydurma olmadığının garantisi</b></td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="note"><b>Sertifikasız ucuz kumpas:</b> 10 ölçüm birbirine çok yakın → Type A küçük, <b>precise</b>. Ama sertifika yok → Type B <b>bilinmiyor</b>, traceability <b>yok</b>. Kumpas sistematik olarak 0.2 mm kaymış olabilir ve bunu asla anlayamazsın. "Çok güvenilir" demek <b>yanlış</b>: tutarlı (precise) ama doğruluğu (accuracy) kanıtlanamaz.</div>
+</div>
+
+<!-- 8 -->
+<div class="sec"><div class="b">8</div><h2>Standards (etalon): ana anahtar ve kopyaları</h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Anahtar benzetmesi</h3>
+    <div class="tree">PRIMARY    = ana anahtar (kasada; UME / NIST)
+             en iyisi, başka anahtara bakılarak yapılmadı
+ SECONDARY  = ana anahtardan kopyalanan yedek
+ WORKING    = yedekten kopyalanan, her gün kullanılan
+             ara ara yedeğe tutup kontrol edilir</div>
+    <p>Her kopya bir öncekinden biraz daha az mükemmel → yine "aşağı indikçe uncertainty büyür".</p>
+  </div>
+  <div class="card">
+    <h3>Diğer üç tür</h3>
+    <table class="kv">
+      <tr><td>National</td><td>Devletin "ülkede bu esas alınır" dediği standart</td></tr>
+      <tr><td>Reference</td><td>Bir kurumdaki en iyi standart: "bu lab'daki her şey buna göre"</td></tr>
+      <tr><td>Transfer</td><td>İki standardı karşılaştırmak için kullanılan aracı ("kurye")</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="sec"><div class="b">9</div><h2>Uluslararası sistem: dünya ölçümde nasıl anlaşıyor?</h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Devlet yapısı gibi düşün</h3>
+    <table class="kv">
+      <tr><td>Metre Convention</td><td><b>Anayasa</b>: 1875'te 17 ülkenin imzaladığı antlaşma</td></tr>
+      <tr><td>CGPM</td><td><b>Meclis</b>: üye ülkelerin delegeleri; SI'ı kabul eder</td></tr>
+      <tr><td>CIPM</td><td><b>Yönetim kurulu</b>: 18 kişi; BIPM'i denetler</td></tr>
+      <tr><td>CC</td><td><b>Danışmanlar</b>: teknik komiteler</td></tr>
+      <tr><td>BIPM</td><td><b>Merkez laboratuvar</b>: Sèvres/Paris</td></tr>
+    </table>
+    <div class="tip">Ezber kodu: <b>"Countries Gather, Committee Builds"</b> → <b>C</b>onvention → <b>C</b>GPM → <b>C</b>IPM → <b>B</b>IPM</div>
+  </div>
+  <div class="card">
+    <h3>3 seviye + MRA</h3>
+    <p><b>Global</b> (BIPM) → <b>Regional</b> (RMO: EURAMET, APMP…) → <b>National</b> (NMI: UME, NIST, NPL)</p>
+    <p><b>CIPM MRA</b> = "senin sertifikanı ben de tanırım" anlaşması. UME'nin verdiği sertifika Almanya'da da geçerli olur; sanayi ve ticaret buna dayanır.</p>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="sec"><div class="b">10</div><h2>Tolerance: oyunun kuralı ≠ gözlüğünün bulanıklığı</h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Tolerance</h3>
+    <p>Tasarımcının koyduğu <b>kural</b>: "Mil 10 ± 0.1 mm olsun." 9.9–10.1 arası → <b>kabul</b>, dışı → <b>red</b>. Range = 10.1 − 9.9 = 0.2 mm.</p>
+  </div>
+  <div class="card">
+    <h3>Tolerance vs Uncertainty</h3>
+    <p><b>Tolerance</b> = <b>parçaya</b> konan kural. <b>Uncertainty</b> = <b>ölçümünün</b> bulanıklığı.</p>
+    <p>Gözlüğün kuralın kendisinden daha bulanıksa karar veremezsin: tolerans ±0.02 mm iken cihazın ±0.05 mm ise parça iyi mi kötü mü bilemezsin → <b>daha hassas cihaz lazım</b>.</p>
+    <div class="note">Genel kural (slaytta yok): cihazın uncertainty'si toleransın yaklaşık <b>1/10</b>'u kadar olmalı.</div>
+  </div>
+</div>
+
+<!-- summary -->
+<div class="sec"><div class="b">✓</div><h2>5 cümlede L2-B</h2></div>
+<div class="card">
+<ol style="margin:2px 0;padding-left:17px">
+  <li><b>Uncertainty</b>: sonucu "x ± U" diye vermek; ± kısmı ne kadar emin olmadığın.</li>
+  <li><b>Type A</b> kendi tekrarlarından hesaplanır, <b>Type B</b> sertifikadan okunur; Pisagorla birleştir, ×2 yap (%95).</li>
+  <li><b>Calibration</b>: cihazını doğrusu bilinen referansla karşılaştırıp farkı belgelemek (ayar ayrı bir iş).</li>
+  <li><b>Traceability</b>: kalibrasyonların kesintisiz zinciri SI'a çıkıyor; Type B'ye güvenmenin sebebi bu. Aşağı indikçe uncertainty büyür.</li>
+  <li><b>Standards</b> primary → secondary → working; dünya <b>Convention → CGPM → CIPM → BIPM</b> ile anlaşır; <b>tolerance</b> parçanın kuralı, uncertainty ölçümün bulanıklığı.</li>
+</ol>
+</div>
+
+</body></html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><title>Lecture 3 Bolum A Cheat Sheet</title>
+<style>
+:root{
+  --ink:#1b2430; --muted:#5b6673; --line:#dfe5ea; --card:#ffffff; --soft:#f4f7f9;
+  --acc:#14707a; --acc2:#1d4f73; --accSoft:#e6f2f3; --warn:#b4471b; --warnSoft:#fdf1ea; --star:#e0a100;
+}
+@page{size:A4;margin:11mm 10mm 13mm}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Inter","Inter Display",system-ui,sans-serif;font-size:8.6pt;line-height:1.38;color:var(--ink);background:#fff}
+.hero{background:linear-gradient(120deg,var(--acc2),var(--acc));color:#fff;border-radius:9px;padding:11px 15px 10px;margin-bottom:9px}
+.hero .kick{font-size:7.2pt;letter-spacing:.14em;opacity:.85;text-transform:uppercase}
+.hero h1{font-family:"Inter Display","Inter",sans-serif;font-size:19pt;margin:2px 0 3px;font-weight:800}
+.hero .src{font-size:8pt;opacity:.92}
+.sec{display:flex;align-items:center;gap:7px;margin:11px 0 6px;border-bottom:1px solid var(--line);padding-bottom:3px;break-after:avoid}
+.sec .b{background:var(--acc);color:#fff;font-weight:800;font-size:8pt;width:17px;height:17px;border-radius:4px;display:flex;align-items:center;justify-content:center}
+.sec h2{font-family:"Inter Display","Inter",sans-serif;font-size:11.5pt;margin:0;color:var(--acc2)}
+.star{color:var(--star)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.span{grid-column:1/-1}
+.card{border:1px solid var(--line);border-radius:7px;padding:6px 8px 6px;background:var(--card);break-inside:avoid}
+.card.top{border-top:3px solid var(--acc)}
+.card h3{font-size:8.9pt;margin:0 0 4px;color:var(--acc);display:flex;align-items:baseline;gap:5px}
+.card h3 .ref{margin-left:auto;font-weight:500;color:var(--muted);font-size:7.2pt;white-space:nowrap}
+p{margin:2px 0}
+ul{margin:2px 0;padding-left:14px} li{margin:1px 0}
+table{width:100%;border-collapse:collapse;margin:3px 0}
+th{background:var(--accSoft);color:var(--acc2);text-align:left;font-weight:700;padding:2.5px 5px;font-size:8pt}
+td{padding:2.5px 5px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.kv td:first-child{width:23%;font-weight:700;color:var(--acc2);font-size:7.6pt;text-transform:uppercase;letter-spacing:.02em}
+.tree{font-family:"DejaVu Sans Mono",monospace;font-size:7.4pt;background:var(--soft);border-radius:5px;padding:5px 7px;white-space:pre;line-height:1.3;margin:3px 0}
+.f{font-family:"DejaVu Sans Mono",monospace;font-size:7.9pt;background:var(--soft);border-left:3px solid var(--acc);border-radius:3px;padding:4px 7px;margin:3px 0;white-space:pre-wrap}
+.tpl{font-family:"DejaVu Sans Mono",monospace;font-size:7.5pt;background:#fff;border:1px dashed #b9c6cf;border-radius:4px;padding:4px 7px;margin:3px 0;white-space:pre}
+.note{background:var(--warnSoft);border-left:3px solid var(--warn);border-radius:3px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.tip{background:var(--accSoft);border-radius:4px;padding:4px 7px;margin:4px 0;font-size:8pt}
+.trap{border:1px solid #f0c8b3;background:var(--warnSoft);border-radius:7px;padding:6px 9px;break-inside:avoid}
+.trap h3{color:var(--warn);margin:0 0 3px;font-size:9pt}
+.quiz ol{padding-left:17px;margin:2px 0} .quiz li{margin:2.5px 0}
+.ans td:first-child{width:18px;font-weight:800;color:var(--acc)}
+b{font-weight:700}
+.pb{break-before:page}
+.foot{margin-top:7px;text-align:center;color:var(--muted);font-size:7pt}
+sub,sup{font-size:.72em}
+</style>
+</head><body>
+<div class="hero">
+  <div class="kick">MSE3271 · Metrology and Calibration · YTÜ Metalurji ve Malzeme Müh.</div>
+  <h1>Lecture 3 · Bölüm A · Cheat Sheet</h1>
+  <div class="src">Kaynak: Doç. Dr. Nilüfer Duygulu, Lecture 3 (PDF 3) "Measurement Techniques and Evaluation" · Bölüm A: slayt 1–64 (ölçüm türleri, ölçüm sonucu, hata hesapları) · Şablon özet + hesap örnekleri + mini test + cevap anahtarı</div>
+</div>
+
+<!-- A -->
+<div class="sec"><div class="b">A</div><h2>Ölçüm türleri: 3 çift <span class="star">★</span></h2></div>
+<div class="grid">
+  <div class="card span">
+    <h3>Bir ölçüm aynı anda 3 soruya cevap verir <span class="ref">slayt 3–13</span></h3>
+    <table>
+      <tr><th style="width:17%">Çift</th><th style="width:20%">Sorduğu soru</th><th>Birinci tür</th><th>İkinci tür</th></tr>
+      <tr><td><b>Direct / Indirect</b><br><span style="color:var(--muted)">(doğrudan / dolaylı)</span></td><td>Okudum mu, hesapladım mı?</td>
+        <td><b>Direct:</b> değer cihazdan doğrudan okunur. Ör: parça boyu kumpas veya CMM ile. <i>Avantaj:</i> hızlı, basit · <i>Sınır:</i> cihazın hassasiyeti</td>
+        <td><b>Indirect:</b> başka ölçülen büyüklüklerden hesaplanır. Ör: kütle ve hacimden yoğunluk, ρ = m/V</td></tr>
+      <tr><td><b>Absolute / Comparative</b><br><span style="color:var(--muted)">(mutlak / karşılaştırmalı)</span></td><td>Temel birimden mi, referansla kıyasla mı?</td>
+        <td><b>Absolute:</b> temel SI birimlerine dayanır. Ör: kütleyi kuvvet ve yerçekimi ivmesinden bulmak</td>
+        <td><b>Comparative (relative):</b> bilinen bir referansla kıyaslanır. Ör: işlenmiş parçayı <b>gauge block</b> (mastar blok) ile kontrol etmek</td></tr>
+      <tr><td><b>Static / Dynamic</b><br><span style="color:var(--muted)">(durağan / değişken)</span></td><td>Ölçülen şey zamanla değişiyor mu?</td>
+        <td><b>Static:</b> sabit ya da çok yavaş değişen büyüklük. Ör: duran milin çapı, sabit yük altında kirişin eğilmesi</td>
+        <td><b>Dynamic:</b> ölçüm sırasında değişen büyüklük. Ör: borudaki akış hızı, titreşen kiriş, ivme, zamanla değişen sıcaklık</td></tr>
+    </table>
+    <div class="tip"><b>Static kuralı:</b> cihazın ölçüm süresi, büyüklüğün değişme süresinden <b>kısaysa</b> ölçüm static'tir. · Dynamic sistemler <b>0., 1. ve 2. dereceden diferansiyel denklemlerle</b> tanımlanır. · Ezber kodu: <b>DAS</b> → <b>D</b>irect · <b>A</b>bsolute · <b>S</b>tatic</div>
+  </div>
+
+  <div class="card">
+    <h3>Method ve measuring system <span class="ref">slayt 14–15</span></h3>
+    <table class="kv">
+      <tr><td>Method</td><td>Ölçümdeki işlemlerin <b>genel mantığı</b> (Lecture 1'deki procedure'ın method adımı)</td></tr>
+      <tr><td>Measuring system</td><td>Ölçüm için bir araya getirilmiş bir veya daha fazla cihaz ve yardımcı malzemeler. <b>Tek bir cihaz da</b> measuring system olabilir.</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Örnek sınıflandırma</h3>
+    <table>
+      <tr><th>Ölçüm</th><th>Sınıf</th></tr>
+      <tr><td>Duran mili kumpasla ölçmek</td><td>direct · comparative · static</td></tr>
+      <tr><td>Silindirin çap ve boyundan hacim</td><td>indirect · static</td></tr>
+      <tr><td>Çalışan motorun titreşimi</td><td>dynamic</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- B -->
+<div class="sec"><div class="b">B</div><h2>Ölçüm sonucu ve üç tür değer</h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Measurement result (ölçüm sonucu) <span class="ref">slayt 16–19</span></h3>
+    <ul>
+      <li>Ölçülen büyüklüğe atanan değerler + ilgili diğer bilgiler</li>
+      <li>Genelde <b>tek değer ± uncertainty</b> olarak yazılır: 25.03 ± 0.03 mm</li>
+      <li>Uncertainty ihmal edilebilecek kadar küçükse <b>sadece değer</b> yazılabilir</li>
+      <li>Eski kitaplarda "sonuç" kelimesi üç anlamda kullanılırdı: cihazın gösterdiği değer (indication), düzeltilmemiş sonuç, düzeltilmiş sonuç</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Üç tür değer <span class="star">★</span> <span class="ref">slayt 20–33</span></h3>
+    <table class="kv">
+      <tr><td>Measured q. value</td><td><b>Ölçerek bulduğun</b> değer. Tekrarlı ölçümde ortalama veya median alınır; uncertainty küçülür. GUM'daki adı: "estimate of the measurand"</td></tr>
+      <tr><td>True q. value</td><td>Tanıma tam uyan değer → <b>bilinemez</b>. <i>Error approach:</i> tek gerçek değer var ama bilinemez. <i>Uncertainty approach:</i> tanım kusursuz olmadığından bir <b>dizi</b> gerçek değer var. İstisna: <b>temel fiziksel sabitlerin tek bir</b> gerçek değeri var.</td></tr>
+      <tr><td>Conventional q. value</td><td><b>Anlaşmayla</b> kabul edilen değer. Örnekler: g<sub>n</sub> = 9.806 65 m/s² · Josephson sabiti K<sub>J-90</sub> = 483 597.9 GHz/V · kütle standardı m = 100.003 47 g</td></tr>
+    </table>
+    <div class="note">"Conventional <b>true</b> value" ifadesi artık <b>tavsiye edilmiyor</b> (Lecture 1 eski ifadeyi kullanıyor; aynı kavram). Belirsizliği çok küçük, hatta <b>sıfır</b> kabul edilebilir.</div>
+  </div>
+</div>
+
+<!-- C -->
+<div class="sec"><div class="b">C</div><h2>Uncertainty ve hata hesapları <span class="star">★</span></h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Uncertainty notları <span class="ref">slayt 34–44</span></h3>
+    <ul>
+      <li>Tanım: değerlerin dağılımını gösteren <b>negatif olmayan</b> sayı (uncertainty asla eksi olmaz)</li>
+      <li><b>Sistematik etkilerden</b> gelen bileşenleri de içerir (düzeltmenin ve standardın belirsizliği). Bazen sistematik hata düzeltilmez, uncertainty'ye eklenir.</li>
+      <li>Standart sapma (<b>standard uncertainty</b>) ya da bir aralığın <b>yarı genişliği</b> olarak verilir</li>
+      <li><b>Type A:</b> deneyi yapanın kendi verisinden; <b>ortalamanın standart sapması</b> = standard uncertainty · <b>Type B:</b> tekrarlı ölçüm olmadan, tüm bilgilere dayanan tahmin</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Kaynakların 3 grubu <span class="ref">slayt 39</span></h3>
+    <table class="kv">
+      <tr><td>Human</td><td>Cihazı kullanma şekli, test düzeneğinin bakımı</td></tr>
+      <tr><td>Technical</td><td>Test yöntemi, malzemenin özellikleri, kalibrasyon</td></tr>
+      <tr><td>Environmental</td><td>Test ortamı, rastgele etkiler</td></tr>
+    </table>
+    <div class="tip">Lecture 2'deki <b>SIMEO</b> ile eşleşme: Human ≈ Operator · Technical ≈ Instrument + Method + Sampling · Environmental ≈ Environment · Ezber kodu: <b>HTE</b></div>
+  </div>
+
+  <div class="card span">
+    <h3>Metre çubuğu örneği <span class="ref">slayt 44</span></h3>
+    <p>Sertifika: 0 ile 1000 mm çizgileri arası <b>1000.045 ± 0.005 mm</b> → <b>−0.045 mm = correction</b> (çubuk 0.045 mm uzun) · <b>0.005 mm = uncertainty</b> · Ek Type B kaynağı: skala <b>çizgilerinin kalınlığı</b>. Correction ve uncertainty <b>ayrı</b> şeylerdir.</p>
+    <p><b>"Error" kelimesinin iki anlamı (slayt 45):</b> ① ölçülen ile gerçek değer arasındaki fark · ② öngörülen belirsizlik ("hata payı"). Tek ölçüm sonucun güvenilirliğini göstermez; analizler en az iki kez yapılır (replicate samples).</p>
+  </div>
+
+  <div class="card top">
+    <h3>Formüller <span class="ref">slayt 47–53</span></h3>
+    <div class="f">Ortalama (mean)   x̄ = Σxᵢ / N
+Sapma (deviation) dᵢ = xᵢ − x̄            (precision ölçüsü)
+Absolute error    E  = xᵢ − xₜ           [ölçülen birim]
+Relative error    Eᵣ = (xᵢ − xₜ)/xₜ × 100  [%]</div>
+    <p><b>Median:</b> küçükten büyüğe sırala → ortadaki. Veri sayısı <b>tek</b> ise tam ortadaki; <b>çift</b> ise ortadaki iki değerin ortalaması.</p>
+    <p><b>Precision:</b> ölçümlerin birbirine yakınlığı · <b>Accuracy:</b> gerçek değere yakınlık; ölçüsü hatanın büyüklüğü. Gerçek değer bilinmediği için tam belirlenemez.</p>
+    <div class="note">Lecture 3'teki relative error <b>"ölçülen − gerçek"</b>, Lecture 2'deki % error <b>"gerçek − ölçülen"</b> kullanıyor → sadece <b>işaret</b> farklı, büyüklük aynı.</div>
+  </div>
+
+  <div class="card top">
+    <h3>Örnek 1: Demir analizi <span class="ref">slayt 49–50</span></h3>
+    <p><b>Verilen:</b> gerçek değer 20.00 ppm · 6 ölçüm: 19.4 · 19.5 · 19.6 · 19.8 · 20.1 · 20.3</p>
+    <div class="f">Ortalama = 118.7 / 6 = 19.78 ≈ 19.8 ppm
+Median: 6 veri (çift) → 3. ve 4. değer
+       = (19.6 + 19.8) / 2 = 19.7 ppm
+E  = 19.78 − 20.00 = −0.22 ppm
+Eᵣ = −0.22 / 20.00 × 100 = −1.1 %</div>
+  </div>
+
+  <div class="card top span">
+    <h3>Örnek 2: Lityumun molar kütlesi <span class="ref">slayt 54–55</span></h3>
+    <table>
+      <tr><th>Deney</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+      <tr><th>g/mol</th><td>6.9391</td><td>6.9407</td><td>6.9409</td><td>6.9399</td><td>6.9407</td><td>6.9391</td><td>6.9406</td></tr>
+      <tr><th>Sıralı</th><td>6.9391</td><td>6.9391</td><td>6.9399</td><td><b>6.9406</b></td><td>6.9407</td><td>6.9407</td><td>6.9409</td></tr>
+    </table>
+    <div class="f">Gerçek değer xₜ = 6.941 g/mol
+Ortalama = 48.581 / 7 = 6.940 g/mol
+Median   = 7 veri (tek) → 4. sıradaki = 6.9406 g/mol
+E  = 6.940 − 6.941 = −0.001 g/mol      (ölçülen biraz küçük)
+Eᵣ = −0.001 / 6.941 × 100 = −0.0144 %   (on binde 1.4 → çok doğru)</div>
+  </div>
+
+  <div class="card span">
+    <h3>Measurement error <span class="ref">slayt 56–58</span></h3>
+    <table>
+      <tr><th style="width:20%"></th><th>Tanım</th><th>Not</th></tr>
+      <tr><td><b>Measurement error</b></td><td>ölçülen değer − referans değer</td><td><b>Production error</b> (parçanın yanlış üretilmesi) ve <b>mistake</b> (yanlış okuma, dikkatsizlik) ile karıştırılmaz</td></tr>
+      <tr><td><b>Systematic error</b></td><td>(sonsuz ölçümün ortalaması) − gerçek değer</td><td>= toplam hata − random error · gerçek değer gibi <b>tam bilinemez</b></td></tr>
+      <tr><td><b>Random error</b></td><td>ölçüm sonucu − (sonsuz ölçümün ortalaması)</td><td>= toplam hata − systematic error · sonlu ölçüm yapıldığından yalnızca <b>tahmini</b> bulunur</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- D -->
+<div class="sec"><div class="b">D</div><h2>Measurable quantity ve quantity dimension</h2></div>
+<div class="grid">
+  <div class="card">
+    <h3>Measurable quantity <span class="ref">slayt 59–61</span></h3>
+    <p>Bir olayın, cismin ya da maddenin nitelik olarak ayırt edilebilen ve <b>sayıyla ifade edilebilen</b> özelliği. Ör: iş, ısı miktarı, enerji, kalınlık, dalga boyu.</p>
+    <table class="kv">
+      <tr><td>Kütle</td><td>Cismin özelliği; <b>kilogram</b> ile sayıya çevrilir</td></tr>
+      <tr><td>Sertlik ★</td><td>Sayısı <b>prosedüre bağlı</b>: aynı malzeme Rockwell ve Vickers'ta <b>farklı sayılar</b> verir</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3>Quantity dimension (boyut) <span class="ref">slayt 62–64</span></h3>
+    <p>Büyüklüğün temel büyüklüklere bağlılığını <b>üslerle</b> yazmak (sayısal katsayı atılır). <b>L</b> length · <b>M</b> mass · <b>T</b> time</p>
+    <div class="f">Kuvvet  F = m·a → kg·m/s²     → dim F = L M T⁻²
+Hız     m/s                   → L T⁻¹
+Yoğunluk kg/m³                → M L⁻³
+Basınç  N/m² = kg/(m·s²)      → L⁻¹ M T⁻²</div>
+    <p><b>ISQ</b> (International System of Quantities): 7 temel büyüklüğe dayanır, ISO 80000 / IEC 80000'de yayımlanır. <b>SI, ISQ'ya dayanır</b> (ISQ büyüklükleri, SI birimleri tanımlar).</p>
+  </div>
+</div>
+
+<!-- G -->
+<div class="sec"><div class="b">G</div><h2>Tek bakışta: karıştırılan çiftler</h2></div>
+<div class="card">
+<table>
+  <tr><th>A</th><th>B</th><th>Fark</th></tr>
+  <tr><td><b>Direct</b></td><td><b>Indirect</b></td><td>doğrudan okunur ↔ başka ölçümlerden hesaplanır</td></tr>
+  <tr><td><b>Absolute</b></td><td><b>Comparative</b></td><td>temel SI birimlerine dayanır ↔ bilinen referansla kıyaslanır</td></tr>
+  <tr><td><b>Static</b></td><td><b>Dynamic</b></td><td>büyüklük sabit ↔ ölçüm sırasında değişiyor</td></tr>
+  <tr><td><b>Mean</b></td><td><b>Median</b></td><td>toplam / N ↔ sıralı listenin ortası</td></tr>
+  <tr><td><b>Absolute error</b></td><td><b>Relative error</b></td><td>birimli fark ↔ yüzde</td></tr>
+  <tr><td><b>Measurement error</b></td><td><b>Production error / mistake</b></td><td>ölçüm sürecinin doğası ↔ parçanın kusuru / insanın dikkatsizliği</td></tr>
+</table>
+</div>
+
+<div class="trap" style="margin-top:7px">
+  <h3>⚠️ Sınav tuzakları ve slayttaki hatalar</h3>
+  <ul>
+    <li><b>Slayt 50:</b> median hesabının başında "Mean = (19.6 + 19.8)/2" yazıyor → doğrusu <b>Median</b>. Sonuç (19.7 ppm) doğru.</li>
+    <li><b>Slayt 51:</b> "Accuracy indicates the reproducibility" yazıyor → doğrusu <b>Precision</b>. Precision = tekrarlanabilirlik, accuracy = gerçek değere yakınlık.</li>
+    <li><b>Slayt 55:</b> relative error "% 0.01441" diye işaretsiz yazılmış → formüle göre <b>−0.0144 %</b>.</li>
+    <li>Median'da veriyi <b>sıralamayı unutma</b>. Çift sayıda veride ortadaki <b>iki</b> değerin ortalamasını al.</li>
+    <li>Uncertainty <b>negatif olamaz</b>. Error negatif olabilir.</li>
+    <li>Sertlik, sonucu <b>prosedüre bağlı</b> bir büyüklük: Rockwell ≠ Vickers.</li>
+  </ul>
+</div>
+
+<!-- H -->
+<div class="sec"><div class="b">H</div><h2>Mini test (10 soru)</h2></div>
+<div class="card quiz">
+<ol>
+  <li>Ölçüm türlerinin 3 çiftini yazınız ve her birine bir örnek veriniz.</li>
+  <li>Bir öğrenci silindirin çapını ve boyunu kumpasla ölçüp hacmini hesaplıyor. Ölçümü direct/indirect ve static/dynamic olarak sınıflandırınız.</li>
+  <li>True quantity value ile conventional quantity value farkı nedir? Slayttaki bir conventional value örneğini yazınız.</li>
+  <li>Belirsizlik kaynaklarının 3 grubunu yazınız.</li>
+  <li>Bir metre çubuğunun sertifikasında "1000.045 ± 0.005 mm" yazıyor. Correction ve uncertainty nedir?</li>
+  <li>Ölçümler: 12.1, 12.4, 12.2, 12.6, 12.3. Ortalama ve median nedir?</li>
+  <li>Gerçek değer 20.00 ppm, ortalama 19.78 ppm. Absolute ve relative error'u hesaplayınız.</li>
+  <li>Measurement error, production error ve mistake arasındaki fark nedir?</li>
+  <li>Sertlik ölçümü kütle ölçümünden neden farklıdır?</li>
+  <li>Basıncın quantity dimension'ını yazınız.</li>
+</ol>
+</div>
+
+<div class="sec"><div class="b">✓</div><h2>Cevap anahtarı</h2></div>
+<div class="card">
+<table class="ans">
+  <tr><td>1</td><td><b>Direct</b> (kumpasla boy) / <b>indirect</b> (ρ = m/V) · <b>absolute</b> (kütleyi kuvvet ve g'den bulmak) / <b>comparative</b> (gauge block ile kontrol) · <b>static</b> (duran milin çapı) / <b>dynamic</b> (titreşen kiriş)</td></tr>
+  <tr><td>2</td><td><b>Indirect</b> (hacim hesaplanıyor) · <b>static</b> (silindir değişmiyor)</td></tr>
+  <tr><td>3</td><td>True value tanıma tam uyan değerdir ve <b>bilinemez</b>. Conventional value ise <b>anlaşmayla kabul edilen</b> değerdir. Ör: g<sub>n</sub> = 9.806 65 m/s² · kütle standardı 100.003 47 g · K<sub>J-90</sub> = 483 597.9 GHz/V</td></tr>
+  <tr><td>4</td><td><b>Human</b> (kullanım, bakım) · <b>Technical</b> (yöntem, malzeme, kalibrasyon) · <b>Environmental</b> (ortam, rastgele etkiler)</td></tr>
+  <tr><td>5</td><td>Correction = <b>−0.045 mm</b> (çubuk uzun) · uncertainty = <b>0.005 mm</b></td></tr>
+  <tr><td>6</td><td>Ortalama = 61.6 / 5 = <b>12.32</b> · sıralı: 12.1, 12.2, <b>12.3</b>, 12.4, 12.6 → median = <b>12.3</b></td></tr>
+  <tr><td>7</td><td>E = 19.78 − 20.00 = <b>−0.22 ppm</b> · E<sub>r</sub> = −0.22 / 20.00 × 100 = <b>−1.1 %</b></td></tr>
+  <tr><td>8</td><td>Measurement error ölçüm sürecinden gelir (ölçülen − referans). Production error <b>parçanın</b> yanlış üretilmesidir. Mistake <b>insanın</b> dikkatsizliğidir (yanlış okuma).</td></tr>
+  <tr><td>9</td><td>Sertliğin sayısı <b>prosedüre bağlıdır</b>: aynı malzeme Rockwell ve Vickers'ta farklı sayılar verir. Kütle her yöntemde kilogram cinsinden aynıdır.</td></tr>
+  <tr><td>10</td><td>Pa = N/m² = kg/(m·s²) → <b>dim p = L⁻¹ M T⁻²</b></td></tr>
+</table>
+</div>
+</body></html>
