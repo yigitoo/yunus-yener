@@ -9,6 +9,7 @@ Claude burada ders asistanı olarak çalışır: not düzenler, konu anlatır, s
 - Yunus'la **Türkçe** konuş.
 - Dersler İngilizce (ders kodları `MSE`). Teknik terimleri **İngilizce bırak**, ilk geçtiği yerde Türkçesini parantez içinde ver. Örnek: *pitting corrosion (oyuk korozyonu)*.
 - Not dosyalarını Türkçe yaz; formül, birim ve terimler İngilizce/SI kalsın.
+- **Ders/dosya adlarını kısaltma.** "L3", "s.44", "Ş1" gibi kendi uydurduğun kısaltmaları kullanma; "Lecture 3 (3. PDF)", "slayt 44" diye açık yaz. Yunus slaytlara "PDF 1, PDF 2…" diyor.
 - **Ezber kodları, kısaltmalar, akronimler, listeler İngilizce kurulur.** Dersler ve sınavlar İngilizce; Türkçe açıklama yalnızca anlamayı kolaylaştırmak için. Akronim harfleri İngilizce terimlerden gelsin (ör. uncertainty kaynakları → **SIMEO**: Sampling, Instrument, Method, Environment, Operator), Türkçe karşılık gerekirse yanına parantezle.
 
 ## Repo Haritası
