@@ -42,5 +42,7 @@
 
 ## Sınav Hazırlık
 
+- **Vize:** 20.11.2026 Cuma 15:30–16:45 · KMB-317 → [vize özeti](sinavlar/vize-ozet.md) (Blok 1–3 hazır)
+
 - Önemli formüller / diyagramlar:
 - Sık çıkan soru tipleri:
