@@ -10,7 +10,7 @@
 | 1 | Kinetik nedir, reaction rate | 5–15 | ✅ |
 | 2 | Reaksiyonların sınıflandırılması | 16–23 | ✅ |
 | 3 | 0., 1., 2., n. derece reaksiyonlar, half-life | 24–49 | ✅ |
-| 4 | Reaksiyon derecesini bulma yöntemleri | 50–66 | ⏳ |
+| 4 | Reaksiyon derecesini bulma yöntemleri ([PDF](blok-4-reaksiyon-derecesi-bulma.pdf)) | 50–66 | ✅ |
 | 5 | Molecularity; reversible, consecutive, parallel reactions | 67–71 | ⏳ |
 | 6 | Sıcaklık etkisi: Arrhenius, activation energy | 72–82 | ⏳ |
 
@@ -164,10 +164,33 @@ Genel kural: $t_{1/2} \propto a^{\,1-n}$. Bu kural Blok 4'teki half-life yöntem
 
 ---
 
+## Blok 4 — Reaksiyon derecesini bulma yöntemleri
+
+> Ayrıntılı, grafikli ve alıştırmalı anlatım: [blok-4-reaksiyon-derecesi-bulma.pdf](blok-4-reaksiyon-derecesi-bulma.pdf)
+
+| Yöntem | Girdi | Doğrusal ilişki | $n$ | $k$ |
+|---|---|---|---|---|
+| Integration | $C$–$t$ | — | $k$'yı sabit veren derece | sabit $k$'ların ortalaması |
+| Graphic | $C$–$t$ | $C$, $\ln C$, $1/C$ – $t$ | düz çıkan grafik | eğim |
+| Half-life | $t_{1/2}$ vs $a$ | $\log t_{1/2} = \text{cst}-(n-1)\log a$ | $1-\text{eğim}$ | $a=1$'deki intercept |
+| Van't Hoff | $r$ vs $C$ | $\log r = \log k + n\log C$ | eğim | $10^{\text{intercept}}$ |
+
+İki deneyli half-life formülü:
+
+$$n = 1 + \frac{\log t_{1/2,1}-\log t_{1/2,2}}{\log a_2-\log a_1}$$
+
+**Örnekler (slayt 59, 60, 63–66):**
+- A + B = C: $n=2$, $k=0.2$ L·mol⁻¹·h⁻¹
+- Çözünme reaksiyonu: eğim $-1.99$, dolayısıyla $n=3$; $\dfrac{3}{2k}=10^{3.03}$, buradan $k=1.40\times10^{-3}$ L²·mol⁻²·s⁻¹
+- FeO redüksiyonu (Van't Hoff): $n\approx1$; hocanın değeri $k=0.457$. $k$ çizime duyarlıdır. Slayttaki birim "l/min" yazıyor; s⁻¹ olması beklenir, hocaya sorulacak.
+
+---
+
 ## Sınavda çıkabilir
 
 - Verilen $t_{1/2}$'den 1. derece $k$'yı hesaplamak ve %X dönüşüm süresini bulmak (C-14, uranyum tipi)
 - 2. derece reaksiyonda bir dönüşüm oranından $k$'yı bulmak, sonra başka bir dönüşüm oranı için süreyi hesaplamak
 - Stokiyometriye göre türlerin hızlarını birbirine çevirmek ($-r_A/a = r_C/c$)
 - $t_{1/2}$'nin başlangıç konsantrasyonuna bağlılığından reaksiyon derecesini yorumlamak (0: ∝ $a$, 1: bağımsız, 2: ∝ $1/a$)
+- $t_{1/2}$–$a$ verisinden half-life yöntemiyle $n$ ve $k$ bulmak; teğetlerden Van't Hoff ile $n$ bulmak
 - Homojen/heterojen ayrımı ve neden tüm pirometalurjik reaksiyonların heterojen olduğu
