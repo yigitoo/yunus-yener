@@ -10,10 +10,12 @@ const { chromium } = require('playwright');
 const ROOT = __dirname;
 const NOTLAR = path.join(ROOT, '..', 'notlar');
 const OUT_DIR = path.join(ROOT, '_build');
-const PDF = path.join(ROOT, 'mse4631-korozyon-ders-notlari.pdf');
+// Istege bagli: node build.js <icerik.json> <kapak.html> <cikti.pdf>
+const [ICERIK = 'icerik.json', KAPAK = 'kapak.html', CIKTI = 'mse4631-korozyon-ders-notlari.pdf'] = process.argv.slice(2);
+const PDF = path.join(ROOT, CIKTI);
 
 // PDF'e girecek dosyalar (ders klasorune gore), sirasiyla
-const BOLUMLER = JSON.parse(fs.readFileSync(path.join(ROOT, 'icerik.json'), 'utf8'));
+const BOLUMLER = JSON.parse(fs.readFileSync(path.join(ROOT, ICERIK), 'utf8'));
 
 function unescapeHtml(s) {
   return s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
@@ -51,7 +53,7 @@ for (const f of BOLUMLER) {
 
 const katexCss = 'file://' + path.join(ROOT, 'node_modules', 'katex', 'dist', 'katex.min.css');
 const css = fs.readFileSync(path.join(ROOT, 'stil.css'), 'utf8');
-const kapak = fs.readFileSync(path.join(ROOT, 'kapak.html'), 'utf8');
+const kapak = fs.readFileSync(path.join(ROOT, KAPAK), 'utf8');
 const page = `<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>MSE4631 Korozyon ve Korunma - Ders Notlari</title>
 <link rel="stylesheet" href="${katexCss}"><style>${css}</style></head>
 <body>${kapak}${body}</body></html>`;
