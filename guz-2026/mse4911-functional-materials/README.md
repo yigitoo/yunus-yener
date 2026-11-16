@@ -44,7 +44,7 @@
 
 ### Sınav formatı (hocanın söylediği)
 
-> Hangi sınav için (vize/final) ve tarihi: _bilinmiyor, teyit et_
+> **Vize** · 17 Kasım 2026 Salı 09:00–10:15 · KMB-313
 
 | Bölüm | Soru | Puan |
 |-------|------|------|
