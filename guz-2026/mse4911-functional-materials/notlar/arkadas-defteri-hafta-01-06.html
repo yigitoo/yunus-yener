@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>MSE4911 Functional Materials — Defter Notları (Hafta 1–6)</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+  :root {
+    --ink: #1d1d1f;
+    --blue: #1f3fa8;
+    --muted: #5a5f6b;
+    --tr: #4a4f5c;
+    --imp-bg: #fff6d6;
+    --imp-bd: #e0a800;
+    --cl-bg: #e9f6ee;
+    --cl-bd: #1f8a4c;
+    --ex-bg: #f1f4fb;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "Inter", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 10.6pt; line-height: 1.5; margin: 0; }
+  .cover { border: 2px solid var(--blue); border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; }
+  .cover h1 { margin: 0 0 4px; color: var(--blue); font-size: 20pt; letter-spacing: .5px; }
+  .cover p { margin: 3px 0; color: var(--muted); font-size: 9.6pt; }
+  .legend { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; font-size: 9pt; }
+  .legend span { padding: 2px 8px; border-radius: 4px; }
+  .pg { display: flex; align-items: center; gap: 8px; margin: 20px 0 8px; color: #8a8f99; font-size: 8.5pt; font-weight: 600; letter-spacing: .6px; text-transform: uppercase; }
+  .pg::after { content: ""; flex: 1; border-top: 1px dashed #c6cad2; }
+  .pg-break { break-before: page; }
+  .pg, .wk, .wk-guess, h1.title, h2, h3 { break-after: avoid; }
+  .mag td:first-child { white-space: nowrap; }
+  .wk { border: 2px solid var(--blue); border-radius: 6px; padding: 6px 12px; color: var(--blue); font-weight: 800; font-size: 14pt; letter-spacing: .8px; margin: 10px 0 10px; display: inline-block; }
+  .wk-guess { border: 2px dashed var(--cl-bd); color: var(--cl-bd); font-weight: 700; font-size: 11pt; padding: 4px 10px; border-radius: 6px; display: inline-block; margin: 6px 0; }
+  h1.title { color: var(--blue); font-size: 17pt; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; margin: 8px 0 10px; }
+  h2 { color: var(--blue); font-size: 12.5pt; margin: 14px 0 6px; border-bottom: 1.6px solid var(--blue); display: inline-block; padding-bottom: 1px; }
+  h3 { color: var(--blue); font-size: 11pt; margin: 10px 0 4px; text-decoration: underline; text-underline-offset: 3px; }
+  p { margin: 4px 0; }
+  .term { text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+  .bterm { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
+  .tr { color: var(--tr); font-style: italic; }
+  .ind { margin-left: 22px; }
+  .ind2 { margin-left: 44px; }
+  ul { margin: 3px 0 3px 0; padding-left: 22px; }
+  li { margin: 2px 0; }
+  .imp { background: var(--imp-bg); border: 1.5px solid var(--imp-bd); border-radius: 6px; padding: 7px 11px; margin: 8px 0; }
+  .imp > .lbl { font-size: 8pt; font-weight: 800; color: #9a6b00; letter-spacing: .6px; text-transform: uppercase; display: block; margin-bottom: 2px; }
+  .cl { background: var(--cl-bg); border-left: 4px solid var(--cl-bd); border-radius: 4px; padding: 7px 11px; margin: 8px 0 10px; font-size: 9.6pt; break-inside: avoid; }
+  .cl > .lbl { font-size: 8pt; font-weight: 800; color: var(--cl-bd); letter-spacing: .6px; text-transform: uppercase; display: block; margin-bottom: 2px; }
+  .cl ul { padding-left: 18px; }
+  .ex { background: var(--ex-bg); border: 1.5px solid #9aa9d6; border-radius: 6px; padding: 8px 12px; margin: 8px 0; break-inside: avoid; }
+  .eq { text-align: center; margin: 8px 0; font-size: 11.5pt; }
+  .eqbox { display: inline-block; border: 1.8px solid var(--imp-bd); background: var(--imp-bg); border-radius: 6px; padding: 5px 14px; }
+  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 2px; }
+  .frac > span:first-child { border-bottom: 1.2px solid currentColor; padding: 0 3px; }
+  .frac > span:last-child { padding: 0 3px; }
+  .note { font-size: 9pt; color: var(--muted); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .flex { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+  table.t { border-collapse: collapse; margin: 6px 0; font-size: 10pt; break-inside: avoid; }
+  table.t td, table.t th { border: 1px solid #c9ced8; padding: 4px 9px; text-align: left; }
+  table.t th { background: #eef1f8; }
+  .mag td { font-family: "DejaVu Sans", sans-serif; }
+  svg { display: block; }
+  svg text { font-family: "Inter", "DejaVu Sans", sans-serif; }
+  .u { text-decoration: underline; text-underline-offset: 3px; }
+  .keep { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>FUNCTIONAL MATERIALS — MSE4911</h1>
+  <p>Arkadaşının el yazısı defter notlarının (17 sayfa, Hafta 1–6) temize çekilmiş hali. Konu sırası ve içerik <b>defterdekiyle birebir aynıdır</b>; hiçbir şey çıkarılmadı, sırası değiştirilmedi. Şekiller defterdeki çizimlerden yeniden çizildi.</p>
+  <p>Her bölümün başındaki <b>"DEFTER · S. N"</b> etiketi, orijinal defterdeki sayfa numarasıdır (karşılaştırma için).</p>
+  <div class="legend">
+    <span style="border:1.5px solid var(--imp-bd);background:var(--imp-bg)">Sarı kutu = defterdeki önemli kısım (metin aynen)</span>
+    <span style="border-left:4px solid var(--cl-bd);background:var(--cl-bg)">Yeşil kutu = Claude'un ek notu (defterde yok)</span>
+    <span class="tr" style="border:1px solid #ccc">italik gri = defterdeki Türkçe açıklamalar</span>
+  </div>
+</div>
+
+<!-- ====================== SAYFA 1 ====================== -->
+<div class="pg">Defter · s. 1</div>
+<p style="text-align:right; font-weight:600">%40-20-40</p>
+<div class="cl"><span class="lbl">Ek not — Claude</span>"%40-20-40" büyük ihtimalle dersin not ağırlıkları (ör. Vize %40 – ödev/quiz %20 – Final %40). Defterde hangi sayının neye ait olduğu yazmıyor; hocadan/izlenceden teyit et.</div>
+<span class="wk-guess">Hafta 1 (tahmini) — Genel bakış</span>
+
+<h1 class="title">FUNCTIONAL MATERIALS</h1>
+
+<h2>1- Electronic Functional Materials</h2>
+<p><span class="term">Semiconductor</span> = Materials with electrical conductivity between conductors and insulator <span class="note">(Silicon, Gallium Arsenide)</span></p>
+<p><span class="term">Superconductor</span> = Materials that can conduct electricity without resistance at low temperatures <span class="note">(YBCO, NbTi)</span></p>
+<p><span class="term">Conducting Polymers</span> = Organic polymer that conduct electricity <span class="note">(Polyaniline, Polypyrrole)</span></p>
+
+<h2>2- Piezoelectric and Ferroelectric Materials</h2>
+<p><span class="term">Piezoelectric Materials</span> = Materials that generate an electric charge in response to mechanical stress <span class="note">(PZT – Lead zirconate titanate)</span></p>
+<p><span class="term">Ferroelectric Materials</span> = Materials that exhibit spontaneous electric polarization <span class="note">(Barium Titanate)</span></p>
+
+<h2>3- Thermoelectric Materials</h2>
+<p>Materials that convert heat into electricity or vice versa <span class="tr">(tersi)</span> <span class="note">(Bismuth telluride, lead telluride)</span></p>
+
+<h2>4- Magnetic Functional Materials</h2>
+<p><span class="term">Ferromagnetic</span> = Materials with strong magnetic properties <span class="note">(FeCo)</span></p>
+<p><span class="term">Spintronic materials</span> = Materials that utilize electron spin in addition to charge for data storage and transfer <span class="note">(CoFeB)</span></p>
+
+<h2>5- Optical Functional Materials</h2>
+<p><span class="term">Photonic Crystals</span> = Structures that control the flow of light <span class="note">(Silicon photonic crystals)</span></p>
+<p><span class="term">Electro-optic Materials</span> = Materials that change their optical properties in response to an electric field <span class="note">(Lithium Niobate)</span></p>
+<p><span class="term">LED's and Laser Materials</span> = Materials used in light-emitting devices <span class="note">(Gallium Nitride)</span></p>
+
+<!-- ====================== SAYFA 2 ====================== -->
+<div class="pg">Defter · s. 2</div>
+<h2>6- Polymeric Functional Materials</h2>
+<p><span class="term">Biosensors and Drug Delivery</span> = Polymers designed for controlled drug release <span class="note">(PLA, PEG)</span></p>
+<p><span class="term">Soft Materials</span> = Materials characterized by low modulus, flexibility and ability to respond to external stimuli <span class="tr">(uyarıcı)</span> <span class="note">(Elastomers, Hydrogel, Shape memory polymers)</span></p>
+
+<h2>7- Smart and Responsive Materials</h2>
+<p><span class="term">Shape memory alloys</span> = Metals that can return to their original shape when heated <span class="note">(Nitinol)</span></p>
+<p><span class="term">Stimuli-Responsive Polymers</span> = Materials that change properties in response to external stimuli like temp, pH or light <span class="note">(PNIPAM hydrogels)</span></p>
+
+<div class="cl"><span class="lbl">Ek not — Claude · ders akışı</span>
+Yukarıdaki 7 maddelik liste dönemin yol haritası gibi. Defterde işlenen sıra: Semiconductors (Hafta 2) → Conducting Polymers + Superconductors (Hafta 3) → Piezo/Ferroelectric (Hafta 4) → <b>Hafta 5 tatil</b> → Magnetic (Hafta 6). Listedeki <b>3- Thermoelectric</b> henüz ayrıca işlenmedi.</div>
+
+<span class="wk-guess">Hafta 2 (tahmini) — Semiconductors</span>
+
+<h3 style="text-decoration:none"><span class="bterm">Semiconductor</span> → Can behave as conductors or insulators.</h3>
+<ul>
+  <li>The functionality comes from their ability to adjust their electrical conductivity depending on external conditions.</li>
+  <li>Used for building blocks of electronic devices <span class="note">(Computer processors, Memory)</span></li>
+  <li>Semiconductors don't conduct as easily at room temp. <span class="note">(compared to conductors)</span></li>
+  <li>Transistors, diodes and LED's</li>
+  <li>Silicon (Si) is most widely used semiconductor</li>
+</ul>
+
+<div class="imp keep"><span class="lbl">Önemli</span>
+<p><span class="term">Electrical conductivity</span> (σ) <span class="note">[S/m → Siemens]</span> = It represents a material's ability to conduct electric current</p>
+<div class="flex" style="justify-content:space-around; margin-top:6px">
+  <div class="eq">σ = <span class="frac"><span>1</span><span>ρ</span></span> <span class="note">&nbsp;σ → conductivity, ρ → resistivity <span class="tr">(direnç)</span></span></div>
+  <div class="eq">ρ = <span class="frac"><span>R·A</span><span>ℓ</span></span></div>
+  <svg width="230" height="78" viewBox="0 0 230 78" aria-label="Silindirik iletken: uzunluk l, kesit alanı A, direnç R">
+    <line x1="40" y1="12" x2="150" y2="12" stroke="#333"/><text x="92" y="10" font-size="11" text-anchor="middle">ℓ</text>
+    <ellipse cx="40" cy="44" rx="10" ry="24" fill="none" stroke="#333"/>
+    <line x1="40" y1="20" x2="150" y2="20" stroke="#333"/><line x1="40" y1="68" x2="150" y2="68" stroke="#333"/>
+    <path d="M150 20 A10 24 0 0 1 150 68" fill="none" stroke="#333"/>
+    <text x="95" y="48" font-size="10" text-anchor="middle">ρ = resistivity</text>
+    <text x="4" y="76" font-size="9">A = Area</text>
+    <text x="164" y="48" font-size="12">=</text>
+    <polyline points="176,44 182,36 188,52 194,36 200,52 206,36 212,44 224,44" fill="none" stroke="#333"/>
+    <text x="196" y="66" font-size="10">R</text>
+  </svg>
+</div>
+</div>
+<div class="cl"><span class="lbl">Ek not — Claude · birimler</span>
+ρ: Ω·m &nbsp;|&nbsp; σ: (Ω·m)⁻¹ = S/m &nbsp;|&nbsp; R: Ω &nbsp;|&nbsp; A: m² &nbsp;|&nbsp; ℓ: m. Kontrol: ρ = R·A/ℓ → Ω·m²/m = Ω·m ✓</div>
+
+<p>* To conduct electricity, e⁻ needs to move. In a material, the energy levels where e⁻ can exist are called <b>bands</b>.</p>
+<div class="flex">
+  <div style="flex:1; min-width:300px">
+    <p>1- <span class="term">Valence Band</span> = The lower energy region where e⁻ are normally found</p>
+    <p>2- <span class="term">Conduction Band</span> = The higher energy region where e⁻ can move freely and conduct electricity</p>
+  </div>
+  <svg width="190" height="80" viewBox="0 0 190 80" aria-label="Enerji ekseni: altta valence band, üstte conduction band">
+    <line x1="14" y1="74" x2="14" y2="10" stroke="#333" marker-end="url(#ar)"/>
+    <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker></defs>
+    <text x="0" y="8" font-size="9">Energy</text>
+    <rect x="30" y="14" width="60" height="22" fill="#fff" stroke="#333"/>
+    <rect x="30" y="46" width="60" height="22" fill="#dfe4f2" stroke="#333"/>
+    <text x="96" y="29" font-size="10">→ Conduction band</text>
+    <text x="96" y="61" font-size="10">→ Valence band</text>
+  </svg>
+</div>
+
+<!-- ====================== SAYFA 3 ====================== -->
+<div class="pg">Defter · s. 3</div>
+<p>* When light proceeds <span class="tr">(geçerken)</span> from one medium into another, some of light radiation may be <span class="u">transmitted</span> <span class="tr">(geçer)</span> through the medium. Some will be <span class="u">absorbed</span> and some will be <span class="u">reflected</span> at the interface.</p>
+<div class="eq"><span class="eqbox">I<sub>0</sub> = I<sub>T</sub> + I<sub>A</sub> + I<sub>R</sub></span> &nbsp;→ depends on wavelength</div>
+<div class="cl"><span class="lbl">Ek not — Claude</span>I<sub>0</sub> = gelen ışık şiddeti, I<sub>T</sub> = geçen (transmitted), I<sub>A</sub> = soğurulan (absorbed), I<sub>R</sub> = yansıyan (reflected). Defterde son terim "I<sub>e</sub>" gibi okunuyor; Callister'daki gösterim I<sub>R</sub>'dir. Hepsi W/m².</div>
+
+<div class="imp"><span class="lbl">Önemli</span>
+<p>* In semiconductors photons with energies smaller than the bandgap will not be absorbed by the semiconductors in general. They will be transmitted or reflected.</p>
+<p class="tr">(Bant aralığından daha küçük enerjiye sahip fotonlar genellikle yarı iletkenler tarafından emilmez. Bunlar iletilir ya yansır.)</p>
+<p class="tr">↳ Bir ışık fotonun soğurulması, bir e⁻'nin değerlik bandından, bant aralığını geçerek iletim bandındaki boş bir duruma geçmesiyle gerçekleşebilir.</p>
+</div>
+<div class="cl"><span class="lbl">Ek not — Claude · soğurma şartı</span>
+Foton soğurulur ⇔ <b>hν ≥ E<sub>g</sub></b>. Pratik formül: λ<sub>max</sub> (µm) ≈ 1.24 / E<sub>g</sub> (eV).<br>
+Örnek: Si için E<sub>g</sub> ≈ 1.1 eV → λ<sub>max</sub> ≈ 1.1 µm. Bundan uzun dalga boylu (kızılötesi) ışık Si'den geçer.</div>
+
+<h2>Types of Semiconductor</h2>
+<p>1- <span class="term">Elemental Semiconductors</span> : Consist of single elements in Group IV. These semiconductors are naturally <span class="note">(Si, Ge)</span></p>
+<table class="t" style="margin-left:22px">
+  <tr><th>Si</th><td>App → Digital electronic device <span class="tr">(devreler)</span> (microprocessors and integrated circuits (ICs))<br>Photovoltaic solar panels</td></tr>
+  <tr><th>&nbsp;</th><td>App → Fast-switching transistors<br>Useful in infrared optical system</td></tr>
+</table>
+<div class="cl"><span class="lbl">Ek not — Claude</span>Defterde ikinci "App" satırının başında element yazmıyor; içerik (hızlı anahtarlama, kızılötesi optik) <b>Ge</b>'ye ait.</div>
+
+<p>2- <span class="term">Compound Semiconductors</span> = Made from a combination of two or more elements (III-V, II-VI, even IIA-VA)</p>
+<ul>
+  <li>They used high-frequency electronic, optoelectronic devices, solar cell</li>
+</ul>
+<table class="t" style="margin-left:22px">
+  <tr><th>III-V</th><td>GaAs, InP</td><td>→ photodetectors, microwave</td></tr>
+  <tr><th>II-VI</th><td>ZnS, CdTe</td><td>→ Optical coating, window and lenses<br>&nbsp;&nbsp;&nbsp;Thin-film photovoltaic technology in solar cell</td></tr>
+  <tr><th>IV-VI</th><td>Lead sulfide</td><td>→ Infrared optoelectronic, thermoelectric power generation</td></tr>
+</table>
+<ul>
+  <li><b>InGaN</b> (III-V) – most critical → Solid state lighting (LED's), Photovoltaic and solar energy, Green Gap</li>
+</ul>
+
+<!-- ====================== SAYFA 4 ====================== -->
+<div class="pg">Defter · s. 4</div>
+<p>3- <span class="term">Organic Semiconductor</span> = Consist of carbon-based or polymer materials</p>
+<ul><li>Lightweight, flexible, low-cost</li></ul>
+
+<p>* <span class="term">Small-molecule organic semiconductors</span> = Well-defined structures, allowing them to form highly ordered thin films</p>
+<ul>
+  <li>Easy crystallization, enhance charge transport properties</li>
+  <li>Pentacene, Rubrene, Fullerenes (C60)</li>
+</ul>
+<table class="t" style="margin-left:22px">
+  <tr><th>Pentacene</th><th>Rubrene</th><th>Fullerenes (C60)</th></tr>
+  <tr>
+    <td>most commonly used due to its high hole mobility<br>(used in gas sensors)</td>
+    <td>– highest hole mobility<br>– Unique molecular structure<br>– Can be used in OLED's</td>
+    <td>ideal for accepting <span class="tr">(e⁻ alıcı)</span> e⁻ from photoexcited e⁻-donating polymer</td>
+  </tr>
+</table>
+
+<p>* <span class="term">Polymer Semiconductors</span> = Consist of long chains of monomer</p>
+<ul><li>ideal for large-area and flexible app</li></ul>
+<table class="t" style="margin-left:22px">
+  <tr><th>P3HT</th><th>Polyfluorene</th><th>PPV</th></tr>
+  <tr>
+    <td>– most widely used in polymers<br>– good solubility<br>– often used as the donor material<br>– create thin-film transistors</td>
+    <td>– Useful in light-emitting app<br>– Used as hole transport<br>– Used in light-emitting transistors</td>
+    <td>– First polymer used in OLED's<br>– Used for hole <span class="tr">(delik taşınımı)</span> transport</td>
+  </tr>
+</table>
+
+<h2>Energy Bands and Band Theory</h2>
+<ul style="list-style:'* '">
+  <li>Shells are designated by integers (1, 2, 3) and subshells by letters (s, p, d, f).</li>
+  <li>1s² 2s² 2p⁶ 3s² … (Hund's Rule)</li>
+  <li>Spin quantum numbers (m<sub>s</sub>) are different = −1/2, +1/2</li>
+  <li>Each of the 1s and 2s atomic states splits <span class="tr">(bölünür)</span> to form an electron energy band consisting of 12 states</li>
+</ul>
+<div class="cl"><span class="lbl">Ek not — Claude</span>
+<ul>
+  <li>Orbitallerin doldurulma sırası (1s → 2s → 2p …) <b>Aufbau</b> ilkesidir. <b>Hund kuralı</b>: aynı alt kabukta e⁻'lar önce tek tek, paralel spinle yerleşir. "Spinler farklı (±1/2)" kısmı ise <b>Pauli dışlama ilkesi</b>dir.</li>
+  <li>"12 states": Callister'daki şekil 12 atomlu bir grup için çizilmiş. Genel kural: N atom → her atomik seviye N durumlu bir banda yarılır.</li>
+</ul></div>
+
+<div class="flex keep">
+  <svg width="240" height="170" viewBox="0 0 240 170" aria-label="Atomlar arası mesafe azaldıkça 1s ve 2s seviyeleri 12 durumluk bantlara yarılır">
+    <defs><marker id="ar2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker></defs>
+    <line x1="30" y1="150" x2="30" y2="12" stroke="#333" marker-end="url(#ar2)"/>
+    <line x1="30" y1="150" x2="230" y2="150" stroke="#333"/>
+    <text x="34" y="14" font-size="10">Energy</text>
+    <text x="80" y="166" font-size="10">Interatomic separation</text>
+    <text x="10" y="58" font-size="11">2s</text><text x="10" y="118" font-size="11">1s</text>
+    <line x1="120" y1="55" x2="225" y2="55" stroke="#333"/>
+    <g stroke="#333" stroke-width=".8"><line x1="40" y1="44" x2="120" y2="55"/><line x1="40" y1="49" x2="120" y2="55"/><line x1="40" y1="55" x2="120" y2="55"/><line x1="40" y1="61" x2="120" y2="55"/><line x1="40" y1="66" x2="120" y2="55"/></g>
+    <line x1="80" y1="115" x2="225" y2="115" stroke="#333"/>
+    <g stroke="#333" stroke-width=".8"><line x1="40" y1="110" x2="80" y2="115"/><line x1="40" y1="113" x2="80" y2="115"/><line x1="40" y1="117" x2="80" y2="115"/><line x1="40" y1="120" x2="80" y2="115"/></g>
+    <text x="130" y="72" font-size="10">↳ 12 states</text>
+  </svg>
+  <div style="flex:1; min-width:260px">
+    <p>• The set of energy levels, which are closely or tightly packed, is called <b>energy band</b>.</p>
+    <p class="tr">(Birbirine yakın veya sıkı bir şekilde paketlenmiş enerji seviyeleri kümesine = Energy Band denir)</p>
+  </div>
+</div>
+
+<!-- ====================== SAYFA 5 ====================== -->
+<div class="pg">Defter · s. 5</div>
+<p>* The e⁻ orbitals overlap <span class="tr">(üst üste gelir)</span> when the atoms come together. And separate energy levels merge closer together to form a continuous energy band.</p>
+<p class="tr">(Atomlar bir araya geldiğinde e⁻ orbitalleri üst üste gelir. Ve atomlardaki yakın etkileşim sonucunda e⁻ orbitalleri ve ayrı enerji seviyeleri birbirine daha da yaklaşarak sürekli bir enerji bandı oluşturur.)</p>
+
+<div class="flex keep" style="justify-content:space-around">
+  <svg width="210" height="140" viewBox="0 0 210 140" aria-label="Seviyeler yaklaşınca energy band ve energy band gap oluşur">
+    <g stroke="#333" fill="none" stroke-width=".9">
+      <path d="M5 10 Q60 40 110 30"/><path d="M5 20 Q60 40 110 48"/><path d="M5 30 Q50 45 110 62"/>
+      <path d="M5 80 Q60 85 110 78"/><path d="M5 90 Q60 92 110 98"/><path d="M5 100 Q60 98 110 110"/>
+      <line x1="110" y1="30" x2="200" y2="30"/><line x1="110" y1="62" x2="200" y2="62"/>
+      <line x1="110" y1="78" x2="200" y2="78"/><line x1="110" y1="110" x2="200" y2="110"/>
+    </g>
+    <rect x="110" y="30" width="90" height="32" fill="#dfe4f2" opacity=".7"/>
+    <rect x="110" y="78" width="90" height="32" fill="#dfe4f2" opacity=".7"/>
+    <text x="120" y="50" font-size="10">Energy band</text>
+    <text x="120" y="74" font-size="10">Energy band gap</text>
+    <text x="120" y="98" font-size="10">Energy band</text>
+  </svg>
+  <svg width="340" height="140" viewBox="0 0 340 140" aria-label="Yalıtkan ve yarı iletken bant şeması: boş iletim bandı, bant aralığı, dolu değerlik bandı">
+    <rect x="20" y="10" width="60" height="30" fill="#fff" stroke="#333"/>
+    <rect x="20" y="80" width="60" height="30" fill="#c9d1ea" stroke="#333"/>
+    <text x="22" y="130" font-size="10">(insulator)</text>
+    <rect x="120" y="10" width="60" height="38" fill="#fff" stroke="#333"/>
+    <rect x="120" y="66" width="60" height="44" fill="#c9d1ea" stroke="#333"/>
+    <text x="112" y="130" font-size="10">(Semi-conductor)</text>
+    <text x="188" y="30" font-size="10">→ Empty conduction band</text>
+    <text x="188" y="60" font-size="10">→ Band gap</text>
+    <text x="188" y="90" font-size="10">→ Filled valence band</text>
+  </svg>
+</div>
+
+<div class="imp"><span class="lbl">Önemli</span>
+<p><span class="term">Valence Band</span> <span class="tr">(değerlik)</span> → Has the highest occupied energy.</p>
+<p><span class="term">Conduction Band</span> → The free e⁻'s conduct the current in the conductor and known conduction electrons. The conduction band is the one that contains the conduction electrons.</p>
+<p><span class="term">Band Gap</span> → Refers to gap between the valence band and the conduction band. No electrons in here.</p>
+<p class="ind">↳ For an electron to move from the valence band to the conduction band, it must overcome the energy of this gap.</p>
+</div>
+<div class="cl"><span class="lbl">Ek not — Claude · tipik değerler (Callister)</span>
+Yalıtkan: E<sub>g</sub> &gt; ~2 eV · Yarı iletken: E<sub>g</sub> &lt; ~2 eV · Si ≈ 1.11 eV · Ge ≈ 0.67 eV · GaAs ≈ 1.42 eV. Metallerde bant aralığı yoktur (bantlar kısmen dolu ya da üst üste biner).</div>
+
+<p>* Semiconductors can be classified as <b>intrinsic</b> <span class="tr">(içsel)</span> and <b>extrinsic</b> <span class="tr">(dışsal)</span> semiconductors. <b>Doping</b> is a process that involves adding small amounts of impurities to a semiconductor to modify its electrical properties. These are increase the conductivity of a semiconductor.</p>
+<table class="t">
+  <tr><th>Intrinsic semiconductor<br><span class="note">(pure) (undoped)</span></th><td>→ Contains no impurity atoms or dopants (as Si and Ge)<br>Conductivity is low</td></tr>
+  <tr><th>Extrinsic semiconductor<br><span class="note">(impure or doped)</span></th><td>→ Has had specific impurity atom (dopants) added for increase conductivity<br>Conductivity is high<br><span class="tr">2'ye ayrılır: N-type, P-type</span></td></tr>
+</table>
+
+<!-- ====================== SAYFA 6 ====================== -->
+<div class="pg">Defter · s. 6</div>
+<p><span class="term">N-Type Doping</span> <span class="tr">(katkılama)</span> → Involves adding an impurity that has more valence e⁻ than the semiconductor material.</p>
+<p class="ind"><u>Ex</u> = Doping Silicon (has 4 valence e⁻) with phosphorus (has 5 valence e⁻) introduces extra e⁻ into the conduction band</p>
+<p class="ind tr">(Bu fazla e⁻'lar yük taşıyıcı görevi görür ve iletkenliği ↑)</p>
+<p><span class="term">P-Type Doping</span> → <span class="tr">Bu da tam tersi olarak yarı iletken malzemeden daha az değerlik e⁻'a sahip safsızlık eklenmesidir.</span></p>
+<p class="ind">Ex = Si (4) with B (3). Creates holes in the valence band</p>
+<div class="cl"><span class="lbl">Ek not — Claude</span>N-type: P, As, Sb (5A grubu, <b>donor</b>) → çoğunluk taşıyıcı e⁻. P-type: B, Al, Ga (3A grubu, <b>acceptor</b>) → çoğunluk taşıyıcı hole (delik).</div>
+
+<p>* In semiconductors charge carriers <span class="tr">(yük taşıyıcılar)</span> (e⁻ and holes) move when an electric field is applied. The ability of these charge carriers to move is <b>mobility (μ)</b> <span class="tr">(hareketlilik)</span>.</p>
+<div class="imp keep"><span class="lbl">Önemli</span>
+<div class="flex" style="justify-content:space-around">
+  <div class="eq">μ = <span class="frac"><span>v<sub>d</sub></span><span>E</span></span> <span class="note">&nbsp;v<sub>d</sub> → yük taşıyıcıların sürüklenme hızı · E → applied electric field</span></div>
+  <div class="eq">μ = <span class="frac"><span>σ</span><span>n·q</span></span> <span class="note">&nbsp;q → charge · n → charge carrier concentration</span></div>
+</div>
+<p>• The higher the mobility, the faster the e⁻ or holes move in response to an applied electric field</p>
+</div>
+<div class="cl"><span class="lbl">Ek not — Claude · birimler ve tam formül</span>
+μ: m²/(V·s) · v<sub>d</sub>: m/s · E: V/m · n: m⁻³ · q = 1.602×10⁻¹⁹ C.<br>
+Hem e⁻ hem hole varsa (Callister): <b>σ = n|e|μ<sub>e</sub> + p|e|μ<sub>h</sub></b>. Defterdeki μ = σ/(n·q), tek taşıyıcı tipi olduğu durumdaki halidir.</div>
+
+<div class="imp"><span class="lbl">Önemli</span>
+<p>** Conductivity ↑ : Carrier concentration ↑, mobility ↑, Doping ↑, T ↑</p>
+<p class="ind">• Excessive heat increases atomic vibrations, reducing mobility</p>
+</div>
+<div class="cl"><span class="lbl">Ek not — Claude</span>T ↑ olunca yarı iletkende iki etki yarışır: taşıyıcı sayısı artar (σ ↑), ama örgü titreşimleri mobiliteyi düşürür (σ ↓). Intrinsic yarı iletkende taşıyıcı artışı baskın olduğu için <b>σ sıcaklıkla artar</b>; metallerde ise tersine azalır.</div>
+
+<div class="wk">WEEK 3 &nbsp;CONDUCTING POLYMER</div>
+<ul>
+  <li>Conducting polymer from the conjugated structure in their backbone
+    <div class="tr">↳ Polimer zincirinde tekli ve çiftli bağlar bulunur</div>
+    <div class="tr">↳ Bu yapı sayesinde π elektronları zincir boyunca delokalize olabilir</div>
+    <div class="tr">↳ Ancak polimerin iyi iletken olması için genellikle doping gerekir</div>
+  </li>
+</ul>
+<p><span class="term">Doping</span> → <span class="tr">Polimere hareket edebilen yük taşıyıcılar kazandırarak elektrik iletkenliği artırılma işlemi</span></p>
+<p>* Electrical conductivity, flexibility, lightweight, ease of process</p>
+<p><span class="term">Conjugated Polymer Apps</span> → Flexible Li-ion piller, polymer solar cell, Süper kapasitörler</p>
+
+<!-- ====================== SAYFA 7 ====================== -->
+<div class="pg">Defter · s. 7</div>
+<p><span class="term">N-type Doping</span> → <span class="tr">Polimere e⁻ eklenir ve negatif yük taşıyıcılar oluşur</span></p>
+<p><span class="term">P-type Doping</span> → <span class="tr">Polimerden e⁻ çıkarılır ve pozitif yük taşıyıcılar oluşur (hole / boşluk)</span></p>
+<p>* <span class="tr">Katkılama polimerin bant aralığı (değerlik bandı – iletim bandı) içinde enerji durumları oluşturarak polimerin elektronik yapısını değiştirir</span></p>
+<p class="ind">↳ The addition of dopants narrows <span class="tr">(daraltır)</span> this band gap, allowing electrons or holes to jump into the conduction band more easily</p>
+
+<div class="imp keep"><span class="lbl">Önemli</span>
+<p><span class="term">N-type doping</span> → Polymer + e⁻ → Polymer⁻ &nbsp;(Na, K used)</p>
+<p class="ind">• N-doped polymers react with O₂, H₂O leading to rapid doping, degradation, conductivity ↓</p>
+<p><span class="term">P-type doping</span> → PANI + HCl → PANI⁺ + Cl⁻ &nbsp;&nbsp; conductivity ↑</p>
+<p class="ind">↳ polymer becomes protonated <span class="tr">(protonlanır)</span></p>
+</div>
+<p>* <b>PANI</b> <span class="note">(Polianilin)</span> = <span class="tr">Gaz sensörleri, bataryalar, antistatik kaplamalar</span></p>
+<p class="ind"><b>PEDOT:PSS</b> = <span class="tr">OLED ekranlar, esnek elektronikler,</span> organic solar cells</p>
+
+<h1 class="title" style="font-size:15pt">SUPERCONDUCTORS</h1>
+<div class="imp"><span class="lbl">Önemli</span>
+<p>* That exhibit zero electrical resistance when cooled below a certain critical temperature. → <span class="tr">Bu sayede elektrik akımını hiçbir enerji kaybı olmadan iletebilirler</span></p>
+<p class="ind">↳ T<sub>crit</sub> altında e⁻'s pair up to form Cooper pairs and the pairs move through without resistance <span class="tr">(Cooper çiftleri oluşur)</span></p>
+<p class="ind">↳ T<sub>crit</sub> = <span class="tr">Malzemenin süperiletken hale geçtiği sıcaklıktır. Bu sıcaklığın üzerine çıkıldığında süperiletkenlik kaybolur</span></p>
+<p class="ind2">↳ Superconductors have zero resistance below this temp.</p>
+</div>
+<p><span class="term">Bardeen – Cooper – Schrieffer</span> = <span class="tr">Çok düşük sıcaklıklarda bir e⁻ kristal örgüsünde ilerlerken pozitif yüklü iyonları kendine çeker ve bir örgü bozulması (fonon) yaratır</span></p>
+<p class="ind tr">↳ Bu yerel pozitif yük yoğunlaşması, 2. bir elektronu kendine çeker. Normalde birbirini iten 2 e⁻, fononlar aracılığıyla birleşerek <span class="u">Cooper çiftleri oluşturur</span>.</p>
+<p class="ind tr">• Cooper çiftleri kristal örgü içinde hiç saçılmadan hareket eder</p>
+
+<!-- ====================== SAYFA 8 ====================== -->
+<div class="pg">Defter · s. 8</div>
+<div class="keep"><p style="text-align:right" class="note">BSC Theory Formula</p>
+<div class="eq"><span class="eqbox">k<sub>B</sub> · T<sub>c</sub> = 1.14 ħω<sub>D</sub> · exp<span style="font-size:14pt">(</span> <span class="frac"><span>−1</span><span>N(0)·V</span></span> <span style="font-size:14pt">)</span></span></div>
+<table class="t" style="margin:0 auto">
+  <tr><td>k<sub>B</sub></td><td>Boltzmann constant (1.3806×10⁻²³ J/K)</td></tr>
+  <tr><td>ω<sub>D</sub></td><td>Debye frequency</td></tr>
+  <tr><td>N(0)</td><td>density of states at Fermi level</td></tr>
+  <tr><td>V</td><td>e⁻–phonon coupling constant</td></tr>
+</table></div>
+<div class="cl"><span class="lbl">Ek not — Claude</span>Teorinin adı <b>BCS</b> (Bardeen–Cooper–Schrieffer); defterde "BSC" yazılmış. Formüldeki "ħ" indirgenmiş Planck sabiti (h/2π = 1.055×10⁻³⁴ J·s). Yorum: Debye frekansı ve e⁻–fonon etkileşimi (V) büyüdükçe T<sub>c</sub> artar.</div>
+
+<h2>Meissner Effect</h2>
+<ul>
+  <li class="tr">Süperiletken T<sub>crit</sub> altındayken içindeki manyetik alanı iter = Meissner effect
+    <div>↳ İç manyetik alan B = 0 olur ve mıknatıslanma M = −H olur</div></li>
+</ul>
+<div class="flex keep" style="justify-content:center">
+  <svg width="360" height="150" viewBox="0 0 360 150" aria-label="Normal iletkende alan çizgileri içinden geçer, süperiletkende etrafından dolanır">
+    <g stroke="#333" fill="none">
+      <circle cx="80" cy="70" r="30" fill="#ddd"/>
+      <line x1="62" y1="140" x2="62" y2="10"/><line x1="74" y1="140" x2="74" y2="10"/><line x1="86" y1="140" x2="86" y2="10"/><line x1="98" y1="140" x2="98" y2="10"/>
+      <circle cx="250" cy="70" r="30" fill="#bbb"/>
+      <path d="M240 140 C240 110 205 100 205 70 C205 40 240 30 240 10"/>
+      <path d="M232 140 C232 115 190 105 190 70 C190 35 232 25 232 10"/>
+      <path d="M260 140 C260 110 295 100 295 70 C295 40 260 30 260 10"/>
+      <path d="M268 140 C268 115 310 105 310 70 C310 35 268 25 268 10"/>
+    </g>
+    <text x="45" y="148" font-size="10">Normal conductor</text>
+    <text x="210" y="148" font-size="10">Superconductor</text>
+  </svg>
+  <p class="note" style="max-width:150px">← diamagnetism (a property of superconductor)</p>
+</div>
+
+<div class="imp"><span class="lbl">Önemli</span>
+<p>* <span class="term">Critical Magnetic Field</span> (H<sub>c</sub>) → <span class="tr">Süperiletkenlik durumu sonsuz bir manyetik alana dayanamaz. If:</span></p>
+<p class="ind">Applied magnetic field &gt; Critical magnetic field → <span class="tr">Süperiletkenlik kaybolur</span></p>
+<div class="eq"><span class="eqbox">H<sub>c</sub>(T) = H<sub>c</sub>(0) · [ 1 − (T / T<sub>c</sub>)² ]</span></div>
+<p class="ind tr">↳ Manyetik alanın süperiletken yüzeyinden içeri ne kadar sızabileceği ise London Nüfuz Derinliği (λ<sub>L</sub>) ile belirlenir</p>
+</div>
+<p>* <span class="tr">Meissner etkisi, manyetik levitasyon olgusunu mümkün kılar. Burada bir superconductor malzeme manyetik alanı iter ve nesnelerin sürtünmesiz bir şekilde havada asılı kalmasını mümkün kılar.</span></p>
+<p class="ind2">↳ <span class="tr">Maglev Trenler</span></p>
+
+<div class="ex"><b><u>Example</u></b> – A superconductor is cooled to 4.2 K using He. T<sub>crit</sub> = 10 K
+<p>a) The superconducting materials remains superconductive at this temp. if no magnetic field is applied. However, it will lose superconductivity at its T<sub>crit</sub>. The critical magnetic field H<sub>c(0)</sub> = 0.2 T. Calculate the critical magnetic field of the superconductor at 4.2 K.</p>
+<div class="grid2">
+  <div>
+    <p>H<sub>c(T)</sub> = H<sub>c(0)</sub> [ 1 − (T/T<sub>c</sub>)² ]</p>
+    <p>H<sub>c(4.2K)</sub> = 0.2 T ( 1 − (4.2 K / 10 K)² )</p>
+    <p class="ind">0.2 T × 0.8236</p>
+    <p><b>H<sub>c(4.2K)</sub> = 0.1647 T</b> ✓</p>
+  </div>
+  <div class="tr">• T<sub>crit</sub> = 10 K'ya ulaşırsa H<sub>c(10)</sub> = 0 T olur. Malzeme süperiletkenliğini kaybeder normal iletken olur ve manyetik alan malzeme içine nüfuz eder</div>
+</div>
+</div>
+<div class="cl"><span class="lbl">Ek not — Claude · kontrol</span>(4.2/10)² = 0.1764 → 1 − 0.1764 = 0.8236 → 0.2 × 0.8236 = <b>0.1647 T</b>. Hesap doğru. Birim kontrolü: parantez içi boyutsuz (K/K), sonuç T ✓</div>
+
+<!-- ====================== SAYFA 9 ====================== -->
+<div class="pg">Defter · s. 9</div>
+<h2>Classification of Superconductors</h2>
+<div class="grid2 keep">
+  <div>
+    <h3>Type I</h3>
+    <ul>
+      <li>Usually pure metal (Pb, Hg)</li>
+      <li>Have low (T<sub>crit</sub>) (1–15 K) and low magnetic field (H<sub>c</sub>)</li>
+      <li class="tr">Meissner etkisini tam gösterirler, yani manyetik alanı tamamen dışlarlar</li>
+      <li>App = Limited, mainly research</li>
+    </ul>
+    <svg width="230" height="130" viewBox="0 0 230 130" aria-label="Tip I: kritik alan eğrisinin altı süperiletken, üstü normal">
+      <rect x="40" y="10" width="140" height="95" fill="none" stroke="#333"/>
+      <path d="M40 50 Q120 55 165 105 L40 105 Z" fill="#c9d1ea" stroke="#333"/>
+      <text x="100" y="35" font-size="10">Normal</text>
+      <text x="22" y="54" font-size="10">Bc</text>
+      <text x="160" y="118" font-size="10">Tc</text>
+      <text x="40" y="125" font-size="10">Superconductor</text>
+      <text x="186" y="18" font-size="10">Type I</text>
+      <text x="6" y="90" font-size="8" transform="rotate(-90 10 90)">(magnetic field)</text>
+    </svg>
+  </div>
+  <div>
+    <h3>Type II <span class="note" style="font-weight:400">(YBCO, Nb-Ti, MgB₂)</span></h3>
+    <ul>
+      <li>Alloys and complex compound</li>
+      <li>Higher T<sub>crit</sub> &gt; 77 K</li>
+      <li>Partial <span class="tr">(kısmi)</span> magnetic field</li>
+      <li>Have 2 critical field (H<sub>c1</sub>, H<sub>c2</sub>)
+        <div class="tr">↳ H<sub>c1</sub> altında Meissner effect<br>H<sub>c1</sub>–H<sub>c2</sub> karma durum (Vortex state)<br>H<sub>c2</sub> aşılınca superconductor biter</div></li>
+      <li>App = MRI, maglev trains, strong magnets</li>
+    </ul>
+    <svg width="250" height="130" viewBox="0 0 250 130" aria-label="Tip II: Bc1 altında süperiletken, Bc1-Bc2 arası karma durum, Bc2 üstü normal">
+      <rect x="40" y="10" width="140" height="95" fill="none" stroke="#333"/>
+      <path d="M40 22 Q150 25 172 105 L40 105 Z" fill="#e3e7f3" stroke="#333"/>
+      <path d="M40 62 Q120 70 172 105 L40 105 Z" fill="#b7c2e3" stroke="#333"/>
+      <text x="130" y="20" font-size="10">Normal</text>
+      <text x="16" y="26" font-size="10">Bc2</text><text x="16" y="66" font-size="10">Bc1</text>
+      <text x="168" y="118" font-size="10">Tc</text>
+      <text x="48" y="125" font-size="10">Superconductor</text>
+      <text x="58" y="48" font-size="8.5">Mixture of normal and</text><text x="66" y="58" font-size="8.5">superconducting</text>
+      <text x="186" y="18" font-size="10">Type II</text>
+    </svg>
+  </div>
+</div>
+<div class="cl"><span class="lbl">Ek not — Claude · dikkat</span>"Type II → T<sub>crit</sub> &gt; 77 K" her Type II için geçerli değil: aynı sayfadaki Nb-Ti (9.2 K) ve Nb₃Sn (18 K) da Type II'dir. 77 K (sıvı azot) üstü sadece <b>HTS</b> grubu (YBCO, BSCCO) için doğru. Sınavda "Type II = yüksek T<sub>c</sub>" genellemesine dikkat.</div>
+
+<p>* <b>Type II superconductorler 2'ye ayrılır.</b></p>
+<p>1- <span class="term">Low Temp Superconductor (LTS)</span> =</p>
+<ul class="ind">
+  <li><b>Nb-Ti</b> <span class="note">(Niyobyum)</span> = T<sub>c</sub> ≈ 9.2 K (−264 °C). Cooled by liquid He. Used in MRI devices for magnet.</li>
+  <li><b>Nb₃Sn</b> = T<sub>c</sub> ≈ 18 K. Used in particle accelerators <span class="tr">(parçacık hızlandırıcı)</span></li>
+</ul>
+<p>2- <span class="term">High Temp Superconductor (HTS)</span> =</p>
+<ul class="ind">
+  <li><b>YBCO</b> <span class="note">(Yttrium barium copper oxide)</span> = T<sub>c</sub> ≈ 93 K. <span class="tr">Ucuz soğutma imkanı sunar.</span> Used in maglev train and magnetic levitation.</li>
+  <li><b>BSCCO</b> = T<sub>c</sub> ≈ 85 K. <span class="tr">Sıvı azotla soğutulabilen bir diğer HTS malzemesi</span></li>
+</ul>
+<div class="cl"><span class="lbl">Ek not — Claude</span>BSCCO satırındaki sayı defterde net okunmuyor ("8?K"). Bi-2212 fazı için literatür değeri ≈ 85 K, Bi-2223 için ≈ 110 K. Sıvı azotun kaynama noktası 77 K olduğu için ikisi de LN₂ ile soğutulabilir.</div>
+<p><b>Real life App</b> = MRI <span class="tr">(Tıbbi görüntüleme)</span> → Nb-Ti bobins used &nbsp;,&nbsp; Maglev trains → Superconductor magnet</p>
+
+<!-- ====================== SAYFA 10 ====================== -->
+<div class="pg">Defter · s. 10</div>
+<div class="wk">WEEK 4 &nbsp;PIEZOELECTRIC and FERROELECTRIC MAT</div>
+<div class="imp"><span class="lbl">Önemli</span>
+<p><span class="term">Piezoelectric</span> → Generate electric charge in response to applied mechanical stress.</p>
+<p class="ind">Mechanical energy → convert → electrical energy</p>
+<p class="ind note">• App = Sensors, actuators, energy harvesting <span class="tr">(toplama)</span> devices</p>
+<p><span class="term">Ferroelectric</span> → Exhibit a spontaneous electric polarization that can be reversed by applying an external electric field.</p>
+<p class="ind tr">(Harici elektrik alan uygulandığında tersine çevrilebilen kendiliğinden bir elektriksel polarizasyon sergiler)</p>
+<p class="ind note">• App = Memory storage, capacitors and certain sensors</p>
+</div>
+<p>* <span class="tr">Piezoelektrik malzemelerden farklı olarak, ferroelektrik malzemeler, elektrik alanı kaldırıldıktan sonra bile polarizasyonlarını korurlar</span></p>
+<p class="ind tr">(Histerezis döngüsü denir (hysteresis loop), elektrik alan–şiddet arasındaki ilişkiyi gösterir)</p>
+<div class="imp"><span class="lbl">Önemli</span>* All ferroelectric materials are piezoelectric but the reverse is not true.</div>
+
+<h2>Types of Piezoelectric effect</h2>
+<p><span class="bterm">Direct piezoelectric effect</span> → <span class="tr">Mekanik stresin kristal yapıyı bozarak (distortion) dipol oluşturması ve yüzeylerde voltaj/yük üretmesidir.</span> &nbsp;• Used sensors</p>
+<div class="eq">D = d · X &nbsp;<span class="note">X → stress, d → piezoelectric coefficient</span></div>
+<p><span class="bterm">Converse Piezoelectric Effect</span> → <span class="tr">Malzemeye elektrik alanı uygulandığında dipollerin hizalanması sonucu malzemenin fiziksel olarak genleşmesi veya büzülmesi.</span> &nbsp;• Used actuator</p>
+<div class="eq">S = d · E &nbsp;<span class="note">E → elektrik alan, S → mekanik gerinim</span></div>
+<div class="cl"><span class="lbl">Ek not — Claude · semboller ve birimler</span>
+D: dielectric displacement (yük yoğunluğu), C/m² · X: stress, Pa · S: strain (gerinim), boyutsuz · E: elektrik alan, V/m · d: piezoelektrik katsayı, C/N (= m/V). İki denklemde <b>aynı d</b> kullanılır: direct ve converse etki aynı katsayıyla tanımlanır.</div>
+
+<h2>Basic Principles of Piezoelectricity</h2>
+<p>* <span class="tr">Piezoelektrik sadece simetri merkezi olmayan (non-centrosymmetric) kristal yapılarda görülür. Simetri merkezi olan yapılarda yük dağılımı mekanik kuvvet altında dengede kalır ve net yük oluşmaz. (+) (−) yük merkezleri birbirinden kayar, net bir elektrik kutuplanması (polarizasyon) oluşur.</span></p>
+<div class="cl"><span class="lbl">Ek not — Claude</span>Son cümle (yük merkezlerinin kayması) <b>simetri merkezi olmayan</b> kristale aittir: kuvvet uygulanınca (+) ve (−) yük merkezleri ayrılır → polarizasyon. Simetrik kristalde ise merkezler çakışık kalır → net P = 0.</div>
+
+<!-- ====================== SAYFA 11 ====================== -->
+<div class="pg">Defter · s. 11</div>
+<h2>Types of Piezoelectric materials</h2>
+<p>1- <span class="term">Natural</span> = Natural materials have lower piezoelectric coefficients compared to synthetic materials. They generate a smaller amount of electric charge under stress</p>
+<ul class="ind">
+  <li><b>Quartz</b> = Stable crystal structure (used clocks and oscillators)</li>
+  <li><b>Rochelle salt</b> = ↑ piezoelectric coefficient, ↓ durability <span class="tr">(dayanıklılık)</span> &nbsp;• Higher cost</li>
+</ul>
+<p>2- <span class="term">Synthetic</span> = More durable and easier process than natural. Used in complex app. Have higher piezoelectric coefficient &nbsp;• Lower cost</p>
+<table class="t" style="margin-left:22px">
+  <tr><th>PZT</th><th>BaTiO₃</th><th>PVDF</th></tr>
+  <tr>
+    <td><span class="tr">(kurşun zirkonat titanat)</span><br>(used in actuators, ultrasonic imaging)</td>
+    <td><span class="tr">(Baryum titanat)</span><br>(used in capacitors, microphones)</td>
+    <td>→ <span class="tr">esnek polimer</span><br>(used in energy harvesting devices, medical ultrasound transducers <span class="tr">(dönüştürücü)</span>)</td>
+  </tr>
+</table>
+
+<h2>Ferroelectric Materials</h2>
+<div class="imp"><span class="lbl">Önemli</span>
+<p>* <span class="tr">Dışarıdan elektrik alanı uygulanmadan bile kendiliğinden elektrik polarizasyonuna (spontaneous polarization) sahip olan ve bu polarizasyonu dış elektrik alanla tersine çevirebilen malzemelerdir.</span></p>
+<p class="ind tr">↳ Bu benzersiz davranış genellikle Perovskite (ABX₃) kristal yapısından kaynaklanır (such as BaTiO₃, PZT)</p>
+</div>
+<p><span class="term">Curie Temp</span> (T<sub>c</sub>) → <span class="tr">Ferroelektrik malzemelerin bu sıcaklığın üzerine ısıtıldıklarında kristal yapılarının değişerek</span> (such as BaTiO₃ tetragonal → cubic) <span class="tr">dipol hizalanmasını dolayısıyla ferroelektrik/piezoelektrik özelliklerini kaybettikleri kritik sıcaklık</span></p>
+<table class="t">
+  <tr><th>T &lt; T<sub>c</sub> <span class="note">(Ferroelectric phase)</span></th><td>→ <span class="tr">Asimetrik yapı korunur,</span> permanent polarization is mevcut (BaTiO₃ tetragonal)</td></tr>
+  <tr><th>T &gt; T<sub>c</sub> <span class="note">(Paraelectric phase)</span></th><td>→ <span class="tr">Termal enerji dipol düzeni bozar, kristal simetrik kübik yapıya döner ve</span> permanent polarization <span class="tr">bozulur</span></td></tr>
+</table>
+<div class="eq">Dielectric constant → <span class="eqbox">ε = <span class="frac"><span>C</span><span>T − T<sub>c</sub></span></span></span> &nbsp;<span class="note">C → Curie constant, T<sub>c</sub> → Curie Temp</span></div>
+<p class="ind tr">↳ dielektrik sabiti T<sub>c</sub> civarında keskin bir tepe noktası yapar</p>
+<div class="cl"><span class="lbl">Ek not — Claude</span>Bu ifade <b>Curie–Weiss yasası</b>dır ve T &gt; T<sub>c</sub> (paraelektrik bölge) için geçerlidir. T → T<sub>c</sub>'ye yaklaştıkça payda → 0, yani ε çok büyür; defterdeki "keskin tepe" bu yüzden oluşur. BaTiO₃ için T<sub>c</sub> ≈ 120 °C.</div>
+
+<!-- ====================== SAYFA 12 ====================== -->
+<div class="pg">Defter · s. 12</div>
+<p>* <span class="bterm">Hysteresis Loop</span> → (P–E). <span class="tr">Bir ferroelektrik malzemedeki polarizasyonun dış elektrik alanına nasıl tepki verdiğinin grafiksel gösterimidir.</span></p>
+<div class="imp"><span class="lbl">Önemli</span>
+<p>** <span class="tr">Bu döngü ferroelektrik davranışın ayırt edici bir özelliğidir ve dış elektrik alanı kaldırıldıktan sonra bile malzemenin polarizasyonu muhafaza etmesi ortaya koyar =</span> (permanent polarization)</p>
+</div>
+<div class="flex keep">
+  <svg width="300" height="200" viewBox="0 0 300 200" aria-label="P-E histerezis döngüsü: Ps, +Pr, -Pr, +Ec, -Ec">
+    <defs><marker id="ar3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker></defs>
+    <line x1="20" y1="100" x2="255" y2="100" stroke="#333" marker-end="url(#ar3)"/>
+    <line x1="130" y1="190" x2="130" y2="12" stroke="#333" marker-end="url(#ar3)"/>
+    <text x="134" y="14" font-size="10">Polarization</text>
+    <text x="225" y="116" font-size="10">Electric field</text>
+    <path d="M215 45 C170 40 120 45 100 100 C85 140 70 160 45 160" fill="none" stroke="#1f3fa8" stroke-width="1.8"/>
+    <path d="M45 160 C90 160 140 155 160 100 C175 60 190 48 215 45" fill="none" stroke="#1f3fa8" stroke-width="1.8"/>
+    <path d="M130 100 C150 95 165 70 215 45" fill="none" stroke="#999" stroke-dasharray="3 3"/>
+    <circle cx="215" cy="45" r="2.5"/><text x="220" y="42" font-size="11">Ps</text>
+    <text x="96" y="70" font-size="10">+Pr</text><text x="136" y="140" font-size="10">−Pr</text>
+    <text x="84" y="114" font-size="10">−Ec</text><text x="160" y="114" font-size="10">+Ec</text>
+  </svg>
+  <div style="flex:1; min-width:250px; font-size:10pt">
+    <p>Ps → Saturation polarization <span class="tr">(Doygunluk polarizasyonu)</span></p>
+    <p>→ Non-permanent polarization</p>
+    <p>→ Permanent (remanent) polarization</p>
+    <p>→ Electric field</p>
+  </div>
+</div>
+<div class="imp"><span class="lbl">Önemli</span>
+<p><span class="term">P<sub>s</sub></span> <span class="tr">(Doygunluk polarizasyonu) = Yüksek elektrik alanda tüm dipoller alan yönünde hizalanır ve polarizasyon max'a ulaşır</span></p>
+<p><span class="term">P<sub>r</sub> (Permanent Polarization)</span> = <span class="tr">Elektrik alan sıfırlandığında bile malzeme içindeki dipollerin bir kısmı hizalı kalır</span> (permanent memory technology)</p>
+<p><span class="term">E<sub>c</sub> (Coercive Field)</span> <span class="tr">(Zorlayıcı alan)</span> = <span class="tr">Kalıcı polarizasyonu sıfırlamak için tamamen aksi yönde uygulanması gereken elektrik alan şiddeti.</span></p>
+</div>
+<p>↳ The area enclosed <span class="tr">(Arasında kalan alan)</span> by the hysteresis loop represent the energy loss per cycle due to the dipole switching</p>
+<div class="eq"><span class="eqbox">W = ∮<sub>L</sub> P · dE</span> &nbsp;<span class="note">P → polarization, E → electric field</span></div>
+<div class="cl"><span class="lbl">Ek not — Claude</span>P<sub>r</sub>'nin İngilizce terimi kitaplarda genelde <b>remanent polarization</b> (kalıntı polarizasyon). Defterde iki terim birlikte geçiyor, anlamları aynı. W birim hacim başına, döngü başına kayıptır (J/m³).</div>
+<p>** <span class="tr">Sentetik polikristalin seramikler üretildiğinde, dipoller rastgele yönlere bakar ve net polarizasyon = 0'dır. Bu seramikleri aktif hale getirmek için</span> <span class="u">Kutuplama (Poling)</span> <span class="tr">uygulanır</span></p>
+<p class="ind tr">↳ yüksek sıcaklık altında güçlü bir elektrik alanı uygulanır, dipoller tek bir yöne hizalanır.</p>
+<p class="tr">Ancak high T veya aşırı mekanik stress, malzemenin Depolarizasyon yaşamasına neden olabilir. Bu yüzden high T ortamlarda BaTiO₃ yerine daha (yüksek) T<sub>c</sub>'ye sahip PZT tercih edilir.</p>
+
+<!-- ====================== SAYFA 13 ====================== -->
+<div class="pg">Defter · s. 13</div>
+<p><span class="term">App of Ferroelectric</span> →</p>
+<ul class="ind">
+  <li>Capacitors and Non-Volatile Memory (FeRAM)</li>
+  <li>Sensors and Actuators</li>
+  <li>Electro-Optic Devices (fiber optic communication system) (LCD's, FLC's → Ferroelectric liquid crystals)</li>
+</ul>
+<p><span class="term">Challenge and Future Trends of Ferroelectric Materials</span> →</p>
+<ul class="ind">
+  <li class="tr">PZT'deki kurşunun toksik olmasından dolayı doğa dostu kurşunsuz alternatifler geliştirilmektedir (Potasyum Sodyum Niobat, BiFeO₃)</li>
+  <li class="tr">Elektronik cihazlar küçüldükçe, nano ölçekli ferroelektrik ince filmlerde polarizasyon kaybı ve sızıntı akımları (leakage currents) sorun olmaktadır. Gelecekte FeFET, MoS₂ gibi malzemeler öne çıkacaktır</li>
+</ul>
+
+<div class="cl"><span class="lbl">Ek not — Claude</span><b>Hafta 5 tatildi</b>, o hafta ders işlenmedi. Defter Hafta 4'ten doğrudan Hafta 6'ya geçiyor.</div>
+
+<div class="wk">WEEK 6 &nbsp;MAGNETIC FUNCTIONAL MATERIALS</div>
+<div class="flex keep">
+  <div style="flex:1; min-width:300px">
+    <h3>1- Magnetic Flux Density (B)</h3>
+    <p class="tr">• Malzeme içindeki toplam manyetik alanı ifade eder</p>
+    <div class="eq">B = <span class="frac"><span>Φ<sub>B</sub></span><span>A</span></span> <span class="note">&nbsp;Φ<sub>B</sub> → Magnetic flux, A → Area &nbsp;(Gauss or Tesla)</span></div>
+    <h3>2- Magnetic Field Intensity (H)</h3>
+    <p>• The externally applied magnetic field</p>
+    <div class="eq">H = <span class="frac"><span>N · I</span><span>ℓ</span></span> <span class="note">&nbsp;N → sarım sayısı (coil number), I → akım, ℓ → uzunluk &nbsp;(Ampere/metre)</span></div>
+    <p class="note">→ Bobin</p>
+  </div>
+  <div class="imp" style="min-width:230px">
+    <span class="lbl">Önemli</span>
+    <div class="eq" style="font-size:13pt">B⃗ = μ<sub>0</sub> ( H⃗ + M⃗ )</div>
+    <p class="note">μ<sub>0</sub> → permeability · H → external magnetic field · M → magnetization of material</p>
+  </div>
+</div>
+<div class="flex keep">
+  <svg width="140" height="140" viewBox="0 0 140 140" aria-label="Bobin: akım I ile sarılmış silindir, içinde B">
+    <rect x="45" y="25" width="50" height="95" fill="none" stroke="#333"/>
+    <g fill="none" stroke="#333">
+      <ellipse cx="70" cy="35" rx="34" ry="7"/><ellipse cx="70" cy="50" rx="34" ry="7"/><ellipse cx="70" cy="65" rx="34" ry="7"/>
+      <ellipse cx="70" cy="80" rx="34" ry="7"/><ellipse cx="70" cy="95" rx="34" ry="7"/><ellipse cx="70" cy="110" rx="34" ry="7"/>
+    </g>
+    <line x1="70" y1="125" x2="70" y2="6" stroke="#1f3fa8" stroke-width="1.6"/><path d="M65 12 L70 4 L75 12" fill="none" stroke="#1f3fa8" stroke-width="1.6"/>
+    <text x="4" y="134" font-size="10">Current (I) →</text>
+  </svg>
+  <p>B = Magnetic induction (tesla) inside the material</p>
+</div>
+<h3>3- Magnetization (M)</h3>
+<p class="tr">• Dışarıdan bir H alanı uygulandığında, malzemenin içindeki atomik dipoller bu alan yönünde hizalanma eğilimi gösterirler. Malzemenin bu tepkisine mıknatıslanma denir</p>
+<div class="eq"><span class="eqbox">M = χ<sub>m</sub> · H</span> &nbsp;<span class="note">χ<sub>m</sub> → Manyetik duyarlılık (malzemenin ne kadar kolay mıknatıslanabildiğini gösterir)</span></div>
+<div class="cl"><span class="lbl">Ek not — Claude · birimler ve bağlantılar</span>
+μ<sub>0</sub> = 4π×10⁻⁷ H/m (boşluğun manyetik geçirgenliği) · H, M: A/m · B: T (1 T = 10⁴ Gauss) · χ<sub>m</sub>: boyutsuz.<br>
+B = μ<sub>0</sub>(H + M) ve M = χ<sub>m</sub>H birleştirilirse: <b>B = μ<sub>0</sub>(1 + χ<sub>m</sub>)H = μH</b>, buradan <b>μ<sub>r</sub> = 1 + χ<sub>m</sub></b>. s.15'teki μ<sub>r</sub> &lt; 1 / μ<sub>r</sub> &gt; 1 ifadeleri bu ilişkiden gelir. Defterde M küçük harf "m" ile yazılmış.</div>
+
+<!-- ====================== SAYFA 14 ====================== -->
+<div class="pg">Defter · s. 14</div>
+<p><span class="term">Magnetic moment</span> (m) → <span class="tr">Bir manyetik kaynağın gücünü ve yönelimini sayısallaştıran bir vektör büyüklüğüdür.</span></p>
+<p class="ind tr">↳ Bir maddenin manyetik alanla aynı hizaya gelme ya da kendi manyetik alanını oluşturma eğilimini ifade eder</p>
+<div class="flex keep">
+  <div class="eq"><span class="eqbox">m = I · A</span></div>
+  <svg width="230" height="90" viewBox="0 0 230 90" aria-label="Akım halkası: alan A, dipol momenti alana dik">
+    <ellipse cx="70" cy="55" rx="42" ry="22" fill="#e3e7f3" stroke="#333"/>
+    <text x="55" y="60" font-size="10">Area</text>
+    <path d="M40 30 Q30 38 33 46" fill="none" stroke="#333"/><path d="M36 26 L42 30 L36 34" fill="none" stroke="#333"/>
+    <text x="30" y="20" font-size="10">Current</text>
+    <line x1="70" y1="55" x2="130" y2="20" stroke="#1f3fa8" stroke-width="1.6"/>
+    <text x="134" y="22" font-size="10">Dipole moment</text>
+  </svg>
+</div>
+<p>1- <span class="term">Spinning electron</span> (spin magnetic moment) (μ<sub>s</sub>) → The spin of e⁻ also produces a magnetic along the spin axis</p>
+<p class="ind tr">(Elektron kendi etrafında da spin atar, bu spin hareketi manyetik moment oluşturur)</p>
+<p>2- <span class="term">Orbiting electron</span> (orbit magnetic moment) (μ<sub>o</sub>) → Being a moving charge, e⁻ produce a small magnetic field having a magnetic moment along the axis of rotation</p>
+<p class="ind tr">(Elektronun çekirdek etrafında dönmesi dairesel akım halkası yaratır)</p>
+<svg width="260" height="100" viewBox="0 0 260 100" aria-label="Yörünge ve spin manyetik momentleri">
+  <line x1="50" y1="95" x2="50" y2="8" stroke="#333"/><path d="M46 14 L50 6 L54 14" fill="none" stroke="#333"/>
+  <ellipse cx="50" cy="55" rx="30" ry="8" fill="none" stroke="#333" stroke-dasharray="3 2"/><circle cx="50" cy="55" r="3" fill="#333"/>
+  <text x="74" y="50" font-size="9">e⁻</text><text x="84" y="64" font-size="10">(μ<tspan baseline-shift="sub" font-size="7">o</tspan>)</text>
+  <text x="10" y="8" font-size="9">Magnetic moment</text>
+  <line x1="170" y1="95" x2="170" y2="8" stroke="#333"/><path d="M166 14 L170 6 L174 14" fill="none" stroke="#333"/>
+  <circle cx="170" cy="55" r="12" fill="none" stroke="#333"/>
+  <text x="188" y="52" font-size="9">e⁻ spin</text><text x="188" y="66" font-size="10">(μ<tspan baseline-shift="sub" font-size="7">s</tspan>)</text>
+  <text x="140" y="8" font-size="9">Magnetic moment</text>
+</svg>
+
+<p><span class="term">Atomic Net Spin ve manyetik moment</span> → <span class="tr">Bir atom veya iyonun net manyetik momenti, tüm e⁻'ların spin ve orbital momentlerinin vektörel toplamıdır</span></p>
+<table class="t mag">
+  <tr><th>İyon</th><th>d-orbital</th><th>Spin dizilimi</th><th>Net spin</th><th>Magnetic moment</th></tr>
+  <tr><td>Mn²⁺</td><td>3d⁵</td><td>↑ ↑ ↑ ↑ ↑</td><td>5/2</td><td>5 μ<sub>B</sub></td></tr>
+  <tr><td>Fe²⁺</td><td>3d⁶</td><td>⇅ ↑ ↑ ↑ ↑</td><td>2</td><td>4 μ<sub>B</sub></td></tr>
+  <tr><td>Co²⁺</td><td>3d⁷</td><td>⇅ ⇅ ↑ ↑ ↑</td><td>3/2</td><td>3 μ<sub>B</sub></td></tr>
+  <tr><td>Ni²⁺</td><td>3d⁸</td><td>⇅ ⇅ ⇅ ↓ ↓</td><td>1</td><td>2 μ<sub>B</sub></td></tr>
+</table>
+<p class="ind tr">↓ eşleşmemiş (unpaired) elektronlara göre bulunur</p>
+<div class="cl"><span class="lbl">Ek not — Claude</span>
+μ<sub>B</sub> = Bohr magneton = 9.27×10⁻²⁴ A·m². Kural: <b>moment ≈ (eşleşmemiş e⁻ sayısı) × μ<sub>B</sub></b>, net spin = (eşleşmemiş e⁻ sayısı)/2.<br>
+Ni²⁺ satırında defterde son iki ok ↓↓ çizilmiş; önemli olan iki eşleşmemiş e⁻'un <b>aynı yönde</b> olması (↑↑ de yazılabilir), sonuç değişmez: 2 μ<sub>B</sub>.</div>
+
+<!-- ====================== SAYFA 15 ====================== -->
+<div class="pg">Defter · s. 15</div>
+<div class="flex" style="justify-content:space-between">
+  <h2>Types of Magnetism</h2>
+  <p class="note">aligned = hizalanmak · domain = alan</p>
+</div>
+<table class="t mag">
+  <tr><td>↓ ↓ ↓ ↓ ↓ ↓</td><td>→ <b>Diamagnetic</b></td><td>(Opposite direction to the magnetic field)</td></tr>
+  <tr><td>↑ ↑ ↑ ↑ ↑ ↑</td><td>→ <b>Paramagnetic</b></td><td>(Parallel direction to the magnetic field)</td></tr>
+  <tr><td>↑ ↑ ↑ ↑ ↑ ↑</td><td>→ <b>Ferromagnetic</b></td><td>(Below T<sub>c</sub>, spins are parallel in magnetic domains)</td></tr>
+  <tr><td>↑ ↓ ↑ ↓ ↑ ↓</td><td>→ <b>Ferrimagnetic</b></td><td>(Below T<sub>c</sub>, spins are aligned antiparallel, but don't cancel → <span class="tr">birbirlerini iptal etmezler</span>)</td></tr>
+  <tr><td>↑ ↓ ↑ ↓ ↑ ↓</td><td>→ <b>Antiferromagnetic</b></td><td>(Below T<sub>c</sub>, spins are aligned antiparallel in magnetic domain)</td></tr>
+</table>
+<div class="cl"><span class="lbl">Ek not — Claude</span>Ferrimanyetik ile antiferromanyetik oklar aynı görünüyor. Fark şu: ferrimanyetikte zıt yöndeki momentlerin <b>büyüklükleri farklı</b> (kısa ve uzun ok, ör. ↑ ↓), antiferromanyetikte <b>eşit</b>. Antiferromanyetik için kritik sıcaklık T<sub>N</sub>'dir (Néel), T<sub>c</sub> değil.</div>
+
+<p>1- <span class="bterm">Diamagnetism</span> → All orbital shells are filled and there are no unpaired e⁻. No net magnetic moments</p>
+<p class="ind">↳ <u>Mechn.</u> <span class="tr">Dış manyetik alan uygulandığında, Lenz kanunu gereği dış alanı zayıflatacak yönde çok küçük bir zıt manyetik moment indüklenir</span></p>
+<ul class="ind">
+  <li>Magnetic susceptibility <span class="tr">(duyarlılık)</span> is small and negative <b>χ<sub>m</sub> &lt; 0</b>, the permeability <b>μ<sub>r</sub> &lt; 1</b></li>
+  <li class="tr">Sıcaklıktan ve dış alan şiddetinden tamamen bağımsız</li>
+  <li>* Cu, Au, Si, NaCl, Superconductor</li>
+</ul>
+
+<p>2- <span class="bterm">Paramagnetism</span> → <span class="tr">Eşleşmemiş elektronlar nedeniyle kalıcı (adjacent) dipoller mevcut.</span></p>
+<p class="ind">↳ <u>Mechn.</u> <span class="tr">Dış alan yokken termal karmaşıklık nedeniyle dipoller rastgele yönlenmiştir (net M = 0). Dış alan uygulandığında dipoller alan yönünde kısmen döner</span></p>
+<ul class="ind">
+  <li>Susceptibility positive and small <b>χ<sub>m</sub> &gt; 10⁻⁵</b>. Permeability <b>μ<sub>r</sub> &gt; 1</b>. <span class="tr">Komşu dipoller arasında etkileşim yoktur</span></li>
+  <li>If T ↑, <span class="tr">termal ajitasyon ↑ ve düzeni bozar, duyarlılık ↓</span></li>
+</ul>
+<div class="eq"><span class="eqbox">χ<sub>m</sub> = <span class="frac"><span>C</span><span>T − θ</span></span></span></div>
+<p>* Alkali metals (Li, Na, K), transition metals (Al, Pt, Mn)</p>
+<div class="cl"><span class="lbl">Ek not — Claude</span>
+<ul>
+  <li>Tipik değerler (Callister): diamanyetik χ<sub>m</sub> ≈ −10⁻⁵, paramanyetik χ<sub>m</sub> ≈ 10⁻⁵ – 10⁻², ferromanyetik χ<sub>m</sub> ~10⁶'ya kadar.</li>
+  <li>"kalıcı (adjacent)": doğru İngilizce karşılık <b>permanent</b> dipoles (adjacent = komşu/bitişik demek).</li>
+  <li>χ = C/(T − θ) = Curie–Weiss yasası; θ = 0 ise saf Curie yasası (χ = C/T). Ferroelektrikteki ε = C/(T − T<sub>c</sub>) ile aynı formda.</li>
+  <li>Al bir <b>geçiş metali değildir</b> (3A grubu), ama paramanyetik olduğu doğru. Pt ve Mn geçiş metalidir.</li>
+</ul></div>
+
+<!-- ====================== SAYFA 16 ====================== -->
+<div class="pg">Defter · s. 16</div>
+<p>3- <span class="bterm">Ferromagnetism</span> → <span class="tr">Dış alan olmasa dahi atomik dipoller arasında</span> Exchange Coupling <span class="tr">(Değiş-Tokuş) denilen mekaniksel bir etkileşim vardır</span></p>
+<p class="ind">↳ <u>Mechn.</u> <span class="tr">Bu güçlü etkileşim komşu atomların spinlerinin aynı yöne paralel hizalanmasını sağlar. Bu hizalama domain (manyetik alan bölgesi) adı verilen alanlarda gerçekleşir</span></p>
+<ul class="ind">
+  <li>Very high susceptibility, <b>χ<sub>m</sub> = 10⁶</b></li>
+  <li class="tr">Curie sıcaklığı (T<sub>c</sub>) üzerinde termal enerji değişim etkileşimini yener ve ferromanyetik → paramanyetik hale geçer</li>
+</ul>
+<div class="cl"><span class="lbl">Ek not — Claude</span>"Mekaniksel" etkileşimin tam adı <b>kuantum mekaniksel</b> exchange (değiş-tokuş) etkileşimidir. Klasik bir mekanik kuvvet değildir.</div>
+
+<div class="grid2 keep">
+  <div>
+    <h3>Hard Magnetic Material</h3>
+    <svg width="220" height="150" viewBox="0 0 220 150" aria-label="Sert manyetik malzeme: geniş B-H histerezis döngüsü">
+      <line x1="10" y1="75" x2="210" y2="75" stroke="#333"/><line x1="110" y1="145" x2="110" y2="5" stroke="#333"/>
+      <text x="200" y="90" font-size="10">H</text><text x="114" y="14" font-size="10">B</text>
+      <path d="M190 30 L80 30 Q62 30 57 55 L47 105 Q43 120 30 120 L140 120 Q158 120 163 95 L173 45 Q177 30 190 30 Z" fill="none" stroke="#1f3fa8" stroke-width="1.8"/>
+    </svg>
+    <ul>
+      <li>Have large hysteresis loss</li>
+      <li>Cannot be easily magnetized</li>
+      <li>Magnetostatic energy large</li>
+      <li>Used to make permanent magnets</li>
+      <li>Fe-Ni-Al alloys<br>Cu-Ni-Fe alloys<br>Cu-Ni-Co alloys<br>FePt</li>
+      <li>Coercivity, retentivity are large<br><span class="tr">(zorlayıcılık) (tutuculuk)</span></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Soft Magnetic Material</h3>
+    <svg width="220" height="150" viewBox="0 0 220 150" aria-label="Yumuşak manyetik malzeme: dar B-H histerezis döngüsü">
+      <line x1="10" y1="75" x2="210" y2="75" stroke="#333"/><line x1="110" y1="145" x2="110" y2="5" stroke="#333"/>
+      <text x="200" y="90" font-size="10">H</text><text x="114" y="14" font-size="10">B</text>
+      <path d="M140 40 Q115 40 106 75 Q100 110 80 120 Q105 112 114 75 Q120 42 140 40" fill="none" stroke="#1f3fa8" stroke-width="1.8"/>
+    </svg>
+    <ul>
+      <li>Low hysteresis loss</li>
+      <li>Can be easily magnetized</li>
+      <li>Magnetostatic energy small</li>
+      <li>Used to make electromagnets</li>
+      <li>Fe-Si alloys<br>Ferrites<br>FePt</li>
+      <li>Coercivity, retentivity small</li>
+    </ul>
+  </div>
+</div>
+<div class="cl"><span class="lbl">Ek not — Claude</span>FePt defterde <b>hem hard hem soft</b> listesine yazılmış. FePt (L1₀ fazı) bilinen bir <b>sert</b> (hard) mıknatıstır; soft listesindeki büyük ihtimalle yanlışlıkla yazılmış. Soft için tipik örnekler: Fe-Si, ferritler, permalloy (Ni-Fe).</div>
+
+<div class="imp"><span class="lbl">Önemli</span>
+<p><span class="term">Curie sıcaklığı</span> (T<sub>c</sub>) → <span class="tr">Isı enerjisinin dipol hizalamasını yenip malzemenin ferromanyetik özelliklerini kaybedip paramanyetik hale geçtiği sıcaklık</span> (Fe için 768 °C)</p>
+<p><span class="term">Néel sıcaklığı</span> (T<sub>N</sub>) → <span class="tr">Antiferromanyetik hizalamanın bozularak malzemenin paramanyetik hale geçtiği sıcaklık</span></p>
+<p class="ind">* <span class="tr">T<sub>c</sub>'de güçlü/net mıknatıs yapısından paramanyetizmaya geçilirken, T<sub>N</sub>'de birbirini sıfırlayan zıt hizalı yapıdan paramanyetizmaya geçilir</span></p>
+</div>
+
+<!-- ====================== SAYFA 17 ====================== -->
+<div class="pg">Defter · s. 17</div>
+<p>4- <span class="bterm">Antiferromagnetism</span> → <span class="tr">Komşu spinler eşit büyüklükte ancak tam zıt dizilir. Net manyetik moment = 0</span></p>
+<ul class="ind">
+  <li class="tr">Néel sıcaklığı (T<sub>N</sub>) üzerinde paramanyetik olurlar</li>
+  <li>* MnO, FeO, Cr₂O₃</li>
+  <li>Susceptibility is small and positive<br>↳ At T<sub>N</sub> → susceptibility is max</li>
+</ul>
+<p>5- <span class="bterm">Ferrimagnetism</span> → <span class="tr">Seramik yapılarda (ferrit, MFe₂O₄) görülür. Zıt yönlü spinler birbiriyle tam örtüşmez (farklı büyüklük), bu yüzden net bir mıknatıslanma kalır.</span></p>
+<ul class="ind">
+  <li>Electrical insulator (ferrit) → <span class="tr">Yüksek frekanslı trafolarda akım kayıplarını engellemek için mükemmeldir</span></li>
+</ul>
+<div class="cl"><span class="lbl">Ek not — Claude</span>Ferritler yalıtkan olduğu için içlerinde <b>eddy current</b> (girdap akımı) oluşmaz. "Yüksek frekansta akım kaybı yok" denmesinin sebebi bu.</div>
+<p>6- <span class="bterm">Superparamagnetism</span> → Form of (magnetism) exhibited by small ferromagnetic or ferrimagnetic nanoparticles.</p>
+<ul class="ind">
+  <li class="tr">Nanoparçacık boyutu (&lt;100 nm) kritik bir eşiğin altına düştüğünde malzeme tek bir magnetic domain (single-domain)'den oluşur. Dış alan kaldırıldığında kalıcı mıknatıslanma = 0 (H<sub>c</sub> = 0, M<sub>r</sub> = 0)</li>
+  <li>High susceptibility gösterir.</li>
+  <li class="tr">Nanopartiküller süperparamanyetik boyuta ulaştığında hysteresis loop kaybolur</li>
+</ul>
+<div class="cl"><span class="lbl">Ek not — Claude</span>Kritik boyut malzemeye bağlıdır. Fe₃O₄ için süperparamanyetik davranış genelde ~20 nm'nin altında görülür; "&lt;100 nm" kaba bir üst sınır. Burada H<sub>c</sub> coercivity (zorlayıcı alan) anlamında; süperiletkenlerdeki kritik alan H<sub>c</sub> ile karıştırma.</div>
+
+<h2>Applications of Magnetic Materials</h2>
+<table class="t">
+  <tr><th>* Diamagnetic</th><td>Cu, Ag, Bi</td><td>(Levitation experiments, maglev trains, precision <span class="tr">(hassas)</span> instruments)</td></tr>
+  <tr><th>* Paramagnetic</th><td>Al, Pt, Mn</td><td>(Enhancing MRI imaging, magnetic separation process)</td></tr>
+  <tr><th>* Ferromagnetic</th><td>Fe, Ni, Co</td><td>(Permanent magnets in motors, generators, magnetic storage)</td></tr>
+  <tr><th>* Antiferromagnetic</th><td>MnO, Fe₂O₃</td><td>(Magnetic sensors, magnetic RAM (MRAM))</td></tr>
+  <tr><th>* Ferrimagnetic</th><td>Fe₃O₄, MnFe₂O₄</td><td>(Transformers, inductors, microwave devices)</td></tr>
+  <tr><th>* Superparamagnetic</th><td>Nanoparticle Fe₃O₄</td><td>(Drug delivery, cancer treatment, Biotechnology, MRI imaging)</td></tr>
+</table>
+
+<!-- ====================== CLAUDE EK: FORMÜL ÖZETİ ====================== -->
+<div class="pg pg-break">Ek · Claude — defterde yok</div>
+<div class="cl" style="font-size:10pt">
+<span class="lbl">Ek — Claude · tek sayfa formül özeti (defterdeki formüllerin toplu hali)</span>
+<table class="t" style="width:100%; background:#fff">
+  <tr><th>Konu</th><th>Formül</th><th>Semboller / birim</th><th>Defter</th></tr>
+  <tr><td>İletkenlik</td><td>σ = 1/ρ · ρ = RA/ℓ</td><td>σ: S/m, ρ: Ω·m</td><td>s.2</td></tr>
+  <tr><td>Işık</td><td>I<sub>0</sub> = I<sub>T</sub> + I<sub>A</sub> + I<sub>R</sub></td><td>soğurma şartı hν ≥ E<sub>g</sub></td><td>s.3</td></tr>
+  <tr><td>Mobilite</td><td>μ = v<sub>d</sub>/E = σ/(n·q)</td><td>μ: m²/(V·s)</td><td>s.6</td></tr>
+  <tr><td>BCS</td><td>k<sub>B</sub>T<sub>c</sub> = 1.14 ħω<sub>D</sub> exp(−1/N(0)V)</td><td>k<sub>B</sub> = 1.38×10⁻²³ J/K</td><td>s.8</td></tr>
+  <tr><td>Kritik alan</td><td>H<sub>c</sub>(T) = H<sub>c</sub>(0)[1 − (T/T<sub>c</sub>)²]</td><td>T = T<sub>c</sub>'de H<sub>c</sub> = 0</td><td>s.8</td></tr>
+  <tr><td>Piezo (direct)</td><td>D = d·X</td><td>D: C/m², X: Pa</td><td>s.10</td></tr>
+  <tr><td>Piezo (converse)</td><td>S = d·E</td><td>S: boyutsuz, E: V/m</td><td>s.10</td></tr>
+  <tr><td>Curie–Weiss (ferroelektrik)</td><td>ε = C/(T − T<sub>c</sub>)</td><td>T &gt; T<sub>c</sub> için</td><td>s.11</td></tr>
+  <tr><td>Histerezis kaybı</td><td>W = ∮ P·dE</td><td>J/m³ (döngü başına)</td><td>s.12</td></tr>
+  <tr><td>Manyetik akı yoğunluğu</td><td>B = Φ<sub>B</sub>/A · B = μ<sub>0</sub>(H + M)</td><td>B: T, μ<sub>0</sub> = 4π×10⁻⁷ H/m</td><td>s.13</td></tr>
+  <tr><td>Bobin alanı</td><td>H = N·I/ℓ</td><td>H: A/m</td><td>s.13</td></tr>
+  <tr><td>Mıknatıslanma</td><td>M = χ<sub>m</sub>H · μ<sub>r</sub> = 1 + χ<sub>m</sub></td><td>χ<sub>m</sub>: boyutsuz</td><td>s.13</td></tr>
+  <tr><td>Manyetik moment</td><td>m = I·A</td><td>A·m², μ<sub>B</sub> = 9.27×10⁻²⁴ A·m²</td><td>s.14</td></tr>
+  <tr><td>Curie–Weiss (paramanyetik)</td><td>χ<sub>m</sub> = C/(T − θ)</td><td>T ↑ → χ ↓</td><td>s.15</td></tr>
+</table>
+<p style="margin-top:8px"><b>Sınavda çıkabilir (tahmin):</b></p>
+<ul>
+  <li>H<sub>c</sub>(T) hesabı (s.8'deki örnek tipi): T, T<sub>c</sub>, H<sub>c</sub>(0) verilir.</li>
+  <li>Type I ile Type II süperiletken karşılaştırması ve H–T diyagramları.</li>
+  <li>P–E histerezis döngüsünde P<sub>s</sub>, P<sub>r</sub> ve E<sub>c</sub>'nin tanımı; neden "tüm ferroelektrikler piezoelektriktir ama tersi doğru değildir".</li>
+  <li>Manyetizma türlerinin χ<sub>m</sub> işareti/büyüklüğü, örnek malzemeleri, T<sub>c</sub> ve T<sub>N</sub> farkı.</li>
+  <li>Hard ve soft manyetik malzemelerin karşılaştırması (histerezis alanı, coercivity, kullanım).</li>
+</ul>
+</div>
+
+</body>
+</html>
