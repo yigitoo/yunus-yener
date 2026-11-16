@@ -42,5 +42,19 @@
 
 ## Sınav Hazırlık
 
-- Önemli formüller / diyagramlar:
+### Sınav formatı (hocanın söylediği)
+
+> Hangi sınav için (vize/final) ve tarihi: _bilinmiyor, teyit et_
+
+| Bölüm | Soru | Puan |
+|-------|------|------|
+| Test | 12 soru | %60 (soru başı ~5 puan) |
+| Klasik | 4 soru | 4 × 10 = 40 puan |
+| **Toplam** | **16 soru** | **100** |
+
+- Her konudan soru var.
+- 1 adet **basit hesaplama** sorusu. Defterdeki tek sayısal örnek: H<sub>c</sub>(T) = H<sub>c</sub>(0)[1 − (T/T<sub>c</sub>)²] (defter s.8).
+- 1 adet **"hangi materyal ne için kullanılır"** sorusu. Bakılacak yerler: defter s.3 (semiconductor türleri), s.7 (PANI, PEDOT:PSS), s.9 (Nb-Ti, Nb₃Sn, YBCO, BSCCO), s.11 (PZT, BaTiO₃, PVDF, Quartz), s.13 (ferroelectric uygulamaları), s.17 (magnetic materials uygulama tablosu).
+
+- Önemli formüller / diyagramlar: [defter PDF'inin son sayfasındaki formül özeti](notlar/arkadas-defteri-hafta-01-06.pdf)
 - Sık çıkan soru tipleri:
