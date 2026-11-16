@@ -4,7 +4,7 @@
 
 | Tarih | Ders | Etkinlik | Durum |
 |-------|------|----------|-------|
-| 16.11.2026 Pzt 11:45–12:45 · KMB-313 | MSE4931 Ferroalloy Production Methods | Vize | ⏳ |
+| 16.11.2026 Pzt 11:45–12:45 · KMB-313 | MSE4931 Ferroalloy Production Methods | Vize | ✅ |
 | 17.11.2026 Sal 09:00–10:15 · KMB-313 | MSE4911 Functional Materials | Vize | ⏳ |
 | 18.11.2026 Çar 11:30–12:45 · KMB-317 | MSE2941 Occupational Health and Safety 1 (Gr.1) | Vize | ⏳ |
 | 18.11.2026 Çar 14:00–15:15 · KMB-217 | MSE4881 Polymer Processing | Vize | ⏳ |
