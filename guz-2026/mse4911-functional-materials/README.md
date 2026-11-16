@@ -25,12 +25,12 @@
 
 | Hafta | Konu | Not |
 |-------|------|-----|
-| 1 | | [hafta-01](notlar/hafta-01.md) |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
-| 6 | | |
+| 1 | Giriş: functional material sınıfları | [hafta-01](notlar/hafta-01.md) · [defter s.1–2](notlar/arkadas-defteri-hafta-01-06.pdf) |
+| 2 | Semiconductors: band theory, doping, mobility | [defter s.2–6](notlar/arkadas-defteri-hafta-01-06.pdf) |
+| 3 | Conducting polymers + Superconductors (BCS, Meissner, Type I/II) | [defter s.6–9](notlar/arkadas-defteri-hafta-01-06.pdf) |
+| 4 | Piezoelectric & Ferroelectric materials | [defter s.10–13](notlar/arkadas-defteri-hafta-01-06.pdf) |
+| 5 | Tatil — ders yok | |
+| 6 | Magnetic functional materials | [defter s.13–17](notlar/arkadas-defteri-hafta-01-06.pdf) |
 | 7 | | |
 | 8 | Vize | |
 | 9 | | |
