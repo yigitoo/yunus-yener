@@ -57,5 +57,5 @@
 - 1 adet **"hangi materyal ne için kullanılır"** sorusu. Bakılacak yerler: defter s.3 (semiconductor türleri), s.7 (PANI, PEDOT:PSS), s.9 (Nb-Ti, Nb₃Sn, YBCO, BSCCO), s.11 (PZT, BaTiO₃, PVDF, Quartz), s.13 (ferroelectric uygulamaları), s.17 (magnetic materials uygulama tablosu).
 
 - Önemli formüller / diyagramlar: [defter PDF'inin son sayfasındaki formül özeti](notlar/arkadas-defteri-hafta-01-06.pdf)
-- Vize cheat sheet (32 kart + malzeme listesi): [1](sinavlar/vize-cheat-sheet-1.png) · [2](sinavlar/vize-cheat-sheet-2.png) · [3](sinavlar/vize-cheat-sheet-3.png) · [4](sinavlar/vize-cheat-sheet-4.png) · [5 – hangi malzeme ne için](sinavlar/vize-cheat-sheet-5.png)
+- Vize cheat sheet (32 kart + malzeme listesi): [PDF](sinavlar/vize-cheat-sheet.pdf) · [1](sinavlar/vize-cheat-sheet-1.png) · [2](sinavlar/vize-cheat-sheet-2.png) · [3](sinavlar/vize-cheat-sheet-3.png) · [4](sinavlar/vize-cheat-sheet-4.png) · [5 – hangi malzeme ne için](sinavlar/vize-cheat-sheet-5.png)
 - Sık çıkan soru tipleri:
