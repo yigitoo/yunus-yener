@@ -1,6 +1,6 @@
-# MSE2941 OHS — Vize Hızlı Özet (W1, W3–W6)
+# MSE2941 OHS — Vize Hızlı Özet (W1, W3–W7)
 
-> Kaynak: Doç. Dr. Mehmet YILMAZ slaytları (W1, W3, W4, W5, W6). W2 yüklenmedi, W7 (4857 & 6331) eklenecek.
+> Kaynak: Doç. Dr. Mehmet YILMAZ slaytları (W1, W3–W7). W2 yüklenmedi.
 > Değerlendirme: Ödev %15 · Vize %45 · Final %40.
 
 ## W1 — Introduction
@@ -78,6 +78,25 @@
 - **Chipless machines** (talaşsız): guillotine shears, hydraulic & eccentric presses. **Chip machines** (talaşlı): drilling, **lathe**, milling, planing, shaper.
 - Lathe: chuck key, guards, emergency stop, doğru speed & feed, takım değiştirirken güç kesik.
 - Don'ts: atölyede koşma, compressed air'i kişiye tutma, çalışırken kapağı açma, talaşı çıplak elle toplama, yükün altında durma.
+
+## W7 — Workplace Rules 2: Load Handling & Safety Signs
+
+- **Lifting & carrying:** yükü hafiflet / mekanik yardım; **75 cm'den geniş** cisim elle kaldırılmaz; çok kişi taşırken **tek kişi komut verir**; omuzda taşırken herkes **aynı omuz**, indirirken **arkadaki** komut verir; istiften alırken **üstten başla**; **düşen cismi tutmaya çalışma**; **asılı yükün altında durma**; hareketli araçtan yük alma.
+- **Gas cylinders** (basınçlı tüp): yuvarlanmaz, düşürülmez; **cylinder cart** + **safety cap** + **zincirle** sabitlenir.
+- **Manual lifting tekniği:** yüke yakın dur, yük iki diz arasında; **dizleri bük, sırt düz**; sadece **bacak ve kol kasları**; yavaş kaldır; yükü vücuda yakın tut; indirirken adımları tersine uygula.
+- **Push / pull:** iterken öne, çekerken arkaya eğil; sırtı bükme; tutamak **omuz ile bel arası** yükseklikte.
+- **Önlem sırası:** **Elimination** (forklift ile elle taşımayı kaldır) → **Technical measures** (crane, hand truck, vacuum lifter) → **Job rotation** / yeterli mola → **Training**.
+- **Health or Safety Signs Regulation** (Çalışma ve Sosyal Güvenlik Bakanlığı): risk **collective protection** (toplu korunma) ile yeterince azaltılamıyorsa, risk değerlendirmesi sonucuna göre işveren levha koyar.
+
+| Sign | Shape | Renk | Oran |
+|---|---|---|---|
+| **Prohibitory** (yasak) | Daire | Beyaz zemin, siyah piktogram, **kırmızı** çerçeve + çapraz çizgi | kırmızı ≥ **%35** |
+| **Mandatory** (zorunlu) | Daire | **Mavi** zemin, beyaz piktogram | mavi ≥ **%50** |
+| **Warning / caution** (uyarı) | **Üçgen** | **Sarı** zemin, siyah piktogram + siyah çerçeve | sarı ≥ **%50** |
+| **Emergency exit / first aid** | Dikdörtgen / kare | **Yeşil** zemin, beyaz piktogram | yeşil ≥ **%50** |
+
+- Kurallar: iyi aydınlatılmış ve görünür yerde, göz hizasında; zayıf ışıkta fluorescent/reflective malzeme; durum ortadan kalkınca levha kaldırılır; çok sayıda levha yan yana konmaz; birden fazla sesli sinyal aynı anda kullanılmaz; çok gürültülü yerde sesli sinyal kullanılmaz.
+- ⚠️ Slaytta "Green = warning" yazıyor ama sonraki slaytlar ve standart: **yeşil = safe condition / emergency exit**, **sarı = warning**.
 
 ## Sınavda çıkabilir
 

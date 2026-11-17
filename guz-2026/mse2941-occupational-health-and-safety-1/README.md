@@ -31,7 +31,7 @@
 | 4 | Occupational accidents | [vize özeti](sinavlar/vize-ozet.md) |
 | 5 | Occupational accident + haklar/yükümlülükler | [vize özeti](sinavlar/vize-ozet.md) |
 | 6 | Workplace rules & machine safety | [vize özeti](sinavlar/vize-ozet.md) |
-| 7 | 4857 İş K. & 6331 İSG K. | |
+| 7 | Workplace rules 2: load handling & safety signs | [vize özeti](sinavlar/vize-ozet.md) |
 | 8 | Vize | |
 | 9 | | |
 | 10 | | |
