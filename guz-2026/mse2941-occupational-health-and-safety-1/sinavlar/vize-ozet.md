@@ -29,7 +29,7 @@
 - **Goals of occupational safety:** protect employees · protect material & equipment · ensure safe production. "Kim sorumlu?" → **EVERYONE**.
 - **Occupational disease**: direct cause, **gradual onset**, official recognition. Ör: asbestosis, silicosis, dermatitis, noise-induced hearing loss, carpal tunnel.
 - **Accident oranları:** **88% unsafe acts**, **10% unsafe conditions**, 2% other.
-- **ILO istatistik:** 250 milyon kaza/yıl, 335.000 ölüm/yıl; her ~7 s'de kaza, her 5.5 dk'da 1 ölüm. (W5'te: 270 M kaza, 160 M meslek hastalığı, 2.2 M ölüm.)
+- **ILO istatistik (slayttaki haliyle):** 250 milyon kaza/yıl, 335.000 ölüm/yıl; "every 7 seconds" kaza, "every 5.5 minutes" 1 ölüm. ⚠️ Bu aralıklar yıllık toplamlarla matematiksel olarak tutmuyor (250 M/yıl ≈ 0.13 s'de bir); sınavda slayttaki sayıları yaz. (W5'te: 270 M kaza, 160 M meslek hastalığı, 2.2 M ölüm.)
 - **Business blindness** (iş körlüğü): rutine alışıp tehlikeyi görmemek → complacency.
 - **Heinrich Domino Theory (5):** ① ancestry/social environment ② fault of person ③ **unsafe act / unsafe condition** ④ accident ⑤ injury. 3. domino'yu çek → zincir kırılır. Bugün **outdated** sayılır.
 - **Ethics vs Morality:** ethics = dışsal, sistematik kurallar (meslek/toplum); morality = içsel, kişisel pusula.
