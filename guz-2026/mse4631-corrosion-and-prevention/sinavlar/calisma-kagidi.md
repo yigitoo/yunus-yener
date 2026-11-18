@@ -483,3 +483,197 @@ Karbon çeliği için iki korozyon akımı bulundu: havalandırılmış durgun d
 Çözüm: ders notları Sayfa 61
 :::
 ::::
+
+:::: sayfa
+## Sınav A · 1. Vize (19.11.2025) · Soru 1
+
+::: soru
+$i_{corr} = 5\ \mu$A/cm²  
+$Fe \rightarrow Fe^{2+} + 2e^-$  
+$M = 55.85$ g/mol, $\rho = 7.87$ g/cm³
+
+Calculate yearly thickness loss.
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 52 (i_corr → mm/y)
+:::
+::::
+
+:::: sayfa
+## Sınav A · 1. Vize (19.11.2025) · Soru 2
+
+::: soru
+$i_{peak} = 8$ mA/cm²  
+$i_{pass} = 40\ \mu$A/cm²  
+Passive region: −0.05 to 0.80 V  
+Breakdown at 0.80 V
+  
+(a) Sketch the curve.    
+(b) Why is low $i_{pass}$ important?    
+(c) Effect of higher pH and temperature?
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 59–60 (aktif–pasif eğri, pH ve sıcaklık)
+:::
+::::
+
+:::: sayfa
+## Sınav A · 1. Vize (19.11.2025) · Soru 3
+
+::: soru  
+(a) Define activation polarization.    
+(b) Define diffusion polarization.    
+(c) How do you identify the Tafel region?
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 40–43, 51 (polarizasyon, Tafel ekstrapolasyonu)
+:::
+::::
+
+:::: sayfa
+## Sınav A · 1. Vize (19.11.2025) · Soru 4
+
+::: soru  
+(a) Draw the Pourbaix diagram and explain the related reactions of water?    
+(b) Draw and briefly explain Evans polarization diagrams.
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 29–32, 46–48; çıkmış sorular PDF'i Soru 4
+:::
+::::
+
+:::: sayfa
+## Sınav A · 1. Vize (19.11.2025) · Soru 5
+
+::: soru
+$Fe^{2+}/Fe$ has $E^\circ = -0.44$ V and $[Fe^{2+}] = 1\times10^{-4}$ M.
+  
+(a) Calculate electrode potential.    
+(b) Explain whether lower $Fe^{2+}$ increases dissolution tendency.
+  
+($R = 8.314$ J/(mol·K), $T = 298$ K, $F = 96\,485$ C/mol)
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 20 (tek elektrot için Nernst)
+:::
+::::
+
+:::: sayfa
+## Sınav B · 23.08.2021 · Soru 1
+
+::: soru
+Pure copper and pure cobalt electrodes are separately immersed in solutions of their respective divalent ions, making up a galvanic cell that yields a cell potential of 0.65 V (SHE). Calculate the cobalt activity if the activity of copper ions is 0.85 mol/L at 25 °C.
+
+$E^\circ(Co^{2+}/Co) = -0.28$ V; $E^\circ(Cu^{2+}/Cu) = -0.34$ V *(sınav kâğıdında böyle yazıyor; tablo değeri +0.34 V)*
+  
+($R = 8.314$ J/(mol·K), $T = 298$ K, $F = 96\,485$ C/mol)
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 21 (hücre geriliminden bilinmeyen derişim)
+:::
+::::
+
+:::: sayfa
+## Sınav B · 23.08.2021 · Soru 2
+
+::: soru
+Draw the Pourbaix diagram and explain the related reactions of water? (20p)
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 29–32
+:::
+::::
+
+:::: sayfa
+## Sınav B · 23.08.2021 · Soru 3
+
+::: soru  
+(a) Derive the Nernst Equation? (10p)    
+(b) Briefly explain the mixed potential, potentiostat and anodic polarization? (10p)
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 19–20, 39, 46, 51
+:::
+::::
+
+:::: sayfa
+## Sınav B · 23.08.2021 · Soru 4
+
+::: soru
+Copper surface area, $A = 10$ cm², is exposed to an acid solution. After 24 hours, the loss of copper due to oxidation is $15\times10^{-3}$ grams. Calculate:
+  
+(a) the current density $i$ in µA/cm²,    
+(b) the corrosion rate in mm/y,    
+(c) the number of reactions per unit time.
+
+Use data: $A_w = 63.54$ g/mol, $d = 8.96$ g/cm³, $q_e = 1.602\times10^{-19}$ C/reaction, $K = 8.75\times10^4$. (20p)
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 6–7, 52, 55–56 (Faraday, CR, ASTM G31)
+:::
+::::
+
+:::: sayfa
+## Sınav B · 23.08.2021 · Soru 5
+
+::: soru
+Briefly describe the terms given below:
+  
+(a) Activation polarization (7p)    
+(b) Rate determining step (7p)    
+(c) Exchange current density (6p)
+:::
+
+::: alan
+.
+:::
+
+::: ref
+İlgili konu: ders notları Sayfa 40–42; çıkmış sorular PDF'i Soru 5
+:::
+::::
