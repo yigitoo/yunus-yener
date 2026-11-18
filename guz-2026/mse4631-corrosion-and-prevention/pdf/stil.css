@@ -62,3 +62,17 @@ figure img, p > img { max-width: 100%; }
 figcaption { font-size: 8.8pt; color: #5b6770; margin-top: .3em; }
 code { font-family: "DejaVu Sans Mono", monospace; font-size: .9em; background: #f1f3f4; padding: 0 3px; border-radius: 3px; }
 hr { border: 0; border-top: 1px solid #d5dde0; margin: 1.4em 0; }
+
+/* Calisma kagidi: her sayfada bir soru + kareli cozum alani */
+.sayfa { height: 255mm; display: flex; flex-direction: column; break-after: page; page-break-after: always; }
+.sayfa:last-of-type { break-after: auto; page-break-after: auto; }
+.sayfa h2 { margin: 0 0 .4em; font-size: 12.5pt; }
+.sayfa .soru { border: 1px solid #c9d4d6; background: #f7fafa; border-radius: 6px; padding: .55em .9em; font-size: 10pt; }
+.sayfa .soru p { margin: .3em 0; }
+.sayfa .soru img { max-height: 70mm; }
+.sayfa .alan {
+  flex: 1; margin-top: 4mm; border: 1px solid #d5dde0; border-radius: 4px; color: transparent;
+  background-image: linear-gradient(#e6ecee 1px, transparent 1px), linear-gradient(90deg, #e6ecee 1px, transparent 1px);
+  background-size: 5mm 5mm;
+}
+.sayfa .ref { font-size: 8.5pt; color: #7a858c; margin-top: 2mm; text-align: right; }
