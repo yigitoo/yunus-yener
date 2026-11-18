@@ -1,6 +1,8 @@
 :::: sayfa
 ## Soru 1 · Nikel kaplama kalınlığı (Örnek 2.1)
 
+![](../kaynaklar/soru-slaytlari/03_00.jpg){.slayt}
+
 ::: soru
 Toplam yüzey alanı 2.5 dm² olan çelik bir parça nikel kaplanıyor. 75 dakika boyunca 1.25 A sabit akım uygulanıyor; banyonun akım verimi %95. Nikelin tüm yüzeye düzgün biriktiğini kabul et.
 
@@ -20,6 +22,8 @@ Toplam yüzey alanı 2.5 dm² olan çelik bir parça nikel kaplanıyor. 75 dakik
 
 :::: sayfa
 ## Soru 2 · Bakır hücresinin akım verimi (Örnek 2.2)
+
+![](../kaynaklar/soru-slaytlari/03_02.jpg){.slayt}
 
 ::: soru
 Bakır sülfat çözeltisinden tam 1 saat boyunca 26 mA akım geçiriliyor. Katot tartıldığında üzerinde 0.0300 g bakır biriktiği görülüyor.
@@ -41,6 +45,8 @@ Bakır sülfat çözeltisinden tam 1 saat boyunca 26 mA akım geçiriliyor. Kato
 :::: sayfa
 ## Soru 3 · Korozyonla kaybedilen demir (Örnek 2.3)
 
+![](../kaynaklar/soru-slaytlari/03_04.jpg){.slayt}
+
 ::: soru
 Korozyona uğrayan bir çelik yüzeyde anodik reaksiyon $Fe \rightarrow Fe^{2+} + 2e^-$. Anodik ve katodik bölgeler arasında bir yıl (365 gün) boyunca 0.50 mA sabit akım akıyor.
 
@@ -60,6 +66,8 @@ Korozyona uğrayan bir çelik yüzeyde anodik reaksiyon $Fe \rightarrow Fe^{2+} 
 
 :::: sayfa
 ## Soru 4 · Referans skalaları arasında dönüşüm (Örnek 2.4)
+
+![](../kaynaklar/soru-slaytlari/07_01.jpg){.slayt}
 
 ::: soru
 Bir çözeltideki M metalinin potansiyeli doygun kalomel elektroda karşı **−0.541 V (SCE)** okunuyor.
@@ -81,6 +89,8 @@ Bir çözeltideki M metalinin potansiyeli doygun kalomel elektroda karşı **−
 :::: sayfa
 ## Soru 5 · Demirli iki hücre: Fe–Cu ve Fe–Zn (Örnek 2.5)
 
+![](../kaynaklar/soru-slaytlari/07_04.jpg){.slayt}
+
 ::: soru
 1 M $Fe^{2+}$ içindeki Fe elektrot (i) 1 M $Cu^{2+}$ içindeki Cu ile, (ii) 1 M $Zn^{2+}$ içindeki Zn ile birleştiriliyor.
 
@@ -100,6 +110,8 @@ Bir çözeltideki M metalinin potansiyeli doygun kalomel elektroda karşı **−
 
 :::: sayfa
 ## Soru 6 · Bakırın elektrolizle kazanılması (Örnek 2.6)
+
+![](../kaynaklar/soru-slaytlari/08_00.jpg){.slayt}
 
 ::: soru
 Bakır, asidik $CuSO_4$ çözeltisinden inert bir anot ile bakır katot arasında elektrolizle kazanılıyor (25 °C, tüm aktiviteler = 1). Katotta bakır birikiyor, anotta oksijen çıkıyor. Hücre 200 A ile çalışıyor.
@@ -121,6 +133,8 @@ Bakır, asidik $CuSO_4$ çözeltisinden inert bir anot ile bakır katot arasınd
 :::: sayfa
 ## Soru 7 · Serbest enerji verilerinden standart potansiyeller (Örnek 3.1)
 
+![](../kaynaklar/soru-slaytlari/09_00.jpg){.slayt}
+
 ::: soru
 Aşağıdaki standart kimyasal potansiyellerle 25 °C'de $Zn^{2+}/Zn$ ve $Cu^{2+}/Cu$ elektrotlarının standart redüksiyon potansiyellerini, sonra Daniell hücresinin ($Zn + Cu^{2+} \rightarrow Zn^{2+} + Cu$) standart potansiyelini ve denge sabitini hesapla.
 
@@ -140,6 +154,8 @@ Aşağıdaki standart kimyasal potansiyellerle 25 °C'de $Zn^{2+}/Zn$ ve $Cu^{2+
 
 :::: sayfa
 ## Soru 8 · 1 M'dan farklı derişimlerde elektrot potansiyelleri (Örnek 3.2)
+
+![](../kaynaklar/soru-slaytlari/09_05.jpg){.slayt}
 
 ::: soru
 Üç metal, 25 °C'de kendi iyonlarının çözeltilerine daldırılıyor. Aktiviteleri derişime eşit al.
@@ -161,6 +177,8 @@ Aşağıdaki standart kimyasal potansiyellerle 25 °C'de $Zn^{2+}/Zn$ ve $Cu^{2+
 :::: sayfa
 ## Soru 9 · Hücre geriliminden bilinmeyen iyon derişimi (Örnek 3.3)
 
+![](../kaynaklar/soru-slaytlari/10_00.jpg){.slayt}
+
 ::: soru
 Bir hücre, kendi iki değerlikli iyonlarının çözeltilerine daldırılmış saf bakır ve saf kurşun elektrotlardan oluşuyor. $Cu^{2+}$ derişimi 0.6 M. Kurşun elektrot oksitleniyor ve hücre potansiyeli 25 °C'de 0.507 V.
 
@@ -180,6 +198,8 @@ Bir hücre, kendi iki değerlikli iyonlarının çözeltilerine daldırılmış 
 
 :::: sayfa
 ## Soru 10 · Demir ve bakır oksijensiz suda korozyona uğrar mı? (Örnek 3.4)
+
+![](../kaynaklar/soru-slaytlari/10_04.jpg){.slayt}
 
 ::: soru
 Saf demir ve saf bakır numuneler, tüm çözünmüş oksijeni uzaklaştırılmış pH 7, 25 °C saf suya konuyor. Yüzeydeki metal iyonu aktivitesini $10^{-6}$, $P_{H_2} = 1$ atm al. Sonra bakır için havayla doygun suda tekrarla.
@@ -201,6 +221,8 @@ Saf demir ve saf bakır numuneler, tüm çözünmüş oksijeni uzaklaştırılm�
 :::: sayfa
 ## Soru 11 · Bakır derişim hücresi (Örnek 3.5)
 
+![](../kaynaklar/soru-slaytlari/11_00.jpg){.slayt}
+
 ::: soru
 Gözenekli bir duvarla ayrılmış iki bakır sülfat çözeltisine iki saf bakır elektrot daldırılmış: bir tarafta $5.0\times10^{-4}$ M, diğer tarafta 0.50 M. Elektrotlar 25 °C'de bir voltmetre üzerinden bağlı.
 
@@ -220,6 +242,8 @@ Gözenekli bir duvarla ayrılmış iki bakır sülfat çözeltisine iki saf bak�
 
 :::: sayfa
 ## Soru 12 · İki farklı topraktan geçen boru (Örnek 3.6)
+
+![](../kaynaklar/soru-slaytlari/11_03.jpg){.slayt}
 
 ::: soru
 Çelik bir boru kumlu topraktan killi toprağa geçiyor. Kumda boru yüzeyindeki oksijen kısmi basıncı 0.21 atm, kilde 0.0021 atm. İki toprak da pH 7, sıcaklık 25 °C. Katodik reaksiyon $O_2 + 4H^+ + 4e^- \rightarrow 2H_2O$.
@@ -241,6 +265,8 @@ Gözenekli bir duvarla ayrılmış iki bakır sülfat çözeltisine iki saf bak�
 :::: sayfa
 ## Soru 13 · Demir haritasında beş nokta (Örnek 4.1)
 
+![](../kaynaklar/soru-slaytlari/15_07.jpg){.slayt}
+
 ::: soru
 25 °C sudaki beş demir numunesinin pH ve potansiyelleri aşağıda. Haritayı okuyarak cevapla.
 
@@ -248,7 +274,7 @@ Gözenekli bir duvarla ayrılmış iki bakır sülfat çözeltisine iki saf bak�
 
 **İstenen:** (a) her noktanın bölgesi, (b) demir bağışık mı, çözünüyor mu, oksit mi oluşturuyor? (c) su a'nın altında mı, a ile b arasında mı, b'nin üstünde mi?
 
-![](../kaynaklar/sekiller/pourbaix-fe.svg){width=62%}
+![](../kaynaklar/sekiller/pourbaix-fe.svg){width=42%}
 :::
 
 ::: alan
@@ -263,12 +289,12 @@ Gözenekli bir duvarla ayrılmış iki bakır sülfat çözeltisine iki saf bak�
 :::: sayfa
 ## Soru 14 · Aynı asidik suda üç metal (Örnek 4.2)
 
+![](../kaynaklar/soru-slaytlari/16_02.jpg){.slayt}
+
 ::: soru
 Fe, Al ve Cu plakalar aynı asidik suda (pH 4, 25 °C). Durum 1: oksijen yok. Durum 2: oksijen var.
 
 **İstenen:** (a) oksijensizken hangi metaller korozyona uğrayabilir? (b) oksijenliyken? (c) oksijensiz pH 4 suyu için hangi metali seçersin?
-
-![](../kaynaklar/sekiller/pourbaix-fe.svg){width=32%} ![](../kaynaklar/sekiller/pourbaix-al.svg){width=32%} ![](../kaynaklar/sekiller/pourbaix-cu.svg){width=32%}
 :::
 
 ::: alan
@@ -282,6 +308,8 @@ Fe, Al ve Cu plakalar aynı asidik suda (pH 4, 25 °C). Durum 1: oksijen yok. Du
 
 :::: sayfa
 ## Soru 15 · Demir için her tipten bir çizgi (Örnek 4.3)
+
+![](../kaynaklar/soru-slaytlari/16_03.jpg){.slayt}
 
 ::: soru
 Fe–H₂O sisteminin üç dengesi 25 °C'de veriliyor. Çözünmüş demir türlerinin aktivitesini $10^{-6}$, katıların ve suyun aktivitesini 1 al. Her denge için çizgi tipini ve Pourbaix diyagramındaki yerini bul.
@@ -306,6 +334,8 @@ $R = 8.314$ J/(mol·K), $T = 298$ K, $F = 96\,485$ C/mol
 
 :::: sayfa
 ## Soru 16 · Aşırı gerilim ve işareti (Örnek 5.1)
+
+![](../kaynaklar/soru-slaytlari/18_06.jpg){.slayt}
 
 ::: soru
 0.10 M $CuSO_4$'ten bakır kaplanırken bakır katot, ona çok yakın yerleştirilmiş doygun kalomel elektroda karşı −0.100 V okunuyor. İkinci bir hücrede 0.010 M $ZnSO_4$ içinde çözünen çinko anot SCE'ye karşı −0.950 V okunuyor. Aktiviteleri derişime eşit al, 25 °C.
@@ -347,6 +377,8 @@ Asit içinde platin, demir ve cıva üzerinde 10 mA/cm² ($1.0\times10^{-2}$ A/c
 :::: sayfa
 ## Soru 18 · E_corr'dan i_corr'a: çinko ve demir (Örnek 6.1)
 
+![](../kaynaklar/soru-slaytlari/20_05.jpg){.slayt}
+
 ::: soru
 Çinko ve demir aynı oksijensiz hidroklorik asitte (pH 0, 25 °C) korozyona uğruyor. Tek katodik reaksiyon iki metalde de Tafel'e uyan hidrojen çıkışı. Ölçülen korozyon potansiyelleri: $E_{corr}(Zn) = -0.627$ V, $E_{corr}(Fe) = -0.253$ V (SHE).
 
@@ -366,6 +398,8 @@ Asit içinde platin, demir ve cıva üzerinde 10 mA/cm² ($1.0\times10^{-2}$ A/c
 
 :::: sayfa
 ## Soru 19 · i_corr'dan mm/y'ye (Örnek 6.2)
+
+![](../kaynaklar/soru-slaytlari/22_04.jpg){.slayt}
 
 ::: soru
 Karbon çeliği için iki korozyon akımı bulundu: havalandırılmış durgun deniz suyunda 19 µA/cm², oksijensiz asitte 5.0 µA/cm².
@@ -387,6 +421,8 @@ Karbon çeliği için iki korozyon akımı bulundu: havalandırılmış durgun d
 :::: sayfa
 ## Soru 20 · Kütle kaybı kuponu (Örnek 7.1)
 
+![](../kaynaklar/soru-slaytlari/23_05.jpg){.slayt}
+
 ::: soru
 5.0 cm × 2.5 cm × 0.30 cm boyutlarında bir karbon çeliği kupon oksijensiz asitte 30 gün (720 h) bekletiliyor. Temizlendikten sonra 0.118 g kaybettiği görülüyor. Korozyon düzgün. Aynı çelik için Tafel ekstrapolasyonu 5.0 µA/cm² vermişti.
 
@@ -406,6 +442,8 @@ Karbon çeliği için iki korozyon akımı bulundu: havalandırılmış durgun d
 
 :::: sayfa
 ## Soru 21 · Boru ne kadar dayanır? (Örnek 7.2)
+
+![](../kaynaklar/soru-slaytlari/24_01.jpg){.slayt}
 
 ::: soru
 Çelik bir borunun et kalınlığı 8 mm, en az 5 mm gerekli. Kütle kaybı kuponları ortalama 0.12 mm/y veriyor. Kesilen bir boru parçası oyuklanma faktörünün 4 olduğunu gösteriyor.
@@ -427,6 +465,8 @@ Karbon çeliği için iki korozyon akımı bulundu: havalandırılmış durgun d
 :::: sayfa
 ## Soru 22 · Paslanmaz çelik mi, karbon çeliği mi? (Örnek 7.3)
 
+![](../kaynaklar/soru-slaytlari/26_04.jpg){.slayt}
+
 ::: soru
 İki çelik havalandırılmış nötr suda (25 °C) kullanılıyor. Tek katodik reaksiyon difüzyonla sınırlı oksijen redüksiyonu: durgun suda $i_L = 20$ µA/cm², akan suda 80 µA/cm². $E_{pp}$'de iki çelik de oksijen eğrisinin platosunda.
 
@@ -441,101 +481,5 @@ Karbon çeliği için iki korozyon akımı bulundu: havalandırılmış durgun d
 
 ::: ref
 Çözüm: ders notları Sayfa 61
-:::
-::::
-
-:::: sayfa
-## Çıkmış Soru 1 · Bakırın maksimum Cu²⁺ aktivitesi
-
-::: soru
-Aşağıdaki elektrokimyasal hücreyi ($Cu\,|\,Cu^{2+}\,\|\,H^+\,|\,H_2\,|\,Pt$) kullanarak, 25 °C, 101 kPa ve pH = 2'de sülfürik asit içine daldırılmış bir bakır şeridin oksidasyonu nedeniyle çözeltideki bakır iyonlarının ($Cu^{2+}$) maksimum aktivitesini hesaplayın.
-
-**Verilenler:** $E^\circ(Cu^{2+}/Cu) = 0.34$ V; $R = 8.314$ J/(mol·K), $T = 298$ K, $F = 96\,485$ C/mol
-:::
-
-::: alan
-.
-:::
-
-::: ref
-Çözüm: çıkmış sorular PDF'i, Soru 1
-:::
-::::
-
-:::: sayfa
-## Çıkmış Soru 2 · Cd–Cu hücresi: sıcaklık, ΔS, ΔH
-
-::: soru
-Elektrokimyasal hücre $Cd\,|\,0.05\text{ M } Cd^{2+}\,\|\,0.25\text{ M } Cu^{2+}\,|\,Cu$ için:
-  
-(a) hücre potansiyeli 0.762 V iken sıcaklığı hesaplayın,  
-(b) ΔS ve ΔH?
-
-**Verilenler:** $E^\circ(Cd^{2+}/Cd) = -0.403$ V; $E^\circ(Cu^{2+}/Cu) = +0.34$ V; $R = 8.314$ J/(mol·K), $F = 96\,485$ C/mol
-:::
-
-::: alan
-.
-:::
-
-::: ref
-Çözüm: çıkmış sorular PDF'i, Soru 2
-:::
-::::
-
-:::: sayfa
-## Çıkmış Soru 3 · Deniz suyunda çelik plakanın korozyon hızı
-
-::: soru
-Deniz suyuna daldırılmış düşük karbonlu bir çelik plaka (1 cm × 1 cm × 4 cm) için korozyon hızını (CR) mm/yıl biriminde hesaplayın.
-
-**Verilenler:** $I = 110$ µA, $\rho = 7.87$ g/cm³, $M = 55.85$ g/mol, $z = 2$
-:::
-
-::: alan
-.
-:::
-
-::: ref
-Çözüm: çıkmış sorular PDF'i, Soru 3
-:::
-::::
-
-:::: sayfa
-## Çıkmış Soru 4 · Diyagramlar
-
-::: soru  
-(a) Pourbaix diyagramını çizin ve su ile ilgili reaksiyonları açıklayın.
-  
-(b) Evans polarizasyon diyagramlarını çizin ve kısaca açıklayın.
-:::
-
-::: alan
-.
-:::
-
-::: ref
-Çözüm: çıkmış sorular PDF'i, Soru 4
-:::
-::::
-
-:::: sayfa
-## Çıkmış Soru 5 · Kavramlar
-
-::: soru
-Aşağıdaki terimleri kısaca açıklayın:
-  
-(a) Aktivasyon polarizasyonu  
-(b) Hız belirleyici adım  
-(c) Değişim akım yoğunluğu  
-(d) Elektrokimyasal potansiyel
-:::
-
-::: alan
-.
-:::
-
-::: ref
-Çözüm: çıkmış sorular PDF'i, Soru 5
 :::
 ::::

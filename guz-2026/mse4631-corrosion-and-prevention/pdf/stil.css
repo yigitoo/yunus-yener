@@ -76,3 +76,6 @@ hr { border: 0; border-top: 1px solid #d5dde0; margin: 1.4em 0; }
   background-size: 5mm 5mm;
 }
 .sayfa .ref { font-size: 8.5pt; color: #7a858c; margin-top: 2mm; text-align: right; }
+.sayfa figure { margin: .2em 0 .4em; }
+.sayfa img.slayt { max-height: 78mm; max-width: 100%; width: auto; border-radius: 4px; }
+.sayfa .soru { font-size: 9.4pt; }
