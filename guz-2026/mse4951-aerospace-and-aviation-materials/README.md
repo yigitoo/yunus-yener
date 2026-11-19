@@ -42,5 +42,6 @@
 
 ## Sınav Hazırlık
 
+- Cheat sheet: [sinavlar/cheat-sheet.md](sinavlar/cheat-sheet.md)
 - Önemli formüller / diyagramlar:
 - Sık çıkan soru tipleri:
