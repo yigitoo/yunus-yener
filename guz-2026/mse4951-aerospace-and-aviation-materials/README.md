@@ -43,5 +43,6 @@
 ## Sınav Hazırlık
 
 - Cheat sheet: [sinavlar/cheat-sheet.md](sinavlar/cheat-sheet.md)
+- Çıkmış vize 2025 + çözüm: [sinavlar/vize-1-2025-cozum.md](sinavlar/vize-1-2025-cozum.md)
 - Önemli formüller / diyagramlar:
-- Sık çıkan soru tipleri:
+- Sık çıkan soru tipleri: 10 çoktan seçmeli soru, 40 dk, boşluk doldurma (vize 2025)
