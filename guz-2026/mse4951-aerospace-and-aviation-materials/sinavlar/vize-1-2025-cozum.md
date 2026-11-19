@@ -1,68 +1,141 @@
-# MSE4951 — 1st Midterm 2025 (Çıkmış Sorular + Cevaplar)
+# MSE4951 — 1st Midterm 2025 (Cevaplı)
 
-> **Sınav:** 2025–2026 Güz, 1. vize · 21/11/2025 11:45 · 40 dk · 10 soru × 10 puan · Asst. Prof. Dr. Ahmet Sağın
-> Fotoğraflar: [sayfa 1](vize-1-2025-sayfa-1.jpg) · [sayfa 2](vize-1-2025-sayfa-2.jpg)
-> Şablon: **Question → Answer → Why (key hook)**
+> 21/11/2025 · 40 dk · 10 soru × 10 puan · Fotoğraflar: [sayfa 1](vize-1-2025-sayfa-1.jpg) · [sayfa 2](vize-1-2025-sayfa-2.jpg) · PDF: [vize-1-2025-cozum.pdf](vize-1-2025-cozum.pdf)
 
----
+
+## 1)
+
+**Lighter-than** air vehicles, at first used **hot air** but started using **hydrogen**. But it is highly explosive and can be triggered by just a spark. Nowadays, airships use **helium** which is an inert gas.
+
+- A) Lighter-than, hot air, hydrogen, methane
+- B) Heavier-than, cold air, nitrogen, propane
+- C) Heavier-than, warm air, acetylene, carbon dioxide
+- ✅ **D) Lighter-than, hot air, hydrogen, helium**
+- E) All of them
+
+> 💡 Montgolfier 1783 = hot air → hydrogen (patlayıcı) → bugün helium (inert).
+
+
+## 2)
+
+When **area** of the **wing** increases, **lift** force of the wing increases.
+
+- A) Volume, wing, thrust
+- ✅ **B) Area, wing, lift**
+- C) Area, aileron, drag
+- D) Volume, rudder, weight
+- E) None of them
+
+> 💡 L = ½ρv²S·CL → kanat alanı (S) artarsa lift artar.
+
+
+## 3)
+
+What type of engine is shown in the picture? → **Scramjet engine**
+
+- ✅ **A) Scramjet engine**
+- B) Compression ignition engine
+- C) … cylinder engine
+- D) Otto cycle engine
+
+> 💡 Hareketli parça yok + her yerde M>1 = supersonic combustion = scramjet.
+
+
+## 4)
+
+By using **aileron and rudder** … (the airplane turns left or) right.
+
+- A) Aileron
+- B) Rudder
+- C) Slat
+- ✅ **D) A and B**
+
+> 💡 Dönüş: aileron → roll + rudder → yaw birlikte. ⚠ Soru metni fotoğrafta kısmen kapalı.
+
+
+## 5)
+
+The largest biplanes ever constructed were the **World War I bomber planes**.
+
+- ✅ **A) World War I bomber planes**
+- B) World War II fighter planes
+- C) World War II bomber planes
+- D) World War I fighter planes
+
+> 💡 Biplane dönemi = WWI; en büyükleri bombardıman uçakları. WWII'de monoplane var.
+
+
+## 6)
+
+**Center of gravity** of an airplane can change any time weight is added or removed from the aircraft.
+
+- A) velocity
+- B) roll
+- C) maneuverability
+- ✅ **D) center of gravity**
+
+> 💡 Yük / yakıt / yolcu değişince ağırlık merkezi (CG) kayar.
+
+
+## 7)
+
+Stability in roll is referred to as **lateral stability**.
+
+- ✅ **A) lateral stability**
+- B) pitch stability
+- C) directional stability
+- D) horizontal stability
+
+> 💡 Roll → lateral · Pitch → longitudinal · Yaw → directional.
+
+
+## 8)
+
+In aircrafts, the cabin altitude during flight is kept above sea level so as to reduce stress on the pressurized part of the **fuselage**.
+
+- A) Engines
+- B) Wings
+- ✅ **C) Fuselage**
+- D) Tail
+
+> 💡 Basınçlı kabin = gövde (fuselage); basınç farkı azalınca gövde gerilmesi azalır.
+
+
+## 9)
+
+A **vortex** is a rotating cylindrical mass of air.
+
+- A) Vector
+- ✅ **B) vortex**
+- C) camber
+- D) spar
+
+> 💡 Vortex = girdap (ör. wingtip vortex).
+
+
+## 10)
+
+Materials with **higher strength/weight ratio** are typically used in aircraft construction.
+
+- A) no strain
+- B) lower strength/weight ratio
+- C) average strength/weight ratio
+- ✅ **D) higher strength/weight ratio**
+
+> 💡 Hafif ama dayanıklı: Al, Ti alaşımları, kompozitler.
+
 
 ## Answer Key
 
-| Q | A | B | C | D | Answer |
-|---|---|---|---|---|--------|
-| 1 | | | | **X** | Lighter-than / hot air / hydrogen / helium |
-| 2 | | **X** | | | Area / wing / lift |
-| 3 | **X** | | | | Scramjet |
-| 4 | | | | **X** | Aileron + Rudder |
-| 5 | **X** | | | | WWI bomber planes |
-| 6 | | | | **X** | Center of gravity |
-| 7 | **X** | | | | Lateral stability |
-| 8 | | | **X** | | Fuselage |
-| 9 | | **X** | | | Vortex |
-| 10 | | | | **X** | Higher strength/weight ratio |
+| Q | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Cevap | D | B | A | D | A | D | A | C | B | D |
 
----
-
-## Questions & Explanations
-
-| # | Question (fill in / pick) | Answer | Why — key hook |
-|---|---------------------------|--------|----------------|
-| **1** | *___ air vehicles, at first used ___, but started using ___. But it is highly explosive and can be triggered by just a spark. Nowadays airships use ___, which is an inert gas.* | **D — Lighter-than, hot air, hydrogen, helium** | **Montgolfier 1783 = hot air** → sonra **H₂** (çok hafif ama **patlayıcı**, Hindenburg) → bugün **He** (**inert**/asal). "Inert gas" = helium; nitrogen/CO₂ kaldırmaz. |
-| **2** | *When ___ of the ___ increases, ___ force of the wing increases.* | **B — Area, wing, lift** | Lift ∝ wing **area**: $L=\tfrac12\rho v^2 S C_L$. **Flap/slat** da alanı ve eğriliği artırarak lift'i artırır. |
-| **3** | *What type of engine is shown?* (Inlet M>1, fuel injection, flame holder, combustion, nozzle, exhaust M>1) | **A — Scramjet** | **No moving parts** (kompresör/türbin yok), girişten egzoza **M>1** → **supersonic combustion** = **S**cramjet. Diğer şıklar pistonlu motor (Otto, compression ignition, cylinder). |
-| **4** | *By using ___ … (turn left or) right.* | **D — A and B (Aileron + Rudder)** | Dönüş = **coordinated turn**: **aileron → roll** (yatış) + **rudder → yaw** (sapma) birlikte. Slat sadece lift artırır. ⚠️ Soru metni fotoğrafta kısmen kapalı. |
-| **5** | *The largest biplanes ever constructed were the ___.* | **A — World War I bomber planes** | Çift kanat (**biplane**) dönemi = **WWI**. En büyükleri ağır **bombardıman** uçaklarıydı (ör. Zeppelin-Staaken R.VI). WWII'de **monoplane** hâkim. |
-| **6** | *___ of an airplane can change any time weight is added or removed.* | **D — Center of gravity** | **CG** (ağırlık merkezi) yük, yakıt, yolcu eklenince/çıkınca kayar → stabiliteyi etkiler. |
-| **7** | *Stability in roll is referred to as ___.* | **A — Lateral stability** | Eksen ↔ stabilite: **Roll → lateral** · **Pitch → longitudinal** · **Yaw → directional**. |
-| **8** | *Cabin altitude during flight is kept above sea level to reduce stress on the pressurized part of the ___.* | **C — Fuselage** | Basınçlı bölüm = **fuselage** (gövde). Kabin ~**8,000 ft** irtifaya ayarlanır → iç-dış **basınç farkı** ↓ → gövde **skin/frame** gerilmesi ve **fatigue** ↓. |
-| **9** | *A ___ is a rotating cylindrical mass of air.* | **B — Vortex** | **Vortex** (girdap) = dönen hava kütlesi; ör. **wingtip vortex** (kanat ucu girdabı). Camber = profil eğriliği, spar = kiriş. |
-| **10** | *Materials with ___ are typically used in aircraft construction.* | **D — Higher strength/weight ratio** | Havacılık malzemesinin #1 kriteri: **specific strength** (σ/ρ) yüksek → **Al, Ti alloys, CFRP composites**. |
-
----
-
-## Mini Cheat Sheet (bu sınavdan çıkan kalıplar)
-
-| Konu | Hatırla |
-|------|---------|
-| Gas sequence (airships) | **Hot air → Hydrogen (explosive) → Helium (inert)** |
-| Lift formula | $L=\tfrac12\rho v^2 S C_L$ — area $S$ ↑ → lift ↑ |
-| Scramjet şekli | Boru gibi, **no moving parts**, her yerde **M>1** |
-| Turn | **Aileron + Rudder** |
-| Biplane era | **WWI** → largest = **bombers** |
-| CG | Weight added/removed → **CG changes** |
-| Stability names | Roll = **Lateral**, Pitch = **Longitudinal**, Yaw = **Directional** |
-| Pressurization | Stress on **fuselage** |
-| Vortex | **Rotating cylindrical mass of air** |
-| Material choice | **High strength/weight ratio** |
-
-$L$: lift (N) · $\rho$: air density (kg/m³) · $v$: airspeed (m/s) · $S$: wing area (m²) · $C_L$: lift coefficient (–)
-
----
 
 ## Sınavda çıkabilir
 
-- Format: **10 çoktan seçmeli soru, 40 dk**; fill-in-the-blank tarzı. Tanım cümlelerini kelimesi kelimesine bil.
-- Motor şeması tanıma: **ramjet** (subsonic combustion) ve **scramjet** (M>1 boyunca) çizimini ayırt et.
-- Stabilite eksenleri (lateral / longitudinal / directional) ve kumanda yüzeyleriyle eşleşmesi.
-- Tarih soruları: balon gazları, biplane dönemi (WWI), ilkler.
-- Malzeme sorusu: **strength/weight ratio**, pressurization → **fuselage fatigue**.
+- Format: 10 çoktan seçmeli, 40 dk, boşluk doldurma — tanım cümlelerini kelimesi kelimesine bil.
+- Motor şeması tanıma: ramjet (subsonic combustion) vs. scramjet (her yerde M>1).
+- Stabilite eksenleri: roll = lateral, pitch = longitudinal, yaw = directional.
+- Tarih: airship gazları (hot air → H₂ → He), biplane = WWI.
+- Malzeme: high strength/weight ratio; pressurization → fuselage stress.
