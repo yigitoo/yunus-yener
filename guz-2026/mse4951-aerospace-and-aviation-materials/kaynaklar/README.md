@@ -17,6 +17,7 @@
 
 | Hafta | Dosya | Açıklama |
 |-------|-------|----------|
+| — | [havacilik-ve-uzay-notlari.pdf](havacilik-ve-uzay-notlari.pdf) | Havacılık & uzay ders notları (TR + EN): tarih, uçuş prensipleri, yapı, kumanda, motorlar, roketler, uzay ortamı |
 
 ## Makaleler / Standartlar
 
