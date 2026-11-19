@@ -13,8 +13,6 @@
 - ✅ **D) Lighter-than, hot air, hydrogen, helium**
 - E) All of them
 
-> 💡 Montgolfier 1783 = hot air → hydrogen (patlayıcı) → bugün helium (inert).
-
 
 ## 2)
 
@@ -26,8 +24,6 @@ When **area** of the **wing** increases, **lift** force of the wing increases.
 - D) Volume, rudder, weight
 - E) None of them
 
-> 💡 L = ½ρv²S·CL → kanat alanı (S) artarsa lift artar.
-
 
 ## 3)
 
@@ -37,8 +33,6 @@ What type of engine is shown in the picture? → **Scramjet engine**
 - B) Compression ignition engine
 - C) … cylinder engine
 - D) Otto cycle engine
-
-> 💡 Hareketli parça yok + her yerde M>1 = supersonic combustion = scramjet.
 
 
 ## 4)
@@ -50,8 +44,6 @@ By using **aileron and rudder** … (the airplane turns left or) right.
 - C) Slat
 - ✅ **D) A and B**
 
-> 💡 Dönüş: aileron → roll + rudder → yaw birlikte. ⚠ Soru metni fotoğrafta kısmen kapalı.
-
 
 ## 5)
 
@@ -61,8 +53,6 @@ The largest biplanes ever constructed were the **World War I bomber planes**.
 - B) World War II fighter planes
 - C) World War II bomber planes
 - D) World War I fighter planes
-
-> 💡 Biplane dönemi = WWI; en büyükleri bombardıman uçakları. WWII'de monoplane var.
 
 
 ## 6)
@@ -74,8 +64,6 @@ The largest biplanes ever constructed were the **World War I bomber planes**.
 - C) maneuverability
 - ✅ **D) center of gravity**
 
-> 💡 Yük / yakıt / yolcu değişince ağırlık merkezi (CG) kayar.
-
 
 ## 7)
 
@@ -85,8 +73,6 @@ Stability in roll is referred to as **lateral stability**.
 - B) pitch stability
 - C) directional stability
 - D) horizontal stability
-
-> 💡 Roll → lateral · Pitch → longitudinal · Yaw → directional.
 
 
 ## 8)
@@ -98,8 +84,6 @@ In aircrafts, the cabin altitude during flight is kept above sea level so as to 
 - ✅ **C) Fuselage**
 - D) Tail
 
-> 💡 Basınçlı kabin = gövde (fuselage); basınç farkı azalınca gövde gerilmesi azalır.
-
 
 ## 9)
 
@@ -110,8 +94,6 @@ A **vortex** is a rotating cylindrical mass of air.
 - C) camber
 - D) spar
 
-> 💡 Vortex = girdap (ör. wingtip vortex).
-
 
 ## 10)
 
@@ -121,8 +103,6 @@ Materials with **higher strength/weight ratio** are typically used in aircraft c
 - B) lower strength/weight ratio
 - C) average strength/weight ratio
 - ✅ **D) higher strength/weight ratio**
-
-> 💡 Hafif ama dayanıklı: Al, Ti alaşımları, kompozitler.
 
 
 ## Answer Key
