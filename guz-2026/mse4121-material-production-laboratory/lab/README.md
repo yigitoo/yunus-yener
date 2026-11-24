@@ -24,7 +24,7 @@ Deneyler Cuma günleri. Her deneyin hocası/asistanı ayrı; kapakta "Supervisor
 | 23.10.2026 | Exp 3 | Powder Metallurgy | Prof.Dr. Alptekin KISASÖZ / Res.Asst. Zekeriya CÖMERT & Res.Asst. Caner KORKMAZ | KMC-207 | repoda yok (sadece [arkadaş için kısa versiyon](exp3-pm-lab-report-alternative.pdf)) |
 | 30.10.2026 | Exp 7 | Reduction Electrolysis | Prof.Dr. Metin GENÇTEN / Res.Asst. Mustafa Alperen ŞAKAR | KMC-0303 | repoda yok |
 | 06.11.2026 | Exp 4 | The Sol-Gel Technique | Assoc.Prof.Dr. Suna AVCIOĞLU / Res.Asst. Serra ERSOY | KMC-310 | ✅ [bilgisayar](exp4-sol-gel-yunus-yener.pdf) |
-| 13.11.2026 | Exp 1 | Precipitation Hardening | Assoc.Prof.Dr. Yaman ERARSLAN / Res.Asst. Aybike Lara PEKER | KMC-109 | 🟡 yazılacak |
+| 13.11.2026 | Exp 1 | Precipitation Hardening | Assoc.Prof.Dr. Yaman ERARSLAN / Res.Asst. Aybike Lara PEKER | KMC-109 | 🟡 [taslak](exp1/exp1-precipitation-hardening-yunus-yener.pdf) · [Excel](exp1/exp1-brinell-data.xlsx) |
 | 20.11.2026 | — | Vize haftası (deney yok) | | | |
 | 27.11.2026 | Exp 2 | Ceramic Production via Casting Slurry into Plaster Mold | Prof.Dr. Nilgün KUŞKONMAZ / Res.Asst. Mustafa BORUCU | KMD-302B | ⏳ |
 | 04.12.2026 | Exp 10 | Waste Metal Recycling and Casting | Assist.Prof.Dr. Serhat ACAR / Res.Asst. Oğuler SAZCI | KMC-107 | ⏳ |
@@ -63,7 +63,7 @@ Name: Yunus Yener   Student No: 2205C046   Group-5
 
 | Deney | Föyün özel istekleri |
 |-------|----------------------|
-| Exp 1 Precipitation Hardening | **Kapak sayfası** (amblem, ders, deney sorumlusu, ad/no, grup) · özgün teorik bilgi · Brinell hesapları **birimli** · **Excel ile** HB–zaman grafiği · literatürle karşılaştırma |
+| Exp 1 Precipitation Hardening | Hocanın notları: max sertlik + overaging başlangıcı, GP zone/metastabil/stabil, dispersiyon ve koherentlik (abartmadan), **PH çeliklerinde çökelme sertleşmesi** araştırması · **Kapak sayfası** (amblem, ders, deney sorumlusu, ad/no, grup) · özgün teorik bilgi · Brinell hesapları **birimli** · **Excel ile** HB–zaman grafiği · literatürle karşılaştırma |
 | Exp 8 Ore Dressing | Amaç+yapılış (10) · elek tablosu (25) · elek üstü/altı eğrileri + kesişim (25) · teorik ort. tane boyutu kıyas (20) · Z = besleme/konsantre (20) |
 
 (Diğer deneyler yazılırken bu tabloya eklenecek.)
@@ -71,7 +71,7 @@ Name: Yunus Yener   Student No: 2205C046   Group-5
 ## Önceki Raporlardan Dersler
 
 1. **Tablo, grafik ve metin aynı sayıyı söylemeli.** Exp 8'de grafikteki noktalar tablodan kaymıştı; örnek Exp 1 raporunda tartışmadaki değerler tabloyla çelişiyordu.
-2. **Her hesabı yeniden kontrol et.** Örnek Exp 1 raporunda 0 h değeri yanlış hesaplanmıştı (79.54 yazılmış, doğrusu 99.47 HB).
+2. **Tabloya ham veriyi doğru geçir.** Örnek Exp 1 raporunda 0 h iz çapı tabloya 0.88 yazılmış, ölçülen 0.98 (HB = 79.54 doğru). Tablodaki sayıyla hesap birbirini tutmazsa okuyan hata var sanar.
 3. **Varsayımı ölçüm gibi yazma.** Exp 8'deki %6 besleme tenörü / %80 recovery varsayımdı → "assumed" de, kaynağını ver.
 4. **Aynı terimi iki farklı şey için kullanma** (Exp 8: Z kütle oranı ≠ tenör zenginleşme oranı).
 5. **Küçük farka büyük iddia kurma** (Exp 3: %0.16 yoğunluk artışı ölçüm hatası mertebesinde).

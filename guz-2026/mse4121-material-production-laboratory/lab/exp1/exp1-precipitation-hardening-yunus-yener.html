@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Experiment 1: Precipitation Hardening – Lab Report</title>
+<style>
+  @page { size: A4; margin: 18mm 18mm 16mm 18mm; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 11.5pt; line-height: 1.42; color: #111; }
+  h1 { font-size: 15pt; text-align: center; margin: 0 0 4px; }
+  h2 { font-size: 12.5pt; margin: 16px 0 6px; border-bottom: 1px solid #999; padding-bottom: 2px; }
+  h3 { font-size: 11.5pt; margin: 10px 0 4px; }
+  p { margin: 4px 0 6px; text-align: justify; }
+  table { border-collapse: collapse; margin: 6px auto; font-size: 10.5pt; }
+  th, td { border: 1px solid #555; padding: 3px 9px; text-align: center; }
+  th { background: #e8eef6; }
+  .caption { text-align: center; font-size: 10pt; font-style: italic; margin: 2px 0 10px; }
+  .eq { text-align: center; margin: 6px 0; font-size: 12pt; }
+  .calc { font-family: "Times New Roman", serif; font-size: 10.8pt; white-space: nowrap; line-height: 1.5; margin: 4px 0 4px 18px; }
+  ul, ol { margin: 4px 0 6px 0; padding-left: 22px; }
+  li { margin: 2px 0; }
+  .refs li { font-size: 10.2pt; }
+  .cover { height: 250mm; display: flex; flex-direction: column; align-items: center; text-align: center; page-break-after: always; }
+  .emblem { width: 34mm; height: 34mm; border: 1px dashed #888; display: flex; align-items: center; justify-content: center; font-size: 9pt; color: #777; margin-top: 8mm; }
+  .cover .uni { font-size: 15pt; font-weight: bold; margin-top: 8mm; }
+  .cover .dept { font-size: 12.5pt; margin-top: 2mm; }
+  .cover .course { font-size: 13pt; margin-top: 22mm; }
+  .cover .title { font-size: 20pt; font-weight: bold; margin-top: 10mm; }
+  .cover table { margin-top: 30mm; font-size: 12pt; }
+  .cover td { border: none; text-align: left; padding: 4px 10px; }
+  .cover td:first-child { font-weight: bold; }
+  .flow { display: flex; justify-content: center; align-items: stretch; gap: 0; margin: 8px 0 2px; font-size: 9.6pt; }
+  .flow .box { border: 1.2px solid #333; border-radius: 4px; padding: 5px 7px; width: 31mm; text-align: center; background: #f6f8fb; }
+  .flow .arr { align-self: center; padding: 0 3px; font-size: 14pt; }
+  .note { font-size: 10pt; color: #333; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER PAGE ============ -->
+<div class="cover">
+  <div class="emblem">YTÜ emblem</div>
+  <div class="uni">YILDIZ TECHNICAL UNIVERSITY</div>
+  <div class="dept">Faculty of Chemical and Metallurgical Engineering<br>Department of Metallurgical and Materials Engineering</div>
+  <div class="course">MSE4121 Material Production Laboratory</div>
+  <div class="title">EXPERIMENT 1<br>PRECIPITATION HARDENING</div>
+  <table>
+    <tr><td>Supervisor of the Experiment</td><td>Assoc.Prof.Dr. Yaman ERARSLAN</td></tr>
+    <tr><td>Research Assistant</td><td>Res.Asst. Aybike Lara PEKER</td></tr>
+    <tr><td>Student Name – Surname</td><td>Yunus YENER</td></tr>
+    <tr><td>Student Number</td><td>2205C046</td></tr>
+    <tr><td>Group Number</td><td>Group 5</td></tr>
+    <tr><td>Date of Experiment</td><td>13.11.2026</td></tr>
+  </table>
+</div>
+
+<!-- ============ 1. AIM ============ -->
+<h2>1) Aim of the Experiment</h2>
+<p>The aim of this experiment is to apply the three steps of precipitation hardening (solution treatment, quenching and
+artificial aging) to a heat-treatable 7xxx series (Al–Zn–Mg) aluminium alloy and to follow how its Brinell hardness
+changes with aging time. From the hardness–time curve, the under-aged, peak-aged and over-aged regions are identified and
+the results are compared with the literature.</p>
+
+<!-- ============ 2. THEORY ============ -->
+<h2>2) Theoretical Information</h2>
+
+<h3>2.1 Why precipitates make a metal harder</h3>
+<p>A metal deforms plastically when dislocations glide on their slip planes. Anything placed in the path of a moving
+dislocation raises the stress needed to keep it moving, and therefore raises strength and hardness. Small second-phase
+particles distributed through the grains are one of the most effective obstacles. In precipitation hardening these
+particles are not added from outside: they are grown <i>inside</i> the alloy by a controlled heat treatment, so the
+chemical composition stays the same while the mechanical properties change.</p>
+
+<h3>2.2 Conditions and the three steps</h3>
+<p>An alloy can be precipitation hardened only if the solubility of the alloying element in the matrix decreases with
+decreasing temperature (a sloping solvus line in the phase diagram). The 2xxx (Al–Cu), 6xxx (Al–Mg–Si) and 7xxx (Al–Zn–Mg)
+aluminium alloys satisfy this condition.</p>
+<ol>
+  <li><b>Solution treatment:</b> the alloy is heated into the single-phase α region, just below the solidus, so that the
+  alloying elements dissolve completely in the aluminium matrix.</li>
+  <li><b>Quenching:</b> rapid cooling in water does not give the atoms time to diffuse and form the equilibrium phase. The
+  result is a <i>supersaturated solid solution</i> (α<sub>ss</sub>), which also contains excess quenched-in vacancies that later
+  speed up diffusion.</li>
+  <li><b>Aging:</b> the supersaturated solution is held at room temperature (natural aging) or at an elevated temperature
+  below the solvus (artificial aging, ~100–300 °C). The excess solute leaves the matrix step by step as fine precipitates.</li>
+</ol>
+
+<h3>2.3 Precipitation sequence in 7xxx alloys: GP zones → metastable η′ → stable η</h3>
+<p class="eq">α<sub>ss</sub> &nbsp;→&nbsp; GP zones &nbsp;→&nbsp; η′ (metastable) &nbsp;→&nbsp; η (MgZn<sub>2</sub>, stable)</p>
+<ul>
+  <li><b>GP (Guinier–Preston) zones:</b> clusters of Zn and Mg atoms only a few atomic layers thick. They have the same lattice
+  as the matrix and are <i>fully coherent</i>; the lattice planes run continuously through them, but the size mismatch
+  creates elastic strain fields around them.</li>
+  <li><b>η′ phase (metastable):</b> forms from the GP zones as aging continues. It has its own crystal structure but is still
+  <i>semi-coherent</i> with the matrix. When η′ particles are fine and densely distributed, the alloy reaches its maximum
+  hardness (peak aging).</li>
+  <li><b>η phase, MgZn<sub>2</sub> (stable):</b> the equilibrium phase. It is <i>incoherent</i> (it has a real interface with the
+  matrix) and grows coarse at the expense of the smaller particles.</li>
+</ul>
+
+<h3>2.4 Coherency, particle size and the dislocation mechanism</h3>
+<p>While the precipitates are small and coherent, a dislocation can <b>cut (shear)</b> through them; the resistance comes from
+the coherency strain field and from the new interface created by cutting, and it increases as the particles grow. Once the
+particles become large and incoherent, cutting is no longer possible and dislocations <b>bypass</b> them by bowing between
+them and leaving a loop behind (<b>Orowan mechanism</b>). The stress for bypassing <i>decreases</i> as the spacing between
+particles increases. Peak hardness is reached at the particle size where these two mechanisms cross over. Further aging
+makes the particles coarser and fewer, the spacing increases, and the hardness falls: this is <b>over-aging</b>.</p>
+
+<h3>2.5 Precipitation hardening vs. dispersion hardening</h3>
+<p>In dispersion hardening the hard particles (for example oxides such as Al<sub>2</sub>O<sub>3</sub>) are insoluble in the matrix and
+are introduced by powder metallurgy rather than precipitated from a solid solution. They are incoherent from the beginning,
+act only as Orowan obstacles and do not dissolve or coarsen at high temperature. Precipitation-hardened alloys therefore
+reach higher room-temperature strength, but lose it if they are used above their aging temperature, whereas
+dispersion-hardened alloys keep their strength at high temperature.</p>
+
+<!-- ============ 3. MATERIALS ============ -->
+<h2>3) Tools, Devices and Materials</h2>
+<ul>
+  <li>7xxx series (Al–Zn–Mg) aluminium alloy samples</li>
+  <li>Tube furnace for solution treatment (480 °C)</li>
+  <li>Water bath for quenching</li>
+  <li>Drying oven (etüv) for artificial aging</li>
+  <li>Brinell hardness tester: tungsten carbide ball, D = 2.5 mm, F = 62.5 kgf (HBW 2.5/62.5)</li>
+  <li>Measuring microscope / optical scale for the indentation diameter</li>
+</ul>
+
+<!-- ============ 4. PROCEDURE ============ -->
+<h2>4) Experimental Studies</h2>
+<div class="flow">
+  <div class="box"><b>Solution treatment</b><br>tube furnace, 480 °C<br>15 / 30 / 45 / 60 min</div><div class="arr">→</div>
+  <div class="box"><b>Quenching</b><br>water, immediately<br>→ α<sub>ss</sub></div><div class="arr">→</div>
+  <div class="box"><b>Artificial aging</b><br>drying oven<br>0, 1, 3, 6, 12 h*</div><div class="arr">→</div>
+  <div class="box"><b>Brinell test</b><br>D = 2.5 mm<br>F = 62.5 kgf</div>
+</div>
+<p class="caption">Figure 1. Flow chart of the precipitation hardening experiment. (*hardness was measured on previously prepared samples)</p>
+
+<ol>
+  <li><b>Solution treatment.</b> The tube furnace was heated from 113 °C to the solution treatment temperature of 480 °C in
+  about 10 minutes. The samples were placed in the furnace and held for 15, 30, 45 and 60 minutes, so that the effect of
+  holding time on dissolution could be seen. <i>Reason:</i> at 480 °C the Zn and Mg atoms dissolve in the α-Al matrix and the
+  alloy becomes a single-phase solid solution.</li>
+  <li><b>Quenching.</b> At the end of each holding time the sample was taken out as quickly as possible and plunged into
+  water. <i>Reason:</i> the fast cooling prevents diffusion, so the solute atoms stay trapped in the lattice and a
+  supersaturated solid solution forms. Any delay between furnace and water would let coarse precipitates form at the grain
+  boundaries and reduce the later hardening.</li>
+  <li><b>Artificial aging.</b> The quenched samples were placed in the drying oven for artificial aging.
+  <i>Reason:</i> the elevated temperature gives the solute atoms enough mobility to cluster and form GP zones and η′
+  precipitates.</li>
+  <li><b>Hardness measurement.</b> The laboratory time was not enough to complete the aging of the samples treated during
+  our session, so their hardness could not be compared. Instead, hardness was measured on <b>previously prepared samples</b>
+  of the same alloy that had been solution treated, quenched and aged for <b>0, 1, 3, 6 and 12 hours</b>. Each sample was
+  indented with the Brinell tester and the diameter of the indentation (d) was measured. The measurement was done quickly,
+  because time spent outside the oven at room temperature can change the hardness (natural aging).</li>
+</ol>
+
+<!-- ============ 5. RESULTS ============ -->
+<h2>5) Results and Calculations</h2>
+<p>The Brinell hardness was calculated with Equation (1):</p>
+<p class="eq">HB = 2F / [ π · D · ( D − √(D² − d²) ) ] &nbsp;&nbsp;&nbsp;(1)</p>
+<p class="note" style="text-align:center">F: test force (kgf) = 62.5 kgf &nbsp;·&nbsp; D: ball diameter (mm) = 2.5 mm &nbsp;·&nbsp; d: indentation diameter (mm) &nbsp;·&nbsp; HB in kgf/mm²</p>
+
+<h3>Calculations</h3>
+<div class="calc">
+0 h : HB = 2×62.5 / [π×2.5×(2.5 − √(2.5² − 0.98²))] = 125 / [7.854×(2.5 − 2.2999)] = <b>79.54 kgf/mm²</b><br>
+1 h : HB = 2×62.5 / [π×2.5×(2.5 − √(2.5² − 0.84²))] = 125 / [7.854×(2.5 − 2.3547)] = <b>109.50 kgf/mm²</b><br>
+3 h : HB = 2×62.5 / [π×2.5×(2.5 − √(2.5² − 0.77²))] = 125 / [7.854×(2.5 − 2.3785)] = <b>130.95 kgf/mm²</b><br>
+6 h : HB = 2×62.5 / [π×2.5×(2.5 − √(2.5² − 0.79²))] = 125 / [7.854×(2.5 − 2.3719)] = <b>124.24 kgf/mm²</b><br>
+12 h: HB = 2×62.5 / [π×2.5×(2.5 − √(2.5² − 0.90²))] = 125 / [7.854×(2.5 − 2.3324)] = <b>94.95 kgf/mm²</b>
+</div>
+
+<table>
+  <tr><th>Aging time (h)</th><th>d (mm)</th><th>d/D</th><th>HB (kgf/mm²)</th><th>Change vs. 0 h</th><th>Condition</th></tr>
+  <tr><td>0</td><td>0.98</td><td>0.392</td><td>79.54</td><td>–</td><td>as-quenched (α<sub>ss</sub>)</td></tr>
+  <tr><td>1</td><td>0.84</td><td>0.336</td><td>109.50</td><td>+37.7 %</td><td>under-aged</td></tr>
+  <tr><td>3</td><td>0.77</td><td>0.308</td><td><b>130.95</b></td><td><b>+64.6 %</b></td><td><b>peak-aged</b></td></tr>
+  <tr><td>6</td><td>0.79</td><td>0.316</td><td>124.24</td><td>+56.2 %</td><td>over-aged</td></tr>
+  <tr><td>12</td><td>0.90</td><td>0.360</td><td>94.95</td><td>+19.4 %</td><td>over-aged</td></tr>
+</table>
+<p class="caption">Table 1. Indentation diameters and Brinell hardness values of the aged samples (HBW 2.5/62.5).</p>
+<p class="note">All d/D ratios lie between 0.24 and 0.60, which is the range required for a valid Brinell test (ISO 6506-1).</p>
+
+<!-- Chart: same data as the Excel file exp1-brinell-data.xlsx -->
+<svg viewBox="0 0 560 300" width="150mm" style="display:block;margin:8px auto 0" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="560" height="300" fill="#fff"/>
+  <g stroke="#ddd" stroke-width="1">
+    <line x1="70" y1="30"  x2="530" y2="30"/>
+    <line x1="70" y1="85"  x2="530" y2="85"/>
+    <line x1="70" y1="140" x2="530" y2="140"/>
+    <line x1="70" y1="195" x2="530" y2="195"/>
+    <line x1="70" y1="250" x2="530" y2="250"/>
+  </g>
+  <g stroke="#333" stroke-width="1.2"><line x1="70" y1="30" x2="70" y2="250"/><line x1="70" y1="250" x2="530" y2="250"/></g>
+  <g font-size="11" fill="#333" text-anchor="end">
+    <text x="64" y="34">140</text><text x="64" y="89">120</text><text x="64" y="144">100</text><text x="64" y="199">80</text><text x="64" y="254">60</text>
+  </g>
+  <g font-size="11" fill="#333" text-anchor="middle">
+    <text x="70" y="266">0</text><text x="146.7" y="266">2</text><text x="223.3" y="266">4</text><text x="300" y="266">6</text>
+    <text x="376.7" y="266">8</text><text x="453.3" y="266">10</text><text x="530" y="266">12</text>
+  </g>
+  <text x="300" y="288" font-size="12" text-anchor="middle" fill="#111">Aging time (h)</text>
+  <text x="20" y="140" font-size="12" text-anchor="middle" fill="#111" transform="rotate(-90 20 140)">Brinell hardness, HBW 2.5/62.5</text>
+  <!-- y px = 250 - (HB-60)*2.75 ; x px = 70 + t*38.333 -->
+  <polyline fill="none" stroke="#1f5fa8" stroke-width="2.2" points="70,196.3 108.3,113.9 185,54.9 300,73.3 530,153.9"/>
+  <g fill="#1f5fa8"><circle cx="70" cy="196.3" r="4.5"/><circle cx="108.3" cy="113.9" r="4.5"/><circle cx="185" cy="54.9" r="4.5"/><circle cx="300" cy="73.3" r="4.5"/><circle cx="530" cy="153.9" r="4.5"/></g>
+  <g font-size="10.5" fill="#111" text-anchor="middle">
+    <text x="88" y="200">79.5</text><text x="104" y="104">109.5</text><text x="185" y="45">131.0</text><text x="300" y="64">124.2</text><text x="522" y="145">95.0</text>
+  </g>
+  <g font-size="10.5" fill="#555" font-style="italic" text-anchor="middle">
+    <text x="118" y="232">under-aged</text><text x="185" y="232">peak</text><text x="400" y="232">over-aged</text>
+  </g>
+  <g stroke="#999" stroke-dasharray="4 3"><line x1="185" y1="60" x2="185" y2="250"/></g>
+</svg>
+<p class="caption">Figure 2. Brinell hardness – aging time graph (drawn in Excel; data in Table 1).</p>
+
+<!-- ============ 6. DISCUSSION ============ -->
+<h2>6) Discussion and Evaluation of the Results</h2>
+
+<h3>6.1 Shape of the aging curve</h3>
+<p>The as-quenched sample (0 h) has the lowest hardness, 79.54 HB, because the solute atoms are still dissolved in the matrix
+and give only solid-solution strengthening. After 1 h of aging the hardness rises to 109.50 HB (+37.7 %). In this
+<b>under-aged</b> stage GP zones and the first η′ particles nucleate; they are coherent and very fine, and their strain fields
+make dislocation glide more difficult.</p>
+<p>The <b>maximum hardness, 130.95 HB, was measured after 3 h</b>, 64.6 % higher than the as-quenched state. At this point the
+alloy contains the largest number of fine, semi-coherent η′ precipitates, and the stress needed for dislocations to cut
+or bypass them is highest. Since the samples were measured only at 1, 3 and 6 h, the true peak lies somewhere between 1 and
+6 h; 3 h is the best estimate the data allow.</p>
+<p><b>Over-aging begins after the 3 h point.</b> At 6 h the hardness has already dropped to 124.24 HB (−5.1 % from the peak) and
+at 12 h to 94.95 HB (−27.5 % from the peak). During this stage the larger precipitates grow while the smaller ones dissolve,
+η′ transforms into the incoherent equilibrium η (MgZn<sub>2</sub>) phase and the distance between particles increases.
+Dislocations can now pass the particles by the Orowan mechanism at a lower stress, so the alloy softens. Even after 12 h the
+hardness is still 19.4 % higher than the as-quenched value, which shows that some precipitation strengthening remains.</p>
+
+<h3>6.2 Comparison with the literature</h3>
+<p>The measured curve has the classic aging-curve shape described in the literature for heat-treatable Al alloys: a rapid
+rise, a single maximum and a gradual decrease [1–3]. For the 7075 alloy, a typical member of the 7xxx series, handbook
+values are about 60 HB in the annealed (O) condition and about 150 HB in the peak-aged T6 condition [4]. Our values
+(79.5 HB as-quenched, 131 HB at the peak) lie between these limits and the peak is somewhat lower than T6. Likely reasons:</p>
+<ul>
+  <li>The standard T6 treatment ages 7075 at a lower temperature (about 120 °C for ~24 h). Aging at a higher temperature
+  moves the peak to a much shorter time, which is why our peak appears after only a few hours, but the precipitates are
+  coarser and the peak hardness is lower.</li>
+  <li>The exact composition of the laboratory alloy is not known; a leaner Zn + Mg content gives fewer precipitates.</li>
+  <li>The test conditions differ (HBW 2.5/62.5 here, HBW 10/500 in handbooks), and each value comes from a single
+  indentation, so a scatter of a few HB is expected.</li>
+</ul>
+
+<h3>6.3 Precipitation hardening in PH stainless steels</h3>
+<p>The same principle is used in precipitation-hardening (PH) stainless steels. In 17-4 PH (AISI 630), the steel is
+solution treated at about 1040 °C and cooled to form a martensitic matrix supersaturated in copper (Condition A). During
+aging, very fine copper-rich particles precipitate inside the martensite and harden it. The aging temperature selects the
+property balance [5, 6]:</p>
+<ul>
+  <li><b>H900</b> (≈ 482 °C, 1 h) gives the highest strength and hardness (peak-aged).</li>
+  <li><b>H1025, H1150</b> (≈ 552–621 °C, 4 h) are deliberately over-aged: the Cu particles coarsen, hardness and strength
+  decrease, but toughness and stress-corrosion resistance improve.</li>
+</ul>
+<p>This is the same hardness–time/temperature behaviour seen in our aluminium samples: a peak followed by softening due to
+particle coarsening. The difference is the matrix (martensite instead of α-Al) and the much higher process temperatures.
+Engineers sometimes choose an over-aged condition on purpose, as in 7075-T73 or 17-4 PH H1150, when toughness and
+corrosion resistance are more important than maximum strength.</p>
+
+<!-- ============ 7. CONCLUSION ============ -->
+<h2>7) Conclusion</h2>
+<ul>
+  <li>Artificial aging increased the hardness of the 7xxx Al alloy from 79.54 HB (as-quenched) to a maximum of
+  130.95 HB after 3 h, an increase of 64.6 %.</li>
+  <li>The hardness increase is caused by fine, coherent/semi-coherent GP zones and η′ precipitates that obstruct
+  dislocation motion.</li>
+  <li>After about 3 h the alloy over-ages: hardness decreased to 124.24 HB at 6 h and 94.95 HB at 12 h as the precipitates
+  coarsened into incoherent η (MgZn<sub>2</sub>) and dislocations bypassed them by the Orowan mechanism.</li>
+  <li>The curve agrees in shape with the literature; the peak is lower than for 7075-T6, mainly because of the higher
+  aging temperature.</li>
+</ul>
+
+<!-- ============ 8. REFERENCES ============ -->
+<h2>8) References</h2>
+<ol class="refs">
+  <li>Experiment 1: Precipitation Hardening, MSE4121 Material Production Laboratory Experimental Booklet, Yıldız Technical University, 2026.</li>
+  <li>Yaman, M.B., Kocaman, E., Barış, A., “Al7075 Alaşımına İlave Edilen Al-5Ti-1B Tane İnceltici­nin Yaşlanma, Mikroyapı, Sertlik ve Korozif Özellikleri Üzerindeki Etkisi”, Gazi University Journal of Science Part C: Design and Technology, 10: 870–883.</li>
+  <li>Al-Saadi, H.I.A., Tunay, R.F., “Suni Yaşlandırma İşleminin Alüminyum Alaşımının Sertliği Üzerine Etkisi”, Mühendislik Bilimleri ve Tasarım Dergisi, 5 (2017) 525–532.</li>
+  <li>ASM Handbook, Vol. 2: Properties and Selection: Nonferrous Alloys and Special-Purpose Materials, ASM International, 1990.</li>
+  <li>ASTM A564/A564M, Standard Specification for Hot-Rolled and Cold-Finished Age-Hardening Stainless Steel Bars and Shapes, ASTM International.</li>
+  <li>Callister, W.D., Rethwisch, D.G., Materials Science and Engineering: An Introduction, 10th ed., Wiley, 2018 (Ch. 11: Precipitation Hardening).</li>
+</ol>
+
+</body>
+</html>

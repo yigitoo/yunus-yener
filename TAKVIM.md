@@ -9,7 +9,7 @@
 | 23.10.2026 | MSE4121 | Lab Deneyi — Exp 3 Powder Metallurgy | ✅ |
 | 30.10.2026 | MSE4121 | Lab Deneyi — Exp 7 Reduction Electrolysis | ✅ |
 | 06.11.2026 | MSE4121 | Lab Deneyi — Exp 4 Sol-Gel | ✅ |
-| 13.11.2026 | MSE4121 | Lab Deneyi — Exp 1 Precipitation Hardening (rapor yazılacak, teslim tarihi bilinmiyor) | 🟡 |
+| 13.11.2026 | MSE4121 | Lab Deneyi — Exp 1 Precipitation Hardening (rapor taslağı hazır, teslim tarihi bilinmiyor) | 🟡 |
 | 20.11.2026 | Tümü | Vize haftası | ✅ |
 | 27.11.2026 | MSE4121 | Lab Deneyi — Exp 2 Ceramic Slip Casting (KMD-302B) | ⏳ |
 | 04.12.2026 | MSE4121 | Lab Deneyi — Exp 10 Waste Metal Recycling (KMC-107) | ⏳ |
