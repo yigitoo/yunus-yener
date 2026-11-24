@@ -96,13 +96,21 @@ Durgun çözeltiyle dolu dar bir boşlukta (≈ 0.025–0.1 mm) saldırı: conta
 
 Aksi hâlde **pasif** bir yüzeyde, çoğunlukla klorürde küçük ve derin delikler. Çukur, kendi oluşturduğu bir aralıktır.
 
-### Çukur nerede başlar? (derste slaytta)
+### Çukur nerede başlar?
+
+Çalışma kâğıdına göre üç yol vardır (kesin):
+
+1. **Mekanik hasar:** filmin çizilmesi
+2. **İkinci fazlar:** MnS inklüzyonları, ara bileşikler
+3. **Ortam:** Cl⁻, O₂ ve tortulardaki yerel farklar
+
+Derste bu konu bir slaytta üç sütun hâlinde anlatıldı. Fotoğraf bulanık olduğu için ayrıntıları kesin okunamadı; seçilebilen kadarı (doğrulanmadı):
 
 | 1 · Mekanik hasar | 2 · İkinci fazlar | 3 · Ortam |
 |---|---|---|
-| Çizik ya da mekanik hasar filmi kaldırır | İnklüzyonlar (çelikte MnS), ara bileşikler, segregasyon | Cl⁻, O₂ ve tortulardaki yerel farklar |
-| Açıkta kalan metal = **anot** | Çoğu zaman tane sınırları boyunca | Film yerel olarak çözünür |
-| Çevredeki pasif yüzey = **katot** | Filmde yerel anot veya zayıf nokta olur | |
+| Çizik filmi kaldırır | İnklüzyonlar, ara bileşikler, segregasyon | Cl⁻, O₂, tortulardaki yerel farklar |
+| Açıkta kalan metal = anot | Çoğu zaman tane sınırları boyunca | "The film dissolves…" (devamı okunamadı) |
+| Çevredeki pasif yüzey = katot | Filmde yerel anot veya zayıf nokta | (okunamadı) |
 
 ### Büyüyen çukurdaki tepkimeler (çelik)
 
