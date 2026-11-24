@@ -6,7 +6,7 @@
 
 | Yazar | Kitap | Baskı | Takip edilen bölümler |
 |-------|-------|-------|-----------------------|
-| — | Hocanın deney föyleri | | |
+| — | MSE4121 Experimental Booklet ([foy.pdf](../lab/foy.pdf)) | 2026 | Her deneyin kendi bölümü |
 
 ## Yardımcı Kitaplar
 
@@ -29,4 +29,4 @@
 
 ## Lab Dosyaları
 
-Deney föyü, deney anlatımları ve raporlar [`../lab/`](../lab/) altında (foy.pdf, ore-dressing.pdf, powder-metallurgy.pdf, electrolys.pdf, exp3 ve exp8 raporları). Grup listesi: [gruplar.png](gruplar.png).
+Deney föyü, Gr-5 programı, rapor yapısı ve önceki raporlar: [`../lab/README.md`](../lab/README.md). Grup listesi: [gruplar.png](gruplar.png).

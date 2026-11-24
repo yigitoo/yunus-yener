@@ -8,7 +8,8 @@
 | **Hoca** | Doç. Dr. Suna Avcıoğlu |
 | **Gün / Saat / Derslik** | Cuma 14:00–14:50 · Davutpaşa Diğer 4<br>Cuma 15:00–16:50 · Davutpaşa Diğer 4 |
 | **Ofis saati / iletişim** | |
-| **Kaynak kitap** | (detay: [kaynaklar](kaynaklar/README.md)) |
+| **Kaynak kitap** | Deney föyü (detay: [kaynaklar](kaynaklar/README.md)) |
+| **Lab grubu** | Gr-5 (2205C046) — program ve rapor rehberi: [lab/README.md](lab/README.md) |
 
 ## Değerlendirme
 
