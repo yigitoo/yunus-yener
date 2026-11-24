@@ -24,6 +24,7 @@
 | 3 | [hafta03-worksheet-tr.pdf](hafta03-worksheet-tr.pdf) | Çalışma kâğıdı: Korozyonun termodinamiği |
 | 4 | [hafta04-worksheet-tr.pdf](hafta04-worksheet-tr.pdf) | Çalışma kâğıdı: Potansiyel-pH (Pourbaix) diyagramları |
 | 5 | [week05-worksheet-tr.pdf](week05-worksheet-tr.pdf) | Çalışma kâğıdı: Korozyon kinetiği I, polarizasyon |
+| 9 | [hafta09-worksheet-tr.pdf](hafta09-worksheet-tr.pdf) | Çalışma kâğıdı: Korozyon türleri I (galvanik, aralık, filiform, çukur, PREN) |
 | - | [sorular.pdf](sorular.pdf) | Soru dosyası (4 sayfa, taranmış) |
 
 ## Makaleler / Standartlar

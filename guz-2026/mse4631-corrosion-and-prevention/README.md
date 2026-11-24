@@ -33,7 +33,7 @@
 | 6 | Korozyon kinetiği II: karışık potansiyel, Evans diyagramları | [hafta-06](notlar/hafta-06.md) |
 | 7 | Korozyon hızları ve pasiflik | [hafta-07](notlar/hafta-07.md) |
 | 8 | Vize | [vize-ozet](sinavlar/vize-ozet.md) |
-| 9 | | |
+| 9 | Korozyon türleri I: galvanik, aralık, filiform, çukur, PREN | [hafta-09](notlar/hafta-09.md) |
 | 10 | | |
 | 11 | | |
 | 12 | | |
