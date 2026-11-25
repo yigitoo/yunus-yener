@@ -15,7 +15,7 @@
 | Bileşen | Ağırlık | Not |
 |---------|---------|-----|
 | Vize | % | |
-| Ödev / Quiz | % | |
+| Ödev / Quiz | %30 | 2. vize yerine polimer ödevi — [odev-01](odevler/odev-01-polimer-secimi.md), teslim 23.12.2026 |
 | Lab | % | |
 | Final | % | |
 
