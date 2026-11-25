@@ -15,6 +15,7 @@
 | 04.12.2026 | MSE4121 | Lab Deneyi — Exp 10 Waste Metal Recycling (KMC-107) | ⏳ |
 | 11.12.2026 | MSE4121 | Lab Deneyi — Exp 5 Glass Production (KMC-106) | ⏳ |
 | 18.12.2026 | MSE4121 | Lab Deneyi — Exp 9 Pyrometallurgy (KMC-204) | ⏳ |
+| 23.12.2026 | MSE4881 | Ödev — Polimer inceleme ödevi (2. vize yerine, %30), online.yildiz.edu.tr | 🟡 |
 | 25.12.2026 | MSE4121 | Lab telafi (make-up) haftası | ⏳ |
 
 ## Bahar 2027
