@@ -86,7 +86,7 @@ Alternatifler: HDPE (daha da basit ama özellikleri sıradan), PET (şişe örne
 - **Impact modifiers:** EPDM/EPR. Düşük sıcaklıktaki tokluğu artırır.
 - **Colorants**, **antistatic agents**, **flame retardants** (gerekirse).
 
-İşleme notu: erime sıcaklığı yaklaşık 200–250 °C. PP neredeyse hiç su emmez, bu yüzden kurutma (drying) gerekmez (PET ve PA ile karşılaştırarak yaz). Kristalleşme sırasında hacmi küçüldüğü için çekmesi (shrinkage) yüksektir. Bunu kalıp tasarımında hesaba katmak gerekir.
+İşleme notu: eriyik işleme sıcaklığı (melt processing temperature) yaklaşık 200–250 °C; bu, $T_m$ (~160–165 °C) değil, eriyiğin kalıba akabilmesi için çıkılan sıcaklıktır. PP neredeyse hiç su emmez, bu yüzden kurutma (drying) gerekmez (PET ve PA ile karşılaştırarak yaz). Kristalleşme sırasında hacmi küçüldüğü için çekmesi (shrinkage) yüksektir. Bunu kalıp tasarımında hesaba katmak gerekir.
 
 ### 4) Application areas (uygulama alanları)
 
